@@ -2,17 +2,17 @@
 ─────────────────────────────────────────────────────────────────
 1. ℹ️ FILE AND AUTHOR INFORMATION
 ─────────────────────────────────────────────────────────────────
-- ✍️ Author                : Mạc Phúc Khang - MPK (MacPhucKhang)
-- 💾 Repository Locations
-    🌐 Remote Repository   : https://github.com/Macphuckhang11112007/Code/Test.cpp
-    🖥️ Local Repository    : C:/Users/macph/Downloads/Code/Test.cpp
+- ✍️ Author              : Mạc Phúc Khang - MPK (MacPhucKhang)
+- 💾 Repository Locations:
+    🌐 Remote Repository   : https://github.com/Macphuckhang11112007/Code/tree/main/Test/Test.cpp
+    🖥️ Local Repository   : C:/Users/macph/Downloads/MPK/Code/Test/Test.cpp
 - 📄 File Name             : Test.cpp
 - 🏷️ File Version          : v1.0
-- 🗓️ Creation Date         : 17:23 05-07-2025
-- ✏️ Last Modified Date    : 17:23 05-07-2025
+- 🗓️ Creation Date         : 19:29 05-07-2025
+- ✏️ Last Modified Date    : 19:29 05-07-2025
 - 🧠 Thinking Time         : HH:MM
-- 💻 Coding Time           : HH:MM
-- 📏 Code Length           : NUMBER_OF_LINES lines / FILE_SIZE KB
+- 💻 Coding Time          : HH:MM
+- 📏 Code Length          : NUMBER_OF_LINES lines / FILE_SIZE KB
 
 ─────────────────────────────────────────────────────────────────
 2. 🎯 PROBLEM STATEMENT
@@ -38,27 +38,27 @@
 SOLUTION_OVERVIEW_AND_STRATEGY
 
 ### 3.2. 🛠️ Technical Implementation Details:
-- ⚡ Algorithms Used      : LIST_ALGORITHMS_USED
-- 🧩 Data Structures Used  : LIST_DATA_STRUCTURES_USED
+- ⚡ Algorithms Used       : LIST_ALGORITHMS_USED
+- 🧩 Data Structures Used   : LIST_DATA_STRUCTURES_USED
 - 📊 Declared Data Structures: DECLARE_MAIN_DATA_STRUCTURES_IN_CODE
 - ⚙️ Main Functions and Purpose: MAIN_FUNCTIONS_AND_THEIR_PURPOSE
-- 🧑‍💻 Custom Classes/Structs  : CUSTOM_CLASSES_OR_STRUCTS
+- 🧑‍💻 Custom Classes/Structs   : CUSTOM_CLASSES_OR_STRUCTS
 
 ### 3.3. 🔍 Analysis and Notes:
 - 📉 Complexity:
-    - ⏰ Time Complexity   : O(TIME_COMPLEXITY_EXPRESSION)
-    - 📦 Space Complexity  : O(SPACE_COMPLEXITY_EXPRESSION)
+    - ⏰ Time Complexity    : O(TIME_COMPLEXITY_EXPRESSION)
+    - 📦 Space Complexity   : O(SPACE_COMPLEXITY_EXPRESSION)
 - 🧪 Edge Cases and Limitations: EDGE_CASES_AND_LIMITATIONS
-- 🌱 Notes and Learnings   : YOUR_NOTES_AND_KEY_LEARNINGS_HERE
+- 🌱 Notes and Learnings    : YOUR_NOTES_AND_KEY_LEARNINGS_HERE
 
 ─────────────────────────────────────────────────────────────────
 4. 🚀 SUBMISSION PERFORMANCE
 ─────────────────────────────────────────────────────────────────
 - 📤 Submission Source     : SUBMISSION_INFORMATION
-- ⏱️ Submission Time       : HH:MM
-- ✅ Status / Verdict      : UJD - Unjudged
+- ⏱️ Submission Time      : HH:MM
+- ✅ Status / Verdict     : UJD - Unjudged
 - 🏆 Peak Resources Used   : PEAK_TIME_USED s, PEAK_MEMORY_USED MB
-- 💯 Final Score           : SCORE_ACHIEVED / TOTAL_SCORE
+- 💯 Final Score          : SCORE_ACHIEVED / TOTAL_SCORE
 
 ─────────────────────────────────────────────────────────────────
 5. 🔗 REFERENCES AND RELATED PROBLEMS
@@ -71,7 +71,7 @@ SOLUTION_OVERVIEW_AND_STRATEGY
 ─────────────────────────────────────────────────────────────────
 6. 📜 REVISION HISTORY
 ─────────────────────────────────────────────────────────────────
-- ➡️ v1.0 (17:23 05-07-2025) - DESCRIPTION_OF_REVISION
+- ➡️ v1.0 (19:29 05-07-2025) - DESCRIPTION_OF_REVISION
 
 ─────────────────────────────────────────────────────────────────
 // Any additional notes or sections can be added here.
@@ -94,7 +94,7 @@ const int MOD = 1e9 + 7;
 const int MOD2 = 998244353;
 const long long LINF = 1e18 + 9;
 const double EPS = 1e-9;
-const double PI = acos (-1.0);
+const double PI = acos(-1.0);
 
 ///////////////////////////////////
 // 🔤 Typedefs & Short Names
@@ -201,14 +201,12 @@ const double PI = acos (-1.0);
 ///////////////////////////////////
 // 📂 File Redirection (Optional)
 ///////////////////////////////////
-void file (string fl, string in, string out)
-{
-    cin.tie (0)->sync_with_stdio (0); // Optional: flush-to-zero denormals
+void file(string fl, string in, string out) {
+    cin.tie(0)->sync_with_stdio(0); // Optional: flush-to-zero denormals
     // __builtin_ia32_ldmxcsr(40896);  
-    if (fl != "")
-    {
-        freopen ((fl + in).c_str (), "r", stdin);
-        freopen ((fl + out).c_str (), "w", stdout);
+    if (fl != "") {
+        freopen((fl + in).c_str(), "r", stdin);
+        freopen((fl + out).c_str(), "w", stdout);
     }
 }
 
@@ -216,11 +214,9 @@ void file (string fl, string in, string out)
 // 🚨 Entry Point
 ///////////////////////////////////
 int tc = 1;
-signed main ()
-{
-    file ("", "", "");
-    while (tc--)
-    {
+signed main() {
+    file("", "", "");
+    while (tc--) {
         // Solve here!
     }
     return 0;
