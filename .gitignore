@@ -28,5 +28,19 @@
 
 # Executables
 *.exe
-*.out
+# *.out
 *.app
+
+.vscode/
+.vs/
+bin/
+obj/
+*.layout
+*.depend
+*.cbp
+*.cscope_file_list
+settings.json
+launch.json
+tasks.json
+c_cpp_properties.json
+.git/
