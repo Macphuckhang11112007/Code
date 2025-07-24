@@ -4,6 +4,9 @@ using namespace std;
 
 signed main()
 {
-    for (int i : a) cout << i;
+    for (int i = 1; i <= 400; ++i)
+    {
+        cout << i;
+    }
     return 0;
 }
