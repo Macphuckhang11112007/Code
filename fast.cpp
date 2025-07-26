@@ -1,10 +1,10 @@
 #undef _GLIBCXX_DEBUG
 
+#include <bits/stdc++.h>
+
 #pragma GCC optimize( \
     "Ofast,inline,unroll-loops,unswitch-loops,loop-interchange,loop-strip-mine,loop-block,move-loop-invariants,loop-strip-mine,predictive-commoning,if-conversion,peephole,auto-inc-dec,reorder-blocks,reorder-blocks-algorithm=stc,reorder-functions,align-functions,align-jumps,align-loops,align-labels,no-stack-protector,no-defer-pop,omit-frame-pointer")
 #pragma GCC target("arch=tigerlake")
-
-#include <bits/stdc++.h>
 
 #ifdef _WIN32
 #define getchar _getchar_nolock
