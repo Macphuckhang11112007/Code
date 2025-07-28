@@ -52,7 +52,7 @@ int main()
 
     // Vector `sum_col` to store the sum of each column.
     // `sum_col[j]` will contain the sum of all elements in the j-th column.
-    vector<ll> sum_col(n + 1, 0);
+    vector<ll> sum_col(m + 1, 0);
 
     // The `org_row` vector is the key to handling row swaps in O(1).
     // It acts as a mapping layer: `org_row[i]` stores the index of the ORIGINAL
