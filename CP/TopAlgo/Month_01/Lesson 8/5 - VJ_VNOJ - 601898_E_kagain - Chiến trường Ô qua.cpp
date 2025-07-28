@@ -25,7 +25,7 @@ int main()
     while (tc--)
     {
         cin >> n;
-        while (!id_min.empty()) { id_min.pop(); }
+        id_min = stack<int>();
         ans    = Strength();
         arr[0] = arr[n + 1] = 0;
         for (int i = 1; i <= n; ++i) { cin >> arr[i]; }
@@ -36,7 +36,7 @@ int main()
             id_left[i] = id_min.top() + 1;
             id_min.push(i);
         }
-        while (!id_min.empty()) { id_min.pop(); }
+        id_min = stack<int>();
         id_min.push(n + 1);
         for (int i = n; i; --i)
         {
@@ -46,11 +46,11 @@ int main()
         }
         for (int i = 1; i <= n; ++i)
         {
-            int id_len   = id_right[i] - id_left[i] + 1;
-            int strength = 1LL * arr[i] * id_len;
-            if (strength > ans.val)
+            long long width            = id_right[i] - id_left[i] + 1;
+            long long current_strength = arr[i] * width;
+            if (current_strength > ans.val)
             {
-                ans.val  = strength;
+                ans.val  = current_strength;
                 ans.id_l = id_left[i];
                 ans.id_r = id_right[i];
             }
