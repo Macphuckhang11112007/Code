@@ -2,10 +2,12 @@
 
 using namespace std;
 
+long long a, b;
+
 int main()
 {
     cin.tie(0)->sync_with_stdio(0);
-    string str = "123456";
-    cout << str.substr(0, 3) << '\n';  // Output: 123
+    cin >> a >> b;
+    cout << a + b;
     return 0;
 }
