@@ -44,3 +44,5 @@ launch.json
 tasks.json
 c_cpp_properties.json
 .git/
+.cph/
+.cph-ng/
