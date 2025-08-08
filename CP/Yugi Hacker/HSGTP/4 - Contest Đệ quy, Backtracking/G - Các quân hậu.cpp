@@ -12,9 +12,9 @@ const int kN = 8 + 5, kState = 8 + 5;
 
 int  ans;
 char a[kN][kN];
-pii  dir[]               = {{0, 1}, {1, 0},  {0, -1}, {-1, 0},
-                            {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
-int  vst[kN][kN][kState] = {0};
+pii  dir[] = {{0, 1}, {1, 0},  {0, -1}, {-1, 0},
+              {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
+int  vst[kN][kN][kState];
 
 void Push(pii u, int id, queue<pair<pii, int>> &q)
 {
@@ -44,7 +44,7 @@ vector<pair<pii, int>> Mark(int i, int j)
         for (int k = (chk ? 0 : id); k < 8; k += (chk ? 1 : 8))
         {
             pii v = {u.fi + dir[k].fi, u.se + dir[k].se};
-            Push(v, id, q);
+            Push(v, k, q);
         }
     }
     return trace;
