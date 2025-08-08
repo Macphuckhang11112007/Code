@@ -2,60 +2,54 @@
 
 #include <bits/stdc++.h>
 
+#define pii pair<int, int>
+#define fi first
+#define se second
+
 using namespace std;
 
-const int kMaxNM = 500 + 5;
+const int kMaxN = 1e5 + 5;
 
-int       n, m, mat[kMaxNM][kMaxNM];
-long long a, b, q = LLONG_MAX, s[kMaxNM][kMaxNM];
+int                                 n, spf[kMaxN];
+long long                           ans;
+vector<int>                         primes;
+unordered_map<long long, long long> cnt;
 
 int main()
 {
-#ifndef CPH
-    ifstream cin("DauTu.inp");
-    ofstream cout("DauTu.out");
-#endif
     cin.tie(0)->sync_with_stdio(0);
-    cin >> n >> m >> a >> b;
+    cin >> n;
+    spf[0] = spf[1] = 0;
+    for (int i = 2; i <= n; ++i)
+    {
+        if (!spf[i])
+        {
+            spf[i] = i;
+            primes.push_back(i);
+        }
+        for (const int &j : primes)
+        {
+            if (1LL * i * j > n || j > spf[i]) { break; }
+            spf[i * j] = j;
+        }
+    }
     for (int i = 1; i <= n; ++i)
     {
-        for (int j = 1; j <= m; ++j)
+        unordered_map<int, int> fact;
+        int                     x = i;
+        while (spf[x])
         {
-            cin >> mat[i][j];
-            s[i][j] = s[i - 1][j] + mat[i][j];
+            ++fact[spf[x]];
+            x /= spf[x];
         }
-    }
-    for (int i1 = 1; i1 <= n; ++i1)
-    {
-        for (int i2 = i1; i2 <= n; ++i2)
+        long long y = 1;
+        for (const auto &[num, c] : fact)
         {
-            int       l_low = 1, l_mid = 1, l_high = 1;
-            long long sum_low = 0, sum_mid = 0, sum_high = 0;
-            for (int r = 1; r <= m; ++r)
-            {
-                sum_low += s[i2][r] - s[i1 - 1][r];
-                sum_mid += s[i2][r] - s[i1 - 1][r];
-                sum_high += s[i2][r] - s[i1 - 1][r];
-                while (l_low <= r && sum_low > a)
-                {
-                    sum_low -= s[i2][l_low] - s[i1 - 1][l_low];
-                    ++l_low;
-                }
-                while (l_mid <= r && sum_mid > b)
-                {
-                    sum_mid -= s[i2][l_mid] - s[i1 - 1][l_mid];
-                    ++l_mid;
-                }
-                ++l_high;
-                // if (sum_low <= a) { q = min(q, a + b - 2 * sum_low); }
-                // if (a <= sum_mid && sum_mid <= b) { q = min(q, b - a); }
-                // if (sum_high >= b) { q = min(q, 2 * sum_high - (a + b)); }
-                q = min({q, abs(sum_low - a) + abs(sum_low - b),
-                         abs(sum_mid - a) + abs(sum_mid - b),
-                         abs(sum_high - a) + abs(sum_high - b)});
-            }
+            if (c & 1) { y *= num; }
         }
+        ans += 2 * cnt[y] + 1;
+        ++cnt[y];
     }
-    cout << q << '\n';
+    cout << ans;
     return 0;
 }
