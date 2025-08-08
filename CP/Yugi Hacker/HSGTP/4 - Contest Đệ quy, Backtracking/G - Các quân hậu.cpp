@@ -12,9 +12,9 @@ const int kN = 8 + 5, kState = 8 + 5;
 
 int  ans;
 char a[kN][kN];
+int  vst[kN][kN][kState];
 pii  dir[] = {{0, 1}, {1, 0},  {0, -1}, {-1, 0},
               {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
-int  vst[kN][kN][kState];
 
 void Push(pii u, int id, queue<pair<pii, int>> &q)
 {
