@@ -16,3 +16,5 @@ AllowShortLoopsOnASingleLine: true
 AlwaysBreakBeforeMultilineStrings: true
 AlwaysBreakTemplateDeclarations: true
 BreakBeforeBraces: Allman
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
