@@ -2,7 +2,7 @@
 // Finish Time: 8/17/2025, 12:19:52 PM AC
 // Start Time: 8/17/2025, 12:12:53 PM
 
-// Categories: *800, Brute Force, Constructive Algorithms, Greedy, Math
+// Categories: *800 (*472), Brute Force, Constructive Algorithms, Greedy, Math
 #include <bits/stdc++.h>
 
 using namespace std;
