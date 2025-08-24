@@ -1,6 +1,6 @@
-#pragma GCC optimize(                                                                                                  \
-    "Ofast,inline,unroll-loops,loop-interchange,loop-strip-mine,loop-block,move-loop-invariants,predictive-commoning,if-conversion,peephole,auto-inc-dec,reorder-blocks,reorder-functions,align-functions,align-jumps,align-loops,align-labels,no-stack-protector,omit-frame-pointer")
-#pragma GCC target("arch=tigerlake")
+
+#pragma GCC optimize("O3,unroll-loops,no-stack-protector,omit-frame-pointer")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt,fma,sse3,sse4.1,sse4.2,tzcnt")
 #include <bits/stdc++.h>
 #undef _GLIBCXX_DEBUG
 
@@ -8,8 +8,8 @@ using namespace std;
 
 const int kMaxN = 3000 + 5;
 
-int n;
-long long ans = 0;
+int           n;
+long long     ans = 0;
 bitset<kMaxN> color[kMaxN];
 
 signed main()

@@ -17,20 +17,18 @@ int main()
     for (int i = 1; i <= 3 * n; ++i) { cin >> a[i]; }
     priority_queue<int, vector<int>, greater<int>> pq_min;
     long long                                      sum_max = 0;
-    for (int i = 1; i <= 3 * n; ++i)
+    for (int i = 1; i <= n; ++i)
     {
-        if (i <= n)
-        {
-            sum_max += a[i];
-            pq_min.push(a[i]);
-        }
-        else if (i > n && pq_min.top() < a[i])
-        {
-            sum_max -= pq_min.top();
-            pq_min.pop();
-            sum_max += a[i];
-            pq_min.push(a[i]);
-        }
+        sum_max += a[i];
+        pq_min.push(a[i]);
+    }
+    pre[n] = sum_max;
+    for (int i = 2 * n; i <= 3 * n; ++i)
+    {
+        pq_min.push(a[i]);
+        sum_max += a[i];
+        sum_max -= pq_min.top();
+        pq_min.pop();
         pre[i] = sum_max;
     }
     priority_queue<int> pq_max;
