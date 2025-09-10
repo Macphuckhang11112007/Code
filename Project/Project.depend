@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1756060531source:c:\users\macph\downloads\mpk\code\project\main.cpp
-	<bits/stdc++.h>
-	<ext/pb_ds/assoc_container.hpp>
-	<ext/pb_ds/tree_policy.hpp>
-

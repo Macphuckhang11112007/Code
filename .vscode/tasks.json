@@ -6,8 +6,9 @@
             "command": "g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-Wall",
-                "-g",
+                "-std=gnu++26",
+                // "@\"${workspaceFolder}\\.vscode\\args.txt\"",
+                "-g3",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"

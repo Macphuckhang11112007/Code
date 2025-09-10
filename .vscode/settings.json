@@ -170,5 +170,6 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActions.triggerOnFocusChange": true,
   "C_Cpp.clang_format_style": "file",
-  "C_Cpp.vcFormat.indent.accessSpecifiers": true
+  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+  "C_Cpp.errorSquiggles": "disabled"
 }

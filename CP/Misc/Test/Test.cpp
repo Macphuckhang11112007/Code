@@ -1,342 +1,77 @@
 // MPK
 
-#define LOCAL
-#define DEBUG
-// #define PAUSE
-
-#ifdef DEBUG
-#define _GLIBCXX_DEBUG
-#endif
-
-#pragma GCC optimize("O3,inline,unroll-loops,omit-frame-pointer")
-#if __GNUC__ == 14 && __cplusplus > 202002L
+#pragma GCC optimize("Ofast,inline,unroll-loops,omit-frame-pointer")
 #pragma GCC target("arch=x86-64")
-#else
-#pragma GCC target("arch=corei7-avx")
-#endif
 
 #include <bits/stdc++.h>
 
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-
 using namespace std;
-using namespace std::chrono;
-using namespace __gnu_pbds;
 
-#define endl "\n"
-#define endln cout << "\n"
+const int S = 1e5;
 
-#define uint unsigned int
-#define ll long long
-#define ull unsigned long long
-#define lll __int128_t
-#define ulll __uint128_t
-#define dbl double
-#define ldbl long double
-#define int8 int8_t
-#define uint8 uint8_t
-#define int16 int16_t
-#define uint16 uint16_t
-#define int32 int32_t
-#define uint32 uint32_t
-#define int64 int64_t
-#define uint64 uint64_t
-#define int128 __int128_t
-#define uint128 __uint128_t
-
-#define mpr make_pair
-#define mtpl make_tuple
-
-#define pii pair<int, int>
-#define pii_i pair<pii, int>
-#define pi_ii pair<int, pii>
-#define pii_ii pair<pii, pii>
-#define tiii tuple<int, int, int>
-#define tlll tuple<ll, ll, ll>
-#define tiiii tuple<int, int, int, int>
-#define tllll tuple<ll, ll, ll, ll>
-#define pll pair<ll, ll>
-#define pll_l pair<pll, ll>
-#define pl_ll pair<ll, pll>
-#define pll_ll pair<pll, pll>
-
-#define vi vector<int>
-#define vl vector<ll>
-#define vii vector<pii>
-#define vll vector<pll>
-#define vii vector<pii>
-#define vii_i vector<pii, int>
-#define vi_ii vector<int, pii>
-#define vii_ii vector<pii, pii>
-#define viii vector<tiii>
-#define viiii vector<tiiii>
-#define vll vector<pll>
-#define vll_l vector<pll, ll>
-#define vl_ll vector<ll, pll>
-#define vll_ll vector<pll, pll>
-#define vlll vector<tlll>
-#define vllll vector<tllll>
-#define vvi vector<vector<int>>
-#define vvll vector<vector<ll>>
-#define vvc vector<vector<char>>
-
-#define umap unordered_map
-#define uset unordered_set
-
-#define fi first
-#define se second
-#define tp top
-#define bk back
-#define fr front
-
-#define ep emplace
-#define epf emplace_front
-#define epb emplace_back
-#define psh push
-#define pshf push_front
-#define pshb push_back
-#define pp pop
-#define ppb pop_back
-#define ppf pop_front
-#define epv(_x, _val) _x.ep(_val)
-#define epfv(_x, _val) _x.epf(_val)
-#define epbv(_x, _val) _x.epb(_val)
-#define pshv(_x, _val) _x.psh(_val)
-#define pshfv(_x, _val) _x.pshf(_val)
-#define pshbv(_x, _val) _x.pshb(_val)
-
-#define INF INFINITY
-#define IMAX INT_MAX / 2
-#define UIMAX UINT_MAX / 2
-#define LLMAX LLONG_MAX / 2
-#define ULLMAX ULLONG_MAX / 2
-#define MOD1 (ll)(1e9 + 7)
-#define MOD2 (ll)(998 '244' 353)
-#define EPS (dbl)(1e-9)
-
-#define all(_x) _x.begin(), _x.end()
-#define rall(_x) prev(_x.end()), _x.begin()
-#define allr(_x, _l, _r) _x + _l, _x + _r + 1
-#define sz(_x) (ll)(_x.size())
-#define get(_x, _i) (get<(_i) - 1>(_x))
-
-#define DBG(_x) cout << #_x << " = " << _x << "\n"
-#define PRINT(_x) cout << _x
-#define PRINTS(_x) cout << _x << " "
-#define PRINTLN(_x) cout << _x << "\n"
-#define FOR(_i, _l, _r) for (long long _i = _l; _i <= _r; _i++)
-#define RFOR(_i, _r, _l) for (long long _i = _r; _i >= _l; _i--)
-
-template <typename T>
-using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
-template <typename Key, typename Value>
-using ordered_map = tree<Key, Value, less<Key>, rb_tree_tag, tree_order_statistics_node_update>;
-
-mt19937_64 rng(steady_clock::now().time_since_epoch().count());
-
-int tc = 1;
-
-long long Rand() {
-    return rng();
-}
-
-long long RandRange(long long l, long long r) {
-    uniform_int_distribution<long long> dist(l, r);
-    return dist(rng);
-}
-
-double RandReal() {
-    uniform_real_distribution<double> dist(-1e9, 1e9);
-    return dist(rng);
-}
-
-double RandRealRange(double l, double r) {
-    uniform_real_distribution<double> dist(l, r);
-    return dist(rng);
-}
-
-void SetIO(int mtc = 0, string file = "", string inp = ".inp", string out = ".out") {
-    if (file != "") {
-        fstream fin(file + inp, ios::in);
-        fstream fout(file + out, ios::out);
-        cin.rdbuf(fin.rdbuf());
-        cout.rdbuf(fout.rdbuf());
-    }
-#ifndef DEBUG
-    cin.tie(0)->sync_with_stdio(0);
-#endif
-    if (mtc == 1) {
-        cin >> tc;
-    } else if (mtc == -1) {
-        tc = -1;
-    }
-    return;
-}
-
-// -------------------- [Entry Point] --------------------
-
-//
-const int    N = 1e6, SEG = 4 * N;
-int          n, q;
-int          a[N + 10];
-ll           seg[SEG + 10];
-queue<pii_i> qr;
-queue<int>   ansqr;
-
-//
-
-void Lazy(int p) {
-    if (seg[p]) {
-        int x = seg[p];
-        int u = 2 * p, v = 2 * p + 1;
-        seg[u] += x;
-        seg[v] += x;
-        seg[p] = 0;
-    }
-    return;
-}
-
-void Update(int p, int l, int r, int i, int j, int x) {
-    if (l > r || i > j || j < l || r < i) {
-        return;
-    }
-    if (i <= l && r <= j) {
-        seg[p] += x;
-        return;
-    }
-    Lazy(p);
-    int u = 2 * p, v = 2 * p + 1;
-    int m = (l + r) / 2;
-    Update(u, l, m, i, j, x);
-    Update(v, m + 1, r, i, j, x);
-    return;
-}
-
-int Get(int p, int l, int r, int i) {
-    if (l > r || i < l || r < i) {
-        return 0;
-    }
-    if (l == r) {
-        return seg[p];
-    }
-    Lazy(p);
-    int u = 2 * p, v = 2 * p + 1;
-    int m = (l + r) / 2;
-    if (i <= m) {
-        return Get(u, l, m, i);
-    } else {
-        return Get(v, m + 1, r, i);
-    }
-    return 0;
-}
-
-void PreProcess() {
-    return;
-}
-
-bool Input() {
-    //
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        cin >> a[i];
-    }
-    cin >> q;
-    while (q--) {
-        int l, r, x;
-        cin >> l >> r >> x;
-        qr.ep(mpr(l, r), x);
-    }
-    return 1;
-}
-
-void Reset() {
-    //
-    for (int i = 1; i <= n; i++)
-        cin >> a[i];
-    int i;
-    switch (i) {
-        case 1:
-            cout << 1;
-            break;
-        case 2:
-            cout << "h";
-            i++;
-            break;
-        default:
-            cout << 10;
-    }
-    int *p;
-    return;
-}
-
-void Solve() {
-    //
-    while (sz(qr)) {
-        auto [pr, x] = qr.fr();
-        auto [l, r]  = pr;
-        qr.pp();
-        Update(1, 1, n, l, r, x);
-    }
-    for (int i = 1; i <= n; i++) {
-        ansqr.ep(a[i] + Get(1, 1, n, i));
-    }
-    return;
-}
-
-void Output() {
-    //
-    while (sz(ansqr)) {
-        int x = ansqr.fr();
-        ansqr.pp();
-        cout << x << " ";
-    }
-    return;
-}
-
-signed Main() {
-    SetIO();
-    PreProcess();
-    if (tc != -1) {
-        for (int i = 1; i <= tc; i++) {
-            Input();
-            Reset();
-            Solve();
-            Output();
-        }
-    } else {
-        while (Input()) {
-            Reset();
-            Solve();
-            Output();
-        }
-    }
-    return 0;
-}
+int                 n, m;
+int                 sum, ans;
+vector<int>         a, b, sumA, sumB;
+vector<vector<int>> l;
+vector<int>         posA[2 * S + 1], posB[2 * S + 1];
 
 signed main() {
-#ifndef CPH
-    auto time_start = high_resolution_clock::now();
-    cerr << "\n\n";
-#endif
-    signed ret = Main();
-#ifndef CPH
-    auto             time_end = high_resolution_clock::now();
-    duration<double> elapsed  = time_end - time_start;
-    cerr << "\n\n-------------------- [Execution Summary] "
-            "--------------------\n";
-    cerr << "| Execution Time" << ": ";
-    if (elapsed.count() < 1) {
-        cerr << fixed << setprecision(4) << elapsed.count() * 1e3 << " ms" << setw(36 - to_string(int(elapsed.count() * 1e3)).length()) << "|\n";
-    } else {
-        cerr << fixed << setprecision(7) << elapsed.count() << " s" << setw(34 - to_string(int(elapsed.count())).length()) << "|\n";
+    cin.tie(0)->sync_with_stdio(0);
+    freopen("Test.inp", "r", stdin);
+    cin >> n >> m;
+    a.resize(n + 1);
+    b.resize(m + 1);
+    sumA.resize(n + 1);
+    sumB.resize(m + 1);
+    l.resize(n + 1, vector<int>(m + 1));
+    sum     = S;
+    posA[S] = {0};
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        sum += a[i];
+        sumA[i] = sum;
+        posA[sum].emplace_back(i);
     }
-    cerr << "| Exit Code     : " << ret << setw(25 - to_string(ret).length() - 2 * !ret) << "(0x" << setfill('0') << setw(8) << hex << uppercase << ret << (ret == 0 ? ", Success) |" : ", Error) |") << "\n";
-#ifdef PAUSE
-    system("pause");
-#endif
-    cerr << "-------------------------------------------------------------\n\n";
-#endif
-    return ret;
+    sum     = S;
+    posB[S] = {0};
+    for (int i = 1; i <= m; i++) {
+        cin >> b[i];
+        sum += b[i];
+        sumB[i] = sum;
+        posB[sum].emplace_back(i);
+    }
+    for (int id = 1 - m; id <= n - 1; id++) {
+        for (int r2 = max(1, id + 1), c2 = max(1, 1 - id); r2 <= n && c2 <= m; r2++, c2++) {
+            l[r2][c2] = (a[r2] * b[c2] == 1 ? l[r2 - 1][c2 - 1] + 1 : 0);
+
+
+            int len = l[r2][c2];
+            int r1  = r2 - len + 1;
+            int c1  = c2 - len + 1;
+            int lA, rA, lB, rB;
+            lA = lower_bound(posA[sumA[r2]].begin(), posA[sumA[r2]].end(), r1 - 1) - posA[sumA[r2]].begin();
+            rA = lower_bound(posA[sumA[r2]].begin(), posA[sumA[r2]].end(), r2) - posA[sumA[r2]].begin() - 1;
+            lB = lower_bound(posB[sumB[c2]].begin(), posB[sumB[c2]].end(), c1 - 1) - posB[sumB[c2]].begin();
+            rB = lower_bound(posB[sumB[c2]].begin(), posB[sumB[c2]].end(), c2) - posB[sumB[c2]].begin() - 1;
+            // cout << r2 << " " << c2 << "    " << r1 << " " << c1 << "    " << lA << " " << rA << "    " << lB << " " << rB << "    ";
+            while (lA <= rA && lB <= rB) {
+                if (r2 - posA[sumA[r2]][lA] > c2 - posB[sumB[c2]][lB]) {
+                    lA++;
+                    ans++;
+                } else if (r2 - posA[sumA[r2]][lA] < c2 - posB[sumB[c2]][lB]) {
+                    lB++;
+                    ans++;
+                } else {
+                    lA++;
+                    lB++;
+                    ans++;
+                }
+            }
+            ans += max(0, rA - lA + 1);
+            ans += max(0, rB - lB + 1);
+            // cout << len << "    " << ans << "\n";
+        }
+    }
+    cout << ans << "\n";
+    return 0;
 }
