@@ -4,12 +4,12 @@
 
 using namespace std;
 
-const int N = 2e5, LG = 20;
+const int N = 5000;
 
 int n, a[N + 5];
 
-// // DP O(n^2)
-// int dp[N + 5][N + 5];
+// DP O(n^2)
+int dp[N + 5][N + 5];
 
 // // Greedy + Upperbound (STL) O(nlogn)
 // vector<int> lis;
@@ -198,29 +198,29 @@ int main()
     cin >> n;
     for (int i = 1; i <= n; i++) { cin >> a[i]; }
 
-    // // DP O(n^2)
-    // for (int i = 1; i <= n; i++)
-    // {
-    //     for (int j = 1; j <= i; j++)
-    //     {
-    //         if (dp[i - 1][j]) { dp[i][j] = dp[i - 1][j]; }
-    //         else
-    //         {
-    //             if (dp[i - 1][j - 1] && a[i] >= dp[i - 1][j - 1])
-    //             {
-    //                 dp[i][j] = a[i];
-    //             }
-    //         }
-    //     }
-    // }
-    // for (int j = n; j >= 1; j--)
-    // {
-    //     if (dp[n][j])
-    //     {
-    //         cout << j << "\n";
-    //         return 0;
-    //     }
-    // }
+    // DP O(n^2)
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            if (dp[i - 1][j]) { dp[i][j] = dp[i - 1][j]; }
+            else
+            {
+                if (dp[i - 1][j - 1] && a[i] >= dp[i - 1][j - 1])
+                {
+                    dp[i][j] = a[i];
+                }
+            }
+        }
+    }
+    for (int j = n; j >= 1; j--)
+    {
+        if (dp[n][j])
+        {
+            cout << j << "\n";
+            return 0;
+        }
+    }
 
     // // Greedy + Upperbound (STL) O(nlogn)
     // for (int i = 1; i <= n; i++)
