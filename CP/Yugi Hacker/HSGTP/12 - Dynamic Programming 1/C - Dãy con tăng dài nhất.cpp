@@ -1,14 +1,15 @@
 #include <bits/stdc++.h>
- 
+
 using namespace std;
- 
-const int N = 5000;
- 
-int n, a[N + 5];
- 
+
+const int N = 2000;
+
+int n, a[N + 5], tr[N + 5][N + 5];
+int ans[3];
+
 // // Greedy + Lowerrbound (STL) O(nlogn)
 // vector<int> lis;
- 
+
 // // DP Segment Tree O(nlogn)
 // struct Seg
 // {
@@ -25,13 +26,13 @@ int n, a[N + 5];
 // } seg[4 * N + 5];
 // int                     arr[N + 5], dp[N + 5];
 // unordered_map<int, int> idx;
- 
+
 // void Max(int &a, int &b, bool chk = 0)
 // {
 //     if (!chk) { a = max(a, b); }
 //     else { b = max(a, b); }
 // }
- 
+
 // void Build(int p, int l, int r)
 // {
 //     if (l > r) { return; }
@@ -46,7 +47,7 @@ int n, a[N + 5];
 //     }
 //     return;
 // }
- 
+
 // void Lazy(int p)
 // {
 //     if (seg[p].lazy)
@@ -59,7 +60,7 @@ int n, a[N + 5];
 //     }
 //     return;
 // }
- 
+
 // void Update(int p, int l, int r, int i, int j, int x)
 // {
 //     if (l > r || j < l || r < i) { return; }
@@ -80,7 +81,7 @@ int n, a[N + 5];
 //     }
 //     return;
 // }
- 
+
 // int Get(int p, int l, int r, int i, int j)
 // {
 //     if (l > r || j < l || r < i || i > j) { return 0; }
@@ -94,10 +95,10 @@ int n, a[N + 5];
 //     }
 //     return 0;
 // }
- 
+
 // // DP Sqrt Decomposition O(n*sqrt(n))
 // const int S = 450;
- 
+
 // struct SQD
 // {
 //     int val  = 0;
@@ -105,10 +106,10 @@ int n, a[N + 5];
 //     SQD() : val(0), lazy(0) {}
 //     SQD(int _val, int _lazy) : val(_val), lazy(_lazy) {}
 // } sq[N / S + 5];
- 
+
 // int                     arr[N + 5], dp[N + 5], b[N + 5];
 // unordered_map<int, int> idx;
- 
+
 // void Lazy(int p)
 // {
 //     if (sq[p].lazy)
@@ -121,7 +122,7 @@ int n, a[N + 5];
 //     }
 //     return;
 // }
- 
+
 // void Update(int l, int r, int x)
 // {
 //     int block_l = (l - 1) / S + 1, block_r = (r - 1) / S + 1;
@@ -156,14 +157,14 @@ int n, a[N + 5];
 //     }
 //     return;
 // }
- 
+
 // int Get(int l, int r)
 // {
 //     if (l > r) { return 0; }
 //     int block_l = (l - 1) / S + 1;
 //     int block_r = (r - 1) / S + 1;
 //     int res     = 0;
- 
+
 //     if (block_l == block_r)
 //     {
 //         Lazy(block_l);
@@ -174,48 +175,59 @@ int n, a[N + 5];
 //         Lazy(block_l);
 //         int low = block_l * S, high = (block_r - 1) * S + 1;
 //         for (int i = l; i <= low; ++i) { res = max(res, b[i]); }
- 
+
 //         for (int i = block_l + 1; i < block_r; ++i)
 //         {
 //             res = max(res, sq[i].val);
 //         }
- 
+
 //         Lazy(block_r);
 //         for (int i = high; i <= r; i++) { res = max(res, b[i]); }
 //     }
 //     return res;
 // }
- 
-int main()
-{
+
+int main() {
     cin.tie(0)->sync_with_stdio(0);
     cin >> n;
-    for (int i = 1; i <= n; i++) { cin >> a[i]; }
- 
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+
     // DP O(n^2)
-    vector<vector<int>> dp(n + 5, vector<int>(n + 5, 0));
-    for (int i = 0; i <= n; i++) { dp[i][0] = -1; }
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            if (a[i] < (dp[i - 1][j] ? dp[i - 1][j] : INT_MAX / 2) &&
-                a[i] > (dp[i - 1][j - 1] ? dp[i - 1][j - 1] : INT_MAX / 2))
-            {
-                dp[i][j] = a[i];
+    vector<vector<int>> dp(n + 5, vector<int>(n + 5, n + 1));
+    for (int i = 0; i <= n; i++) {
+        dp[i][0] = 0;
+    }
+    a[0]     = INT_MIN / 2;
+    a[n + 1] = INT_MAX / 2;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            if (a[i] < a[dp[i - 1][j]] && a[i] > a[dp[i - 1][j - 1]]) {
+                dp[i][j] = i;
+                tr[i][j] = dp[i - 1][j - 1];
+                if (ans[1] < j) {
+                    ans[1] = j;
+                    ans[2] = i;
+                }
+            } else {
+                dp[i][j] = tr[i][j] = dp[i - 1][j];
             }
-            else { dp[i][j] = dp[i - 1][j]; }
         }
     }
-    for (int j = n; j >= 1; j--)
-    {
-        if (dp[n][j])
-        {
-            cout << j << "\n";
-            return 0;
-        }
+    vector<int> vec;
+    cout << ans[1] << "\n";
+    int id = ans[2];
+    while (1 <= id && id <= n) {
+        vec.push_back(a[id]);
+        id = tr[id][ans[1]];
+        --ans[1];
     }
- 
+    reverse(vec.begin(), vec.end());
+    for (int i : vec) {
+        cout << i << " ";
+    }
+
     // // Greedy + Lowerbound (STL) O(nlogn)
     // for (int i = 1; i <= n; i++)
     // {
@@ -224,7 +236,7 @@ int main()
     //     else { lis.push_back(a[i]); }
     // }
     // cout << lis.size() << "\n";
- 
+
     // // DP Segment Tree O(nlogn)
     // for (int i = 1; i <= n; i++) { arr[i] = a[i]; }
     // sort(arr + 1, arr + n + 1);
@@ -239,7 +251,7 @@ int main()
     //     Update(1, 1, idx.size(), idx[a[i]], idx[a[i]], dp[i]);
     // }
     // cout << *max_element(dp + 1, dp + n + 1);
- 
+
     // // DP Sqrt Decomposition O(n*sqrt(n))
     // for (int i = 1; i <= n; i++) { arr[i] = a[i]; }
     // sort(arr + 1, arr + n + 1);
@@ -254,6 +266,6 @@ int main()
     //     Update(idx[a[i]], idx[a[i]], dp[i]);
     // }
     // cout << *max_element(dp + 1, dp + n + 1);
- 
+
     return 0;
 }
