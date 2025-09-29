@@ -1,77 +1,63 @@
-// MPK
-
-#pragma GCC optimize("Ofast,inline,unroll-loops,omit-frame-pointer")
-#pragma GCC target("arch=x86-64")
-
 #include <bits/stdc++.h>
 
 using namespace std;
 
-const int S = 1e5;
-
-int                 n, m;
-int                 sum, ans;
-vector<int>         a, b, sumA, sumB;
-vector<vector<int>> l;
-vector<int>         posA[2 * S + 1], posB[2 * S + 1];
-
-signed main() {
-    cin.tie(0)->sync_with_stdio(0);
-    freopen("Test.inp", "r", stdin);
-    cin >> n >> m;
-    a.resize(n + 1);
-    b.resize(m + 1);
-    sumA.resize(n + 1);
-    sumB.resize(m + 1);
-    l.resize(n + 1, vector<int>(m + 1));
-    sum     = S;
-    posA[S] = {0};
-    for (int i = 1; i <= n; i++) {
-        cin >> a[i];
-        sum += a[i];
-        sumA[i] = sum;
-        posA[sum].emplace_back(i);
+int fib(int n) {
+    static int f[100] = {0};
+    if (n <= 2) {
+        return f[n] = n - 1;
     }
-    sum     = S;
-    posB[S] = {0};
-    for (int i = 1; i <= m; i++) {
-        cin >> b[i];
-        sum += b[i];
-        sumB[i] = sum;
-        posB[sum].emplace_back(i);
+    if (f[n]) {
+        return f[n];
     }
-    for (int id = 1 - m; id <= n - 1; id++) {
-        for (int r2 = max(1, id + 1), c2 = max(1, 1 - id); r2 <= n && c2 <= m; r2++, c2++) {
-            l[r2][c2] = (a[r2] * b[c2] == 1 ? l[r2 - 1][c2 - 1] + 1 : 0);
+    return f[n] = fib(n - 1) + fib(n - 2);
+}
 
+int gcd(int a, int b) {
+    return (!b ? a : gcd(b, a % b));
+}
 
-            int len = l[r2][c2];
-            int r1  = r2 - len + 1;
-            int c1  = c2 - len + 1;
-            int lA, rA, lB, rB;
-            lA = lower_bound(posA[sumA[r2]].begin(), posA[sumA[r2]].end(), r1 - 1) - posA[sumA[r2]].begin();
-            rA = lower_bound(posA[sumA[r2]].begin(), posA[sumA[r2]].end(), r2) - posA[sumA[r2]].begin() - 1;
-            lB = lower_bound(posB[sumB[c2]].begin(), posB[sumB[c2]].end(), c1 - 1) - posB[sumB[c2]].begin();
-            rB = lower_bound(posB[sumB[c2]].begin(), posB[sumB[c2]].end(), c2) - posB[sumB[c2]].begin() - 1;
-            // cout << r2 << " " << c2 << "    " << r1 << " " << c1 << "    " << lA << " " << rA << "    " << lB << " " << rB << "    ";
-            while (lA <= rA && lB <= rB) {
-                if (r2 - posA[sumA[r2]][lA] > c2 - posB[sumB[c2]][lB]) {
-                    lA++;
-                    ans++;
-                } else if (r2 - posA[sumA[r2]][lA] < c2 - posB[sumB[c2]][lB]) {
-                    lB++;
-                    ans++;
-                } else {
-                    lA++;
-                    lB++;
-                    ans++;
-                }
-            }
-            ans += max(0, rA - lA + 1);
-            ans += max(0, rB - lB + 1);
-            // cout << len << "    " << ans << "\n";
+int sum_digit_rec(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    return sum_digit_rec(n / 10) + n % 10;
+}
+
+int sum_digit_iter(int n) {
+    int res = 0;
+    while (n) {
+        res += n % 10;
+        n /= 10;
+    }
+    return res;
+}
+
+bool palindrome_iter(string s) {
+    for (int i = 0; 2 * i < s.size(); i++) {
+        if (s[i] != s[s.size() - i - 1]) {
+            return 0;
         }
     }
-    cout << ans << "\n";
+    return 1;
+}
+
+bool palindrome_rec(int i, string s) {
+    if (2 * i >= s.size()) {
+        return 1;
+    }
+    if (s[i] == s[s.size() - i - 1]) {
+        return palindrome_rec(i + 1, s);
+    }
+    return 0;
+}
+
+int main() {
+    cout << fib(30) << "\n";
+    cout << gcd(30, 42) << "\n";
+    cout << sum_digit_rec(129) << "\n";
+    cout << sum_digit_iter(129) << "\n";
+    cout << palindrome_iter("aabbaa") << "\n";
+    cout << palindrome_rec(0, "abbaa") << "\n";
     return 0;
 }
