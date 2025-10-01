@@ -6,8 +6,11 @@
             "command": "g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "-D_GLIBCXX_DEBUG",
+                "-march=corei7-avx",
+                "-mtune=corei7-avx",
                 "-std=gnu++26",
-                // "@\"${workspaceFolder}\\.vscode\\args.txt\"",
+                "@\"${workspaceFolder}\\.vscode\\args.txt\"",
                 "-g3",
                 "${file}",
                 "-o",
