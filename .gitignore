@@ -31,6 +31,6 @@
 *.out
 *.app
 
-# .*/
-# *.bin
-# *.opt-record.json.gz
+.*/
+*.bin
+*.opt-record.json.gz
