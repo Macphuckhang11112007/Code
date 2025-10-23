@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+.*/
+*.opt-record.json.gz
