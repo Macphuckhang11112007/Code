@@ -186,7 +186,7 @@
   "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
   "C_Cpp.default.mergeConfigurations": true,
   "C_Cpp.default.recursiveIncludes.order": "breadthFirst",
-  "C_Cpp.default.recursiveIncludes.priority": "beforeSystemIncludes",
+  "C_Cpp.default.recursiveIncludes.priority": "afterSystemIncludes",
   "C_Cpp.default.recursiveIncludes.reduce": "always",
   "C_Cpp.exclusionPolicy": "checkFilesAndFolders",
   "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
@@ -224,6 +224,16 @@
   "editor.inlayHints.enabled": "offUnlessPressed",
   "inlineChat.lineEmptyHint": true,
   "editor.minimap.autohide": "scroll",
-  "editor.minimap.enabled": false,
-  "editor.lineNumbers": "on"
+  "editor.minimap.enabled": true,
+  "editor.lineNumbers": "on",
+  "zenMode.centerLayout": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.autoClosingQuotes": "always",
+  "C_Cpp.copilotHover": "enabled",
+  "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
+  "C_Cpp.experimentalFeatures": "enabled",
+  "C_Cpp.intelliSenseMemoryLimit": 16384
 }

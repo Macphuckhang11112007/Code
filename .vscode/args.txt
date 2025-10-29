@@ -1,3 +1,11 @@
+
+-fdiagnostics-color=always
+-D_GLIBCXX_DEBUG
+-march=corei7-avx
+-mtune=corei7-avx
+-std=gnu++26
+-g3
+
 -Ofast
 -std=gnu++26
 -fPIC
