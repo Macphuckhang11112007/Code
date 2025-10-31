@@ -109,35 +109,56 @@ const int N = 1e5;
 int           n, sz[N + 1];
 vector<int>   a[N + 1];
 bitset<N + 1> vis;
+ll            fact[N + 1];
+map<ll, ll>   inv;
 
-ll C(ll i, ll j) {
-    if (!j) {
-        return 1;
+ll binpow(ll x, ll y) {
+    ll res = 1;
+    while (y) {
+        if (y & 1) {
+            (res *= x) %= MOD1;
+        }
+        (x *= x) %= MOD1;
+        y >>= 1;
     }
-    if (!i) {
+    return res;
+}
+
+ll Inv(ll x) {
+    if (x <= 1) {
+        return max(x, 0LL);
+    }
+    return (inv.find(x) != inv.end() ? inv[x] : (inv[x] = MOD1 - (MOD1 / x * Inv(MOD1 % x)) % MOD1) %= MOD1);
+}
+
+ll C(ll x, ll y) {
+    if (y < 0 || x < y) {
         return 0;
     }
-    return C(i, j - 1) + C(i - 1, j - 1);
+    ll res = 1;
+    (res *= fact[x] * Inv(fact[y])) %= MOD1;
+    (res *= Inv(fact[x - y])) %= MOD1;
+    return res;
 }
 
 void DFS1(int u) {
-    vis[u] = 1;
+    vis[u] = sz[u] = 1;
     for (auto v : a[u]) {
         if (!vis[v]) {
             DFS1(v);
-            sz[u]++;
+            sz[u] += sz[v];
         }
     }
     return;
 }
 
 ll DFS2(int u, int c) {
-    ll res = 0;
+    ll res = C(c, sz[u]);
+    c      = sz[u] - 1;
     vis[u] = 1;
-    c--;
     for (auto v : a[u]) {
         if (!vis[v]) {
-            res += DFS2(v, c);
+            (res *= DFS2(v, c)) %= MOD1;
             c -= sz[v];
         }
     }
@@ -146,6 +167,10 @@ ll DFS2(int u, int c) {
 
 void Solve() {
     cin >> n;
+    fact[0] = inv[1] = 1;
+    for (int i = 1; i <= n; i++) {
+        (fact[i] = fact[i - 1] * i) %= MOD1;
+    }
     for (int i = 1; i < n; i++) {
         int u, v;
         cin >> u >> v;
