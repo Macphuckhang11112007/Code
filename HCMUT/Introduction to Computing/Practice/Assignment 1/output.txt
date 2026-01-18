@@ -1,0 +1,408 @@
+[Scene 1] Rank: Hashira (power = 250.0)
+[Scene 2] Open silently.
+[Scene 3] Engage head-on (adv = 141.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 200.0)
+[Scene 2] Warning: invalid timeOfDay.
+[Scene 3] Harass and probe (adv = 91.0)
+[Scene 4] Use special move to finish! (finalHP = 50)
+[Scene 1] Rank: Novice (power = 20.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 19.0)
+[Scene 4] Withdraw to heal. (finalHP = 190)
+[Scene 1] Rank: Elite (power = 87.3)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 66.0)
+[Scene 4] Withdraw to heal. (finalHP = 318)
+[Scene 1] Rank: Novice (power = 49.4)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 146.2)
+[Scene 4] Withdraw to heal. (finalHP = 63)
+[Scene 1] Rank: Hashira (power = 191.9)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 68.6)
+[Scene 4] Withdraw to heal. (finalHP = 100)
+[Scene 1] Rank: Hashira (power = 135.1)
+[Scene 2] Open silently.
+[Scene 3] Retreat and regroup (adv = 21.4)
+[Scene 4] Withdraw to heal. (finalHP = 159)
+[Scene 1] Rank: Elite (power = 85.2)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 123.6)
+[Scene 4] Withdraw to heal. (finalHP = 98)
+[Scene 1] Rank: Hashira (power = 161.5)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 96.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 117.9)
+[Scene 2] Open silently.
+[Scene 3] Retreat and regroup (adv = 52.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 167.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 32.4)
+[Scene 4] Withdraw to heal. (finalHP = 67)
+[Scene 1] Rank: Hashira (power = 151.0)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 113.0)
+[Scene 4] Withdraw to heal. (finalHP = 366)
+[Scene 1] Rank: Novice (power = 25.4)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 135.4)
+[Scene 4] Withdraw to heal. (finalHP = 45)
+[Scene 1] Rank: Novice (power = 51.4)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 110.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 131.7)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 84.0)
+[Scene 4] Withdraw to heal. (finalHP = 11)
+[Scene 1] Rank: Hashira (power = 206.2)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 53.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 164.4)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 119.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Novice (power = 24.5)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 114.2)
+[Scene 4] Withdraw to heal. (finalHP = 143)
+[Scene 1] Rank: Hashira (power = 178.4)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 129.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 132.1)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 140.6)
+[Scene 4] Withdraw to heal. (finalHP = 128)
+[Scene 1] Rank: Elite (power = 84.1)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 100.2)
+[Scene 4] Use special move to finish! (finalHP = 31)
+[Scene 1] Rank: Hashira (power = 202.6)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 81.6)
+[Scene 4] Withdraw to heal. (finalHP = 464)
+[Scene 1] Rank: Hashira (power = 188.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 88.6)
+[Scene 4] Withdraw to heal. (finalHP = 90)
+[Scene 1] Rank: Novice (power = 76.4)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 94.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 146.2)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 99.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 127.5)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 90.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 138.8)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 77.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 138.1)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 98.0)
+[Scene 4] Withdraw to heal. (finalHP = 238)
+[Scene 1] Rank: Hashira (power = 187.4)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 87.8)
+[Scene 4] Withdraw to heal. (finalHP = 293)
+[Scene 1] Rank: Elite (power = 97.0)
+[Scene 2] Open silently.
+[Scene 3] Engage head-on (adv = 115.8)
+[Scene 4] Withdraw to heal. (finalHP = 226)
+[Scene 1] Rank: Hashira (power = 154.6)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 132.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 167.7)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 71.0)
+[Scene 4] Withdraw to heal. (finalHP = 319)
+[Scene 1] Rank: Elite (power = 111.9)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 71.6)
+[Scene 4] Withdraw to heal. (finalHP = 86)
+[Scene 1] Rank: Elite (power = 119.9)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 119.6)
+[Scene 4] Withdraw to heal. (finalHP = 69)
+[Scene 1] Rank: Hashira (power = 152.8)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 96.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 178.9)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 131.2)
+[Scene 4] Withdraw to heal. (finalHP = 469)
+[Scene 1] Rank: Hashira (power = 175.9)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 78.8)
+[Scene 4] Withdraw to heal. (finalHP = 144)
+[Scene 1] Rank: Elite (power = 93.7)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 126.4)
+[Scene 4] Withdraw to heal. (finalHP = 150)
+[Scene 1] Rank: Elite (power = 113.2)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 73.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 129.7)
+[Scene 2] Open silently.
+[Scene 3] Engage head-on (adv = 126.0)
+[Scene 4] Withdraw to heal. (finalHP = 15)
+[Scene 1] Rank: Hashira (power = 147.3)
+[Scene 2] Open silently.
+[Scene 3] Engage head-on (adv = 123.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 110.5)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 92.4)
+[Scene 4] Withdraw to heal. (finalHP = 65)
+[Scene 1] Rank: Novice (power = 69.2)
+[Scene 2] Open cautiously.
+[Scene 3] Retreat and regroup (adv = 56.2)
+[Scene 4] Withdraw to heal. (finalHP = 283)
+[Scene 1] Rank: Hashira (power = 133.8)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 88.0)
+[Scene 4] Withdraw to heal. (finalHP = 257)
+[Scene 1] Rank: Novice (power = 75.3)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 62.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 155.2)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 71.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 211.0)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 143.8)
+[Scene 4] Withdraw to heal. (finalHP = 306)
+[Scene 1] Rank: Elite (power = 106.4)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 97.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Novice (power = 52.3)
+[Scene 2] Open silently.
+[Scene 3] Retreat and regroup (adv = 59.6)
+[Scene 4] Use special move to finish! (finalHP = 6)
+[Scene 1] Rank: Hashira (power = 137.5)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 76.4)
+[Scene 4] Withdraw to heal. (finalHP = 256)
+[Scene 1] Rank: Hashira (power = 133.1)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 66.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 156.3)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 76.0)
+[Scene 4] Use special move to finish! (finalHP = 11)
+[Scene 1] Rank: Elite (power = 94.9)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 81.6)
+[Scene 4] Withdraw to heal. (finalHP = 35)
+[Scene 1] Rank: Hashira (power = 127.5)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 84.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 145.2)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 135.4)
+[Scene 4] Withdraw to heal. (finalHP = 311)
+[Scene 1] Rank: Hashira (power = 198.3)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 161.2)
+[Scene 4] Withdraw to heal. (finalHP = 345)
+[Scene 1] Rank: Hashira (power = 152.8)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 102.4)
+[Scene 4] Withdraw to heal. (finalHP = 213)
+[Scene 1] Rank: Elite (power = 117.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 79.0)
+[Scene 4] Withdraw to heal. (finalHP = 84)
+[Scene 1] Rank: Hashira (power = 177.1)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 99.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 217.8)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 128.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 108.5)
+[Scene 2] Open cautiously.
+[Scene 3] Retreat and regroup (adv = 35.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Novice (power = 72.6)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 56.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Novice (power = 77.3)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 67.2)
+[Scene 4] Withdraw to heal. (finalHP = 193)
+[Scene 1] Rank: Hashira (power = 139.0)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 113.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Novice (power = 45.3)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 130.6)
+[Scene 4] Withdraw to heal. (finalHP = 214)
+[Scene 1] Rank: Novice (power = 43.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 101.8)
+[Scene 4] Withdraw to heal. (finalHP = 168)
+[Scene 1] Rank: Hashira (power = 129.7)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 42.6)
+[Scene 4] Withdraw to heal. (finalHP = 350)
+[Scene 1] Rank: Hashira (power = 146.9)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 77.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Novice (power = 56.3)
+[Scene 2] Open silently.
+[Scene 3] Retreat and regroup (adv = 45.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 225.4)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 96.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 157.2)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 73.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 174.3)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 131.4)
+[Scene 4] Withdraw to heal. (finalHP = 151)
+[Scene 1] Rank: Hashira (power = 194.5)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 125.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 165.6)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 152.8)
+[Scene 4] Withdraw to heal. (finalHP = 151)
+[Scene 1] Rank: Hashira (power = 171.1)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 95.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 137.7)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 100.6)
+[Scene 4] Use special move to finish! (finalHP = 35)
+[Scene 1] Rank: Elite (power = 102.5)
+[Scene 2] Open cautiously.
+[Scene 3] Retreat and regroup (adv = 36.2)
+[Scene 4] Withdraw to heal. (finalHP = 97)
+[Scene 1] Rank: Hashira (power = 122.7)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 61.4)
+[Scene 4] Withdraw to heal. (finalHP = 135)
+[Scene 1] Rank: Novice (power = 74.7)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 110.2)
+[Scene 4] Use special move to finish! (finalHP = 3)
+[Scene 1] Rank: Hashira (power = 188.2)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 94.4)
+[Scene 4] Withdraw to heal. (finalHP = 249)
+[Scene 1] Rank: Elite (power = 106.3)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 116.0)
+[Scene 4] Withdraw to heal. (finalHP = 509)
+[Scene 1] Rank: Elite (power = 113.2)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 132.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 153.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 127.8)
+[Scene 4] Withdraw to heal. (finalHP = 15)
+[Scene 1] Rank: Elite (power = 109.1)
+[Scene 2] Open silently.
+[Scene 3] Harass and probe (adv = 85.8)
+[Scene 4] Withdraw to heal. (finalHP = 237)
+[Scene 1] Rank: Hashira (power = 122.9)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 127.8)
+[Scene 4] Withdraw to heal. (finalHP = 50)
+[Scene 1] Rank: Hashira (power = 205.7)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 91.2)
+[Scene 4] Withdraw to heal. (finalHP = 191)
+[Scene 1] Rank: Novice (power = 49.9)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 123.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 132.2)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 89.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 121.7)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 52.4)
+[Scene 4] Withdraw to heal. (finalHP = 362)
+[Scene 1] Rank: Hashira (power = 142.2)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 119.0)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 111.7)
+[Scene 2] Open cautiously.
+[Scene 3] Harass and probe (adv = 73.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 188.6)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 93.8)
+[Scene 4] Withdraw to heal. (finalHP = 286)
+[Scene 1] Rank: Hashira (power = 211.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 60.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 123.8)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 145.4)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 160.6)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 110.8)
+[Scene 4] Withdraw to heal. (finalHP = 166)
+[Scene 1] Rank: Novice (power = 38.1)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 169.2)
+[Scene 4] Withdraw to heal. (finalHP = 127)
+[Scene 1] Rank: Hashira (power = 123.6)
+[Scene 2] Denied: No talisman.
+[Scene 3] Harass and probe (adv = 95.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 84.6)
+[Scene 2] Denied: No talisman.
+[Scene 3] Retreat and regroup (adv = 56.0)
+[Scene 4] Withdraw to heal. (finalHP = 368)
+[Scene 1] Rank: Hashira (power = 206.5)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 116.8)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 99.0)
+[Scene 2] Denied: No talisman.
+[Scene 3] Engage head-on (adv = 101.2)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Hashira (power = 148.9)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 141.6)
+[Scene 4] Boss defeated! (finalHP = 0)
+[Scene 1] Rank: Elite (power = 100.5)
+[Scene 2] Open cautiously.
+[Scene 3] Engage head-on (adv = 116.6)
+[Scene 4] Withdraw to heal. (finalHP = 289)
