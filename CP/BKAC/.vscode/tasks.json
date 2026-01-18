@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: g++.exe build active file",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                // "@\"${workspaceFolder}\\.vscode\\args.txt\"",
+                "-fdiagnostics-color=always",
+                // "-D_GLIBCXX_DEBUG",
+                "-march=corei7-avx",
+                "-mtune=corei7-avx",
+                "-std=gnu++26",
+                "-Ofast",
+                // "-g3",
+                "${fileBasename}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${fileDirname}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
