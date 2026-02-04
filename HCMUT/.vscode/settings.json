@@ -221,7 +221,9 @@
     "C_Cpp.loggingLevel": "Debug",
     "C_Cpp.windowsErrorReportingMode": "enabled",
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "fstream": "cpp",
+        "ostream": "cpp"
     },
     "editor.showFoldingControls": "always",
     "npm.enableRunFromFolder": true,
