@@ -130,7 +130,6 @@ void resolveDuel(char character[FIXED_CHARACTER][MAX_NAME], int hp[FIXED_CHARACT
         }
         if (strcmp(character[i], names[1]) == 0) {
             id_USOPP = i;
-            break;
         }
     }
     if (id_LUFFY == -1 || id_USOPP == -1) {
@@ -200,21 +199,28 @@ void decodeCP9Message(char character[FIXED_CHARACTER][MAX_NAME], int hp[FIXED_CH
     for (int i = 0; i < MAX_NAME; i++) {
         resultText[i] = '\0';
     }
-    string message = cipherText;
-    int    XY      = 0;
-    int    p       = message.find("#");
-    if (p != -1 && p + 2 == int(message.size()) - 1 && '0' <= message[p + 1] && message[p + 1] <= '9' && '0' <= message[p + 2] && message[p + 2] <= '9') {
-        XY = stoi(message.substr(int(message.size()) - 2, 2));
+    int XY = 0;
+    int p  = -1;
+    for (int i = strlen(cipherText) - 1; i >= 0; i--) {
+        if (cipherText[i] == '#') {
+            p = i;
+            break;
+        }
+    }
+    if (p != -1 && p + 2 == int(strlen(cipherText)) - 1 && '0' <= cipherText[p + 1] && cipherText[p + 1] <= '9' && '0' <= cipherText[p + 2] && cipherText[p + 2] <= '9') {
+        XY = (cipherText[p + 1] - '0') * 10 + (cipherText[p + 2] - '0');
     } else {
         return;
     }
-    message = message.substr(0, int(message.size()) - 3);
-    if (message.empty()) {
+    for (int i = p; i < int(strlen(cipherText)); i++) {
+        cipherText[i] = '\0';
+    }
+    if (!strlen(cipherText)) {
         return;
     }
     int checksum = 0;
-    for (int i = 0; i < int(message.size()); i++) {
-        checksum += message[i];
+    for (int i = 0; i < int(strlen(cipherText)); i++) {
+        checksum += int(cipherText[i]);
     }
     checksum %= 100;
     if (checksum != XY) {
@@ -224,10 +230,10 @@ void decodeCP9Message(char character[FIXED_CHARACTER][MAX_NAME], int hp[FIXED_CH
     key = (conflictIndex + repairCost) % 26;
     B   = (key % 5) + 4;
     string new_message;
-    for (int i = 0; i < message.size(); i += B) {
+    for (int i = 0; i < int(strlen(cipherText)); i += B) {
         string tmp;
-        for (int j = i; j < min(i + B, int(message.size())); j++) {
-            char c = message[j];
+        for (int j = i; j < min(i + B, int(strlen(cipherText))); j++) {
+            char c = cipherText[j];
             if ('A' <= c && c <= 'Z') {
                 c = 'A' + ((c - 'A' - key) % 26 + 26) % 26;
             } else if ('a' <= c && c <= 'z') {
@@ -273,10 +279,10 @@ bool evaluateRoute(int grid[MAX_GRID][MAX_GRID], int rows, int cols, int dangerL
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             if (grid[i][j] != -1) {
-                if (i == 0 && j == 0) {
-                    dp[i][j] = grid[0][0];
+                if (!i && !j) {
+                    dp[0][0] = grid[0][0];
                 } else {
-                    dp[i][j] = min(INT_MAX / 2, min(i >= 1 ? dp[i - 1][j] : INT_MAX / 2, j >= 1 ? dp[i][j - 1] : INT_MAX / 2) + grid[i][j]);
+                    dp[i][j] = min(INT_MAX / 2, min(i ? dp[i - 1][j] : INT_MAX / 2, j ? dp[i][j - 1] : INT_MAX / 2) + grid[i][j]);
                 }
             }
         }

@@ -1,0 +1,6 @@
+services:
+  hcmut:
+    image: hcmut
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -58,24 +58,27 @@ int main(int argc, const char *argv[]) {
             }
         }
         cout << "Test " << (i < 10 ? "0" : "") + to_string(i) << ":\n";
-        cout << readInput("opw_tc_" + string(i < 10 ? "0" : "") + to_string(i) + "_input", character, hp, skill, shipHP, repairCost) << "\n";
-        for (int i = 0; i < 7; i++) {
-            cout << character[i] << " " << hp[i] << " " << skill[i] << "\n";
-        }
-        cout << "GOING_MERRY " << shipHP << " " << repairCost << "\n";
-        cout << (repairCost = damageEvaluation(shipHP, repairCost)) << "\n";
-        cout << (conflictIndex = conflictSimulation(character, hp, skill, shipHP, repairCost)) << "\n";
-        resolveDuel(character, hp, skill, conflictIndex, repairCost, duel);
-        for (int i = 0; i < 7; i++) {
-            if (duel[i][0] != '\0') {
-                cout << duel[i] << " ";
-            }
-        }
-        cout << "\n";
+        // cout << readInput("opw_tc_" + string(i < 10 ? "0" : "") + to_string(i) + "_input", character, hp, skill, shipHP, repairCost) << "\n";
+        // for (int i = 0; i < 7; i++) {
+        //     cout << character[i] << " " << hp[i] << " " << skill[i] << "\n";
+        // }
+        // cout << "GOING_MERRY " << shipHP << " " << repairCost << "\n";
+        // cout << (repairCost = damageEvaluation(shipHP, repairCost)) << "\n";
+        // cout << (conflictIndex = conflictSimulation(character, hp, skill, shipHP, repairCost)) << "\n";
+        // resolveDuel(character, hp, skill, conflictIndex, repairCost, duel);
+        // for (int i = 0; i < 7; i++) {
+        //     if (duel[i][0] != '\0') {
+        //         cout << duel[i] << " ";
+        //     }
+        // }
+        // cout << "\n";
+        char cipherText[] = "nPLCSLfXesw 8IV lI#77";
+        conflictIndex     = 227;
+        repairCost        = 1898;
         decodeCP9Message(character, hp, skill, conflictIndex, repairCost, cipherText, resultText);
         cout << resultText << "\n";
-        cout << (dangerLimit = analyzeDangerLimit(grid, rows, cols)) << "\n";
-        cout << (route = evaluateRoute(grid, rows, cols, dangerLimit)) << "\n";
+        // cout << (dangerLimit = analyzeDangerLimit(grid, rows, cols)) << "\n";
+        // cout << (route = evaluateRoute(grid, rows, cols, dangerLimit)) << "\n";
         cout << "\n";
     }
     return 0;

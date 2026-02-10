@@ -5,7 +5,7 @@
     "files.autoSave": "onFocusChange",
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.fontFamily": "'Monaspace Argon Frozen', Fira Code, Cascadia Code, Consolas, 'Courier New', monospace",
-    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "Dark Dracula Comment Theme",
     "editor.mouseWheelZoom": true,
     "editor.formatOnPaste": true,
     "editor.aiStats.enabled": true,
