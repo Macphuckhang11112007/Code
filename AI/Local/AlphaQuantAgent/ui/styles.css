@@ -121,3 +121,29 @@ div[data-testid="stMetricValue"] {
 div[data-testid="stMetricLabel"] {
     color: #aaa !important;
 }
+
+/* Floating RAG Chat Blueprint 08 */
+.floating-chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 380px;
+    max-height: 600px;
+    background-color: #1E222D;
+    border: 1px solid #2B3139;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .floating-chat-container {
+        position: relative; 
+        width: 100%;
+        bottom: 0; right: 0;
+    }
+}

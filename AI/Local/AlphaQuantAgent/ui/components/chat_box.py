@@ -1,97 +1,69 @@
-"""
-/**
- * MODULE: System UI - AI Quant Interface (RAG)
- * VAI TRÒ: Giao diện Cố Vấn Bong bóng (Bubble UI). Tiếp nhận Intent của người dùng và gọi truyền chuyển xuống cho Giao thức Gemini RAG Cloud Node.
- * CHIẾN LƯỢC: Duy trì Array Session State để nhớ Context hội thoại mà không bị làm mới F5 xóa sạch dữ liệu.
- */
-"""
 import streamlit as st
 
-def render_chat_interface():
-    st.header("💬 Quantitative RAG AI Advisor")
-    
-    from src.services.database import SQLiteDB
-    from src.services.memory import MemoryManager
-    from src.services.parser import LLMParser
-    from src.services.gemini import GeminiAdvisor
-    from src.services.rag_engine import RAGEngine
-    from src.engine.wallet import Wallet
-    from src.services.formatter import BotFormatter
-
-    # 1. KHỞI TẠO BỘ NHỚ SQLITE (MẮT XÍCH CHỐNG CHẾT NÃO STREAMLIT)
-    if "db" not in st.session_state:
-        st.session_state.db = SQLiteDB("logs/chats/memory.db")
-        st.session_state.memory_mgr = MemoryManager(st.session_state.db)
-        st.session_state.session_id = "default_user_1" # Hardcode tạm cho Single User mode
+@st.fragment
+def render_chat_box():
+    # Khởi tạo trạng thái
+    if "is_chat_open" not in st.session_state:
+        st.session_state.is_chat_open = False
         
-        # 2. KHỞI TẠO VÍ ĐIỆN TỬ VĨNH CỬU RAM (BỌC STATE)
-        st.session_state.wallet = Wallet(initial_capital=10000.0)
-
-    # Lấy lịch sử trực tiếp từ Disk (SQLite) thay vì Array ảo
-    history_db = st.session_state.memory_mgr.get_history(st.session_state.session_id, limit=20)
+    st.markdown("""
+        <style>
+        .chat-toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10001;
+            background-color: #2962FF;
+            color: #ffffff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .chat-toggle-btn:hover { background-color: #1E4BD8; }
+        </style>
+    """, unsafe_allow_html=True)
     
-    # Khởi tạo Memory bọt biển ảo trình duyệt nếu SQL rỗng
-    if not history_db and "messages" not in st.session_state:
-        st.session_state.messages = []
-        intro = "Initializing AlphaQuant RAG Systems... How can I assist with your portfolio or algorithmic trading strategy today?"
-        st.session_state.messages.append({"role": "assistant", "content": intro})
-        st.session_state.memory_mgr.add_message(st.session_state.session_id, "assistant", intro)
-    elif "messages" not in st.session_state:
-        st.session_state.messages = history_db
+    # Render native button styled as float via trick or use standard st.button inside a bottom column.
+    # Streamlit buttons can't be easily given fixed positional classes without raw HTML overriding.
+    # Instead we inject an empty container that maps to layout.
+    
+    col1, col2, col3 = st.columns([8, 1, 1])
+    with col3:
+        if st.button("💬 Ask Quant", key="toggle_chat_btn", use_container_width=True):
+            st.session_state.is_chat_open = not st.session_state.is_chat_open
+            st.rerun()
 
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
-
-    if client_prompt := st.chat_input("Enter strategy parameters, commands or queries..."):
-        # UI Add User
-        st.session_state.messages.append({"role": "user", "content": client_prompt})
-        st.session_state.memory_mgr.add_message(st.session_state.session_id, "user", client_prompt)
+    if st.session_state.is_chat_open:
+        st.markdown('<div class="floating-chat-container">', unsafe_allow_html=True)
+        st.markdown("<h4 style='color:#D1D4DC; text-align:center; margin-top:0;'>💬 AlphaQuant Assistant</h4>", unsafe_allow_html=True)
         
-        with st.chat_message("user"):
-            st.markdown(client_prompt)
+        # Render memory
+        for msg in st.session_state.chat_history:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
+                
+        # Khung nhập liệu
+        if prompt := st.chat_input("Nhập câu lệnh để phân tích (e.g., Drawdown là gì?)"):
+            st.session_state.chat_history.append({"role": "user", "content": prompt})
+            st.rerun() 
             
-        with st.chat_message("assistant"):
-            st.markdown("*(Querying Ledger Database & Establishing LLM Link...)*")
-            
-            # GỌI LLM THỰC TẾ TRUNG GIAN (MIDDLEWARE LOOP)
-            rag = RAGEngine()
-            try:
-                advisor = GeminiAdvisor(rag)
-                report = st.session_state.wallet.get_metrics()
-                # Kéo History Raw từ MemoryMgr
-                raw_hist = st.session_state.memory_mgr.get_history(st.session_state.session_id, limit=5)
-                
-                raw_reply = advisor.generate_advice(client_prompt, raw_hist, report)
-                
-                # PARSER JSON (BẮT TÍN HIỆU GIAO DỊCH EXECUTOR)
-                json_cmd = LLMParser.extract_json_block(raw_reply)
-                
-                if json_cmd and "action" in json_cmd and "ticker" in json_cmd:
-                    action = json_cmd["action"]
-                    qty = json_cmd.get("qty", 0.0)
-                    sym = json_cmd.get("ticker", "BTC_USDT")
-                    side = 1 if action.upper() == "BUY" else -1
-                    
-                    st.write(f"⚙️ **System Executing Engine**: Detected Spot Order: `{action}` for `{sym}` Quantity: `{qty}`...")
-                    
-                    # Mô phỏng Giá Oracle nhanh cho các loại tài sản
-                    mock_px = 1.0 if "VCB" in sym.upper() or "US10Y" in sym.upper() else 60000.0
-                    meta_mock = {'type': 'RATE', 'term_days': 30, 'yield': 0.05} if mock_px == 1.0 else {'type': 'TRADE', 'term_days': 0}
-                    
-                    success, err = st.session_state.wallet.execute("now", sym, side, qty, mock_px, 1000.0, 0.0, meta_mock)
-                        
-                    if not success:
-                        smooth_err = BotFormatter.gracefully_apologize(err)
-                        raw_reply += f"\n\n**[System Audit Alert]**: {smooth_err}"
-                    else:
-                        st.session_state.wallet.export_csv("logs/trading/transactions.csv")
-                        raw_reply += f"\n\n**[System]**: Transaction successfully recorded to ledger. Remaining Liquid Balance: {st.session_state.wallet.cash:,.2f} USD."
-                
-                response = raw_reply
-            except Exception as e:
-                response = f"**[MIDDLEWARE ERROR]**: Lost connection context: {str(e)}"
-            
-            st.markdown(response)
-            st.session_state.messages.append({"role": "assistant", "content": response})
-            st.session_state.memory_mgr.add_message(st.session_state.session_id, "assistant", response)
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Note: If there's an unresolved prompt waiting for answer:
+        if len(st.session_state.chat_history) > 0 and st.session_state.chat_history[-1]["role"] == "user":
+            with st.chat_message("assistant"):
+                with st.spinner("Executing RAG Pipeline..."):
+                    from src.services.gemini import ChatSession
+                    try:
+                        agent = ChatSession()
+                        latest_prompt = st.session_state.chat_history[-1]["content"]
+                        answer = agent.send_message(latest_prompt)
+                        st.session_state.chat_history.append({"role": "assistant", "content": answer})
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"LLM Fault: {e}")
+

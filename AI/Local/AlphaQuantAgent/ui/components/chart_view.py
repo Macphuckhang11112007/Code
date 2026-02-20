@@ -1,161 +1,165 @@
 """
 /**
  * MODULE: System UI - Candlestick View & Live Terminal
- * ROLE: Visualizing market state and providing a real-time trading interface.
+ * ROLE: Visualizing market state with Ghost Candles and live tick engines using Lightweight Charts.
  */
 """
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 import os
-import time
-from copy import deepcopy
+from streamlit_lightweight_charts import renderLightweightCharts
 
-def render_figure(df, asset_name):
-    fig = make_subplots(rows=2, cols=1, shared_xaxes=True, 
-                        vertical_spacing=0.03, subplot_titles=('', ''), 
-                        row_width=[0.2, 0.7])
-
-    # Candlestick
-    fig.add_trace(go.Candlestick(x=df['timestamp'],
-                open=df['open'], high=df['high'],
-                low=df['low'], close=df['close'],
-                name='Price',
-                increasing_line_color='#00873c', decreasing_line_color='#f0162f'), 
-                row=1, col=1)
-                
-    # SMA 20 Overlay
-    fig.add_trace(go.Scatter(x=df['timestamp'], y=df['close'].rolling(20).mean(), 
-                             mode='lines', name='SMA 20', line=dict(color='#2962FF', width=1.5)), 
-                  row=1, col=1)
-                  
-    # SMA 50 Overlay
-    fig.add_trace(go.Scatter(x=df['timestamp'], y=df['close'].rolling(50).mean(), 
-                             mode='lines', name='SMA 50', line=dict(color='#FF9800', width=1.5)), 
-                  row=1, col=1)
-
-    # Volume Bar
-    colors = ['#00873c' if row['close'] >= row['open'] else '#f0162f' for index, row in df.iterrows()]
-    fig.add_trace(go.Bar(x=df['timestamp'], y=df['volume'], marker_color=colors, name='Volume'), row=2, col=1)
-
-    fig.update_layout(
-        yaxis_title='Price',
-        xaxis_rangeslider_visible=False, 
-        template="plotly_dark",
-        plot_bgcolor="#0f0f0f",
-        paper_bgcolor="#0f0f0f",
-        font_color="#ffffff",
-        height=650,
-        margin=dict(l=0, r=0, t=10, b=0),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
-    )
+@st.cache_data(ttl=60, show_spinner=False)
+def load_chart_data(symbol, end_time, window=5000):
+    path = os.path.join("data/trades", f"{symbol}.csv")
+    if not os.path.exists(path): return None, None
+    df = pd.read_csv(path)
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
     
-    fig.update_yaxes(title_text="Volume", row=2, col=1, showgrid=False)
-    fig.update_xaxes(showgrid=False)
-    return fig
+    if end_time is not None:
+        if isinstance(end_time, str):
+            end_time = pd.to_datetime(end_time)
+        df_history = df[df['timestamp'] <= end_time].tail(window).copy()
+    else:
+        df_history = df.tail(window).copy()
+        
+    df_history['time'] = df_history['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
+    df_history['color'] = df_history.apply(lambda x: "rgba(14, 203, 129, 0.5)" if x['close'] >= x['open'] else "rgba(246, 70, 93, 0.5)", axis=1)
+    
+    # Optional MA
+    df_history['ma20'] = df_history['close'].rolling(20).mean()
+    df_history['ma50'] = df_history['close'].rolling(50).mean()
+    
+    return df_history, df
 
-@st.fragment(run_every=1.5)
-def render_live_chart(df_full, selected_asset, max_idx):
-    if st.session_state.get('live_mode_active', False):
-        if st.session_state.current_time_idx < max_idx:
-            st.session_state.current_time_idx += 1
+@st.fragment(run_every="1s")
+def render_chart():
+    symbol = st.session_state.active_symbol
+    current_time = st.session_state.current_sim_time
+    
+    # Live tick engine simulation (advance time if not traveling past)
+    if not st.session_state.is_traveling_past and current_time is not None:
+        try:
+            # Advance time by 15 mins to simulate streaming
+            st.session_state.current_sim_time = pd.to_datetime(current_time) + pd.Timedelta(minutes=15)
+            current_time = st.session_state.current_sim_time
+        except Exception:
+            pass
             
-    current_idx = st.session_state.current_time_idx
-    df = df_full.iloc[max(0, current_idx - 150) : current_idx].reset_index(drop=True)
+    df_history, df_full = load_chart_data(symbol, current_time)
     
-    last = df.iloc[-1]['close']
-    prev = df.iloc[-2]['close'] if len(df) > 1 else last
+    if df_history is None or df_history.empty:
+        st.warning(f"No sufficient data for {symbol}")
+        return
+
+    # Render TradingView Style Header
+    last = df_history.iloc[-1]['close']
+    prev = df_history.iloc[-2]['close'] if len(df_history) > 1 else last
     chg = last - prev
     chg_pct = (chg / prev) * 100 if prev != 0 else 0
+    vol_24h = df_history['volume'].tail(96).sum() if len(df_history) >= 96 else df_history['volume'].sum()
+    high_24h = df_history['high'].tail(96).max()
+    low_24h = df_history['low'].tail(96).min()
     
-    # Render TradingView Style Header
-    color_class = "price-change-positive" if chg >= 0 else "price-change-negative"
-    sign = "+" if chg >= 0 else ""
+    color_class = "stat-positive" if chg >= 0 else "stat-negative"
+    sign = "▲ +" if chg >= 0 else "▼ "
     
     st.markdown(f'''
-        <div style="margin-bottom: 20px;">
-            <div class="asset-title">
-                {selected_asset.replace("_", " / ")} <span class="asset-badge">SPOT</span>
+        <style>
+        .stat-value {{ font-size: 1.2rem; font-weight: 700; color: #D1D4DC; }}
+        .stat-label {{ font-size: 0.8rem; color: #848E9C; line-height: 1; margin-bottom: 2px; }}
+        .stat-positive {{ color: #0ECB81; }}
+        .stat-negative {{ color: #F6465D; }}
+        .stat-header-container {{ display: flex; gap: 20px; align-items: flex-end; padding-bottom: 10px; }}
+        .stat-block {{ display: inline-block; min-width: 100px; }}
+        </style>
+        <div class='stat-header-container'>
+            <div class='stat-block'>
+                <div class='stat-label'>{symbol.replace("_", "/")}</div>
+                <div class='stat-value {color_class}'>{last:,.2f}</div>
             </div>
-            <div style="display: flex; align-items: flex-end;">
-                <span class="price-header">{last:,.2f}</span>
-                <span class="{color_class}">USD {sign}{chg:,.2f} ({sign}{chg_pct:.2f}%)</span>
+            <div class='stat-block'>
+                <div class='stat-label'>24h Change</div>
+                <div class='stat-value {color_class}'>{sign}{chg_pct:.2f}%</div>
+            </div>
+            <div class='stat-block'>
+                <div class='stat-label'>24h High</div>
+                <div class='stat-value'>{high_24h:,.2f}</div>
+            </div>
+            <div class='stat-block'>
+                <div class='stat-label'>24h Low</div>
+                <div class='stat-value'>{low_24h:,.2f}</div>
+            </div>
+            <div class='stat-block'>
+                <div class='stat-label'>24h Volume</div>
+                <div class='stat-value'>{vol_24h:,.0f}</div>
+            </div>
+            <div class='stat-block'>
+                <div class='stat-label'>Staleness</div>
+                <div class='stat-value' style='color:#F0B90B;'>0.0 Safe</div>
             </div>
         </div>
     ''', unsafe_allow_html=True)
     
-    fig = render_figure(df, selected_asset)
-    st.plotly_chart(fig, width="stretch", key=f"chart_fragment_{selected_asset}")
-
-def render_chart():
-    base_dir = "data/trades"
-    if not os.path.exists(base_dir):
-         st.error(f"⚠️ Core data directory {base_dir} missing.")
-         return
-         
-    selected_asset = st.session_state.get('active_asset', 'BTC_USDT')
-    csv_file = os.path.join(base_dir, f"{selected_asset}.csv")
+    # Lightweight Chart Options
+    chartOptions = {
+        "layout": {"textColor": "#D1D4DC", "background": {"type": "solid", "color": "rgba(0,0,0,0)"}},
+        "grid": {"vertLines": {"color": "#2B3139"}, "horzLines": {"color": "#2B3139"}},
+        "crosshair": {"mode": 0},
+        "timeScale": {"timeVisible": True, "secondsVisible": False}
+    }
     
-    if not os.path.exists(csv_file):
-        st.warning(f"No data for {selected_asset}")
-        return
-        
-    df_full = pd.read_csv(csv_file)
-    max_idx = len(df_full)
+    candles = df_history[['time', 'open', 'high', 'low', 'close']].to_dict('records')
+    seriesCandleChart = [{
+        "type": "Candlestick",
+        "data": candles,
+        "options": {
+            "upColor": "#0ECB81", "downColor": "#F6465D", 
+            "borderVisible": False, "wickUpColor": "#0ECB81", "wickDownColor": "#F6465D"
+        }
+    }]
     
-    if max_idx < 2:
-        st.warning(f"Not enough data for {selected_asset}")
-        return
-        
-    # Khởi tạo Time Machine Index
-    if 'current_time_idx' not in st.session_state:
-        st.session_state.current_time_idx = max(50, int(max_idx * 0.8)) # Start at 80% to see history
-        
-    c1, c2 = st.columns([3, 1])
-    with c1:
-        new_idx = st.slider("🕰️ Time Machine (Candle Index)", min_value=50, max_value=max_idx, value=st.session_state.current_time_idx, key="time_machine_slider")
-        if new_idx != st.session_state.current_time_idx:
-            st.session_state.current_time_idx = new_idx
-            # Tắt Live mode nếu user tự tua tay
-            st.session_state.live_mode_active = False 
-    with c2:
-        st.write("")
-        st.write("")
-        live_mode = st.toggle("Live Replay Mode ⚡", value=st.session_state.get('live_mode_active', False))
-        st.session_state.live_mode_active = live_mode
-        
-    render_live_chart(df_full, selected_asset, max_idx)
-
-    # Manual Command Panel Restyled with form to prevent instant reruns
-    with st.form("manual_order_form", clear_on_submit=False):
-        st.markdown("### Spot Order Execution")
-        col0, col1, col2 = st.columns([2, 1, 1])
-        with col0:
-            order_qty = st.number_input("Amount", min_value=0.001, value=1.0, step=0.1)
-        with col1:
-            st.write("")
-            st.write("")
-            buy_submitted = st.form_submit_button("Buy Market", use_container_width=True, type="primary")
-            if buy_submitted:
-                if 'wallet' in st.session_state:
-                    current_idx = st.session_state.current_time_idx
-                    # Lấy giá ảo từ dataframe
-                    virtual_price = df_full.iloc[current_idx-1]['close']
-                    st.session_state.wallet.execute(ts=df_full.iloc[current_idx-1]['timestamp'], symbol=selected_asset, side=1, size=order_qty, px=virtual_price, vol=1000.0, penalty=0.0)
-                    st.success(f"Buy {order_qty} executed at {virtual_price:.2f}.")
-                else:
-                    st.error("Engine Offline.")
-        with col2:
-            st.write("")
-            st.write("")
-            sell_submitted = st.form_submit_button("Sell Market", use_container_width=True)
-            if sell_submitted:
-                if 'wallet' in st.session_state:
-                    current_idx = st.session_state.current_time_idx
-                    virtual_price = df_full.iloc[current_idx-1]['close']
-                    success, msg = st.session_state.wallet.execute(ts=df_full.iloc[current_idx-1]['timestamp'], symbol=selected_asset, side=-1, size=order_qty, px=virtual_price, vol=1000.0, penalty=0.0)
-                    if success: st.error(f"Sell {order_qty} executed at {virtual_price:.2f}.")
-                    else: st.warning(f"Failed: {msg}")
-                else:
-                    st.error("Engine Offline.")
+    # Ghost Candle implementation (mocking next candle with opacity if there are pending orders)
+    seriesGhostChart = []
+    if len(st.session_state.pending_orders) > 0:
+        # Giả lập Ghost Candle
+        next_cdl = df_full[df_full['timestamp'] > current_time].head(1)
+        if not next_cdl.empty:
+            ghost_cdl = next_cdl.copy()
+            ghost_cdl['time'] = ghost_cdl['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
+            # Thêm trượt giá
+            ghost_cdl['close'] = ghost_cdl['close'] * 0.995 # Phạt slippage
+            g_data = ghost_cdl[['time', 'open', 'high', 'low', 'close']].to_dict('records')
+            seriesGhostChart = [{
+                "type": "Candlestick",
+                "data": g_data,
+                "options": {
+                    "upColor": "rgba(14, 203, 129, 0.4)", "downColor": "rgba(246, 70, 93, 0.4)",
+                    "borderVisible": False, 
+                    "wickUpColor": "rgba(14, 203, 129, 0.4)", "wickDownColor": "rgba(246, 70, 93, 0.4)"
+                }
+            }]
+    
+    # Volume Series
+    volumes = df_history[['time', 'volume', 'color']].rename(columns={'volume':'value'}).to_dict('records')
+    seriesVolume = [{
+        "type": "Histogram",
+        "data": volumes,
+        "options": {
+            "priceFormat": {"type": "volume"},
+            "priceScaleId": "",
+            "scaleMargins": {"top": 0.8, "bottom": 0}
+        }
+    }]
+    
+    # MA Series
+    ma20 = df_history[['time', 'ma20']].dropna().rename(columns={'ma20':'value'}).to_dict('records')
+    seriesMA20 = [{
+        "type": "Line",
+        "data": ma20,
+        "options": {"color": "#F0B90B", "lineWidth": 1}
+    }]
+    
+    renderLightweightCharts([
+        {"chart": chartOptions, "series": seriesCandleChart + seriesGhostChart + seriesVolume + seriesMA20}
+    ], key=f"main_tv_chart_{symbol}")

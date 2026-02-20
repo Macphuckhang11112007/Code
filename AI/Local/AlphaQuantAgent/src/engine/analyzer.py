@@ -12,6 +12,8 @@
 
 import pandas as pd
 import numpy as np
+import json
+import os
 from typing import Dict, List, Optional
 
 class AnalyticsEngine:
@@ -134,8 +136,15 @@ class AnalyticsEngine:
         """Fallback chống Crash vỡ ngoại lệ (Exception Overflow) khi Agent nạp mảng rỗng."""
         return {
             "status": "insufficient_data",
-            "distribution": {"q1": 0, "q2": 0, "q3": 0},
-            "risk_profile": {"max_drawdown": 0, "var_95": 0},
-            "efficiency": {"sharpe_ratio": 0},
+            "distribution": {"q1_conservative": 0, "q2_median": 0, "q3_optimistic": 0, "min_return": 0, "max_return": 0, "mean_return": 0},
+            "risk_profile": {"max_drawdown": 0, "var_95": 0, "volatility_annualized": 0},
+            "efficiency": {"sharpe_ratio": 0, "annualized_return": 0},
             "opportunity_cost": {"alpha_abs": 0, "is_winning": False}
         }
+
+    def export_metrics_to_json(self, output_path: str = "logs/trading/advanced_quant_metrics.json"):
+        """Kết xuất 50 con số Quant Matrix ra file định dạng JSON cho Streamlit UI."""
+        report = self.generate_comprehensive_report()
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(report, f, indent=4)

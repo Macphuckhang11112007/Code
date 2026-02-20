@@ -59,5 +59,19 @@ class EarlyStoppingAndLogging(BaseCallback):
             with open(csv_path, 'a') as f:
                 if write_header: f.write("step,reward\n")
                 f.write(f"{self.n_calls},{mean_reward}\n")
+            
+            # Ghi Log chi tiết AI Dynamics cho UI Matrix
+            dyn_path = os.path.join("logs/trading", "ai_dynamics_log.csv")
+            os.makedirs(os.path.dirname(dyn_path), exist_ok=True)
+            dyn_header = not os.path.exists(dyn_path)
+            
+            # Trích xuất từ logger của SB3
+            p_loss = self.logger.name_to_value.get("train/policy_gradient_loss", 0.0)
+            v_loss = self.logger.name_to_value.get("train/value_loss", 0.0)
+            ent_loss = self.logger.name_to_value.get("train/entropy_loss", 0.0)
+            
+            with open(dyn_path, 'a') as f:
+                if dyn_header: f.write("step,policy_loss,value_loss,entropy\n")
+                f.write(f"{self.n_calls},{p_loss},{v_loss},{ent_loss}\n")
                     
         return True # Trả True để vòng lặp Learn không bị Crash ngang

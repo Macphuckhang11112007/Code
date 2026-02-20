@@ -1,47 +1,82 @@
-"""
-/**
- * MODULE: System UI - Ledger Table Tab
- * VAI TRÒ: Hiển thị minh bạch Sổ Cái Kế Toán Kiểm Toán (Audit Trail) để User theo dõi từng cent phí sàn (Fees), tỷ lệ trượt giá (Slippage) theo thời gian thực.
- */
-"""
 import streamlit as st
 import pandas as pd
+import numpy as np
 
+def generate_mock_order_book(current_price):
+    if pd.isna(current_price):
+        current_price = 100.0
+    
+    # Asks (Bán)
+    ask_prices = [current_price * (1 + 0.001 * i) for i in range(10, 0, -1)]
+    ask_sizes = np.random.uniform(0.1, 5.0, 10)
+    asks = pd.DataFrame({'Price': ask_prices, 'Size': ask_sizes})
+    
+    # Bids (Mua)
+    bid_prices = [current_price * (1 - 0.001 * i) for i in range(1, 11)]
+    bid_sizes = np.random.uniform(0.1, 5.0, 10)
+    bids = pd.DataFrame({'Price': bid_prices, 'Size': bid_sizes})
+    
+    return asks, current_price, bids
+
+@st.fragment
 def render_order_book():
-    st.header("🗄️ Atomic Execution Ledger")
-    st.markdown("Raw trade log parsed from `logs/trading/transactions.csv`. Reflects all filled spot orders, dividend events, and fractional transactions with accurate market pricing.")
+    symbol = st.session_state.get('active_symbol', 'BTC_USDT')
+    st.markdown(f"<h4 style='color:#D1D4DC;'>Order Book ({symbol.replace('_','/')})</h4>", unsafe_allow_html=True)
     
-    import os
-    
-    file_path = "logs/trading/transactions.csv"
-    if os.path.exists(file_path):
-        try:
-            df = pd.read_csv(file_path)
-            if not df.empty:
-                df = df.iloc[::-1].reset_index(drop=True)
-                
-                # Hàm tô màu cho cột Chiều Lệnh (Side)
-                def color_side(val):
-                    color = '#00873c' if val == 'BUY' else '#f0162f' if val == 'SELL' else 'white'
-                    return f'color: {color}; font-weight: bold;'
-                
-                # Tô màu nếu cột có tên là 'side'
-                if 'side' in df.columns:
-                    st.dataframe(df.style.map(color_side, subset=['side']), use_container_width=True)
-                else:
-                    st.dataframe(df, use_container_width=True)
-                
-                # Nút tải xuống CSV
-                csv = df.to_csv(index=False).encode('utf-8')
-                st.download_button(
-                    label="⬇️ Xuất Report (Download CSV)",
-                    data=csv,
-                    file_name='alphaquant_transactions.csv',
-                    mime='text/csv',
-                )
+    # Simulate current price
+    df_history = None
+    try:
+        if 'current_sim_time' in st.session_state and st.session_state.current_sim_time:
+            df = pd.read_csv(f"data/trades/{symbol}.csv")
+            df['timestamp'] = pd.to_datetime(df['timestamp'])
+            df = df[df['timestamp'] <= st.session_state.current_sim_time]
+            if len(df) > 0:
+                current_price = df.iloc[-1]['close']
             else:
-                st.info("Sổ cái hiện đang trống. Cần thực hiện giao dịch trước.")
-        except Exception as e:
-            st.error(f"Lỗi đọc sổ cái: {e}")
-    else:
-        st.warning("Chưa có Dữ liệu Sổ Cái. Hãy chạy Backtest qua dòng lệnh hoặc Giao dịch thủ công trước.")
+                current_price = 10000.0
+        else:
+            current_price = 10000.0
+    except Exception:
+        current_price = 10000.0
+        
+    asks_df, mark_price, bids_df = generate_mock_order_book(current_price)
+    
+    # Asks config (Red)
+    st.dataframe(
+        asks_df.style.format({"Price": "{:.2f}", "Size": "{:.4f}"}),
+        hide_index=True, use_container_width=True,
+        column_config={
+            "Price": st.column_config.TextColumn("Price (USDT)"),
+            "Size": st.column_config.ProgressColumn("Size", format="%.4f", min_value=0, max_value=8)
+        },
+        height=380
+    )
+    
+    # Mark Price
+    st.markdown(f"<h2 style='text-align:center; color:#0ECB81; margin: 0; padding: 5px 0;'>{mark_price:,.2f}</h2>", unsafe_allow_html=True)
+    
+    # Bids config (Green)
+    st.dataframe(
+        bids_df.style.format({"Price": "{:.2f}", "Size": "{:.4f}"}),
+        hide_index=True, use_container_width=True,
+        column_config={
+            "Price": st.column_config.TextColumn("Price (USDT)"),
+            "Size": st.column_config.ProgressColumn("Size", format="%.4f", min_value=0, max_value=8)
+        },
+        height=380
+    )
+    
+    # Order Panel
+    st.markdown("---")
+    st.markdown("### Spot Trading")
+    order_qty = float(st.slider("Amount %", 0, 100, 25)) / 100.0
+    
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button("BUY / LONG", use_container_width=True, type="primary"):
+            st.session_state.pending_orders.append({'side': 1, 'qty': order_qty, 'sym': symbol})
+            st.toast("Buy Order Placed into Queue", icon="✅")
+    with c2:
+        if st.button("SELL / SHORT", use_container_width=True):
+            st.session_state.pending_orders.append({'side': -1, 'qty': order_qty, 'sym': symbol})
+            st.toast("Sell Order Placed into Queue", icon="✅")

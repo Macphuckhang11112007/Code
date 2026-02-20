@@ -59,30 +59,52 @@ def render_technicals():
             mode = "gauge+number",
             value = val,
             number = {'font': {'size': 20, 'color': get_color(val)}, 'valueformat': '.0f', 'suffix': f' ({get_text(val)})'},
-            title = {'text': title, 'font': {'size': 16, 'color': '#ffffff'}},
+            title = {'text': title, 'font': {'size': 16, 'color': '#848E9C'}},
             gauge = {
-                'axis': {'range': [0, 100], 'tickwidth': 1, 'tickcolor': "darkblue"},
+                'axis': {'range': [0, 100], 'tickwidth': 1, 'tickcolor': "#2B3139"},
                 'bar': {'color': get_color(val)},
-                'bgcolor': "#0f0f0f",
+                'bgcolor': "rgba(0,0,0,0)",
                 'borderwidth': 2,
-                'bordercolor': "#2d2d2d",
+                'bordercolor': "#2B3139",
                 'steps': [
-                    {'range': [0, 40], 'color': 'rgba(255, 75, 75, 0.2)'},
-                    {'range': [40, 60], 'color': 'rgba(139, 148, 158, 0.2)'},
-                    {'range': [60, 100], 'color': 'rgba(0, 255, 157, 0.2)'}],
+                    {'range': [0, 40], 'color': 'rgba(246, 70, 93, 0.2)'},
+                    {'range': [40, 60], 'color': 'rgba(132, 142, 156, 0.2)'},
+                    {'range': [60, 100], 'color': 'rgba(14, 203, 129, 0.2)'}],
             }
         ))
         fig.update_layout(
-            paper_bgcolor="#0f0f0f",
-            font={'color': "#ffffff", 'family': "Inter"},
+            paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(0,0,0,0)",
+            font={'color': "#D1D4DC", 'family': "Inter"},
             height=250,
-            margin=dict(l=20, r=20, t=30, b=20)
+            margin=dict(l=10, r=10, t=30, b=10)
         )
         return fig
 
     with c1:
-        st.plotly_chart(build_gauge(osc_score, "Oscillators"), key="gauge_osc", width="stretch")
+        st.plotly_chart(build_gauge(osc_score, "Oscillators"), key="gauge_osc", use_container_width=True, config={'displayModeBar': False})
     with c2:
-        st.plotly_chart(build_gauge(sum_score, "Summary"), key="gauge_sum", width="stretch")
+        st.plotly_chart(build_gauge(sum_score, "Summary"), key="gauge_sum", use_container_width=True, config={'displayModeBar': False})
     with c3:
-        st.plotly_chart(build_gauge(ma_score, "Moving Averages"), key="gauge_ma", width="stretch")
+        st.plotly_chart(build_gauge(ma_score, "Moving Averages"), key="gauge_ma", use_container_width=True, config={'displayModeBar': False})
+        
+    st.markdown("---")
+    
+    # Technical Indicators Details Matrix
+    tech_data = {
+        "Indicator": ["RSI (14)", "MACD (12,26)", "Bollinger Bands", "Stochastic", "SMA (20)", "EMA (50)"],
+        "Value": ["45.20", "-12.50", "Within Band", "30.12", "65,400.00", "64,200.00"],
+        "Action": ["Neutral", "Sell", "Neutral", "Buy", "Buy", "Buy"]
+    }
+    df_tech = pd.DataFrame(tech_data)
+    
+    def color_action(val):
+        if val == "Buy": return "color: #0ECB81; font-weight: bold;"
+        if val == "Sell": return "color: #F6465D; font-weight: bold;"
+        return "color: #848E9C; font-weight: bold;"
+        
+    st.dataframe(
+        df_tech.style.map(color_action, subset=["Action"]),
+        use_container_width=True,
+        hide_index=True
+    )

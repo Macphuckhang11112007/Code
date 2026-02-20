@@ -1,0 +1,611 @@
+Folder PATH listing
+Volume serial number is 4ABF-69F7
+D:.
+│   .env
+│   .gitignore
+│   docker-compose.yml
+│   Dockerfile
+│   folder_structure.txt
+│   main.py
+│   requirements.txt
+│   run.py
+│   
+├───.agent
+│   └───rules
+│           alpha-quant-agent-1.md
+│           alpha-quant-agent-10.md
+│           alpha-quant-agent-11.md
+│           alpha-quant-agent-12.md
+│           alpha-quant-agent-13.md
+│           alpha-quant-agent-14.md
+│           alpha-quant-agent-15.md
+│           alpha-quant-agent-16.md
+│           alpha-quant-agent-17.md
+│           alpha-quant-agent-18.md
+│           alpha-quant-agent-19.md
+│           alpha-quant-agent-2.md
+│           alpha-quant-agent-20.md
+│           alpha-quant-agent-21.md
+│           alpha-quant-agent-22.md
+│           alpha-quant-agent-23.md
+│           alpha-quant-agent-24.md
+│           alpha-quant-agent-25.md
+│           alpha-quant-agent-26.md
+│           alpha-quant-agent-27.md
+│           alpha-quant-agent-3.md
+│           alpha-quant-agent-4.md
+│           alpha-quant-agent-5.md
+│           alpha-quant-agent-6.md
+│           alpha-quant-agent-7.md
+│           alpha-quant-agent-8.md
+│           alpha-quant-agent-9.md
+│           
+├───.streamlit
+│       config.toml
+│       
+├───.vscode
+│       settings.json
+│       
+├───configs
+│       asset_meta.yaml
+│       error_codes.yaml
+│       models.yaml
+│       prompts.yaml
+│       system.yaml
+│       
+├───data
+│   ├───rates
+│   │       AGR_deposit_12m.csv
+│   │       AGR_deposit_1m.csv
+│   │       AGR_deposit_3m.csv
+│   │       AGR_deposit_6m.csv
+│   │       BID_deposit_12m.csv
+│   │       BID_deposit_1m.csv
+│   │       BID_deposit_3m.csv
+│   │       BID_deposit_6m.csv
+│   │       CTG_deposit_12m.csv
+│   │       CTG_deposit_1m.csv
+│   │       CTG_deposit_3m.csv
+│   │       CTG_deposit_6m.csv
+│   │       US10Y_10y.csv
+│   │       VCB_deposit_12m.csv
+│   │       VCB_deposit_1m.csv
+│   │       VCB_deposit_3m.csv
+│   │       VCB_deposit_6m.csv
+│   │       VN10Y_10y.csv
+│   │       
+│   ├───stats
+│   │       USINTR.csv
+│   │       USIR.csv
+│   │       VNBOT.csv
+│   │       VNCCI.csv
+│   │       VNCF.csv
+│   │       VNCIR.csv
+│   │       VNCIRMM.csv
+│   │       VNCORPI.csv
+│   │       VNCPI.csv
+│   │       VNDIR.csv
+│   │       VNED.csv
+│   │       VNEP.csv
+│   │       VNEXP.csv
+│   │       VNFDI.csv
+│   │       VNFER.csv
+│   │       VNFYGDPG.csv
+│   │       VNGBP.csv
+│   │       VNGDG.csv
+│   │       VNGDP.csv
+│   │       VNGDPA.csv
+│   │       VNGDPC.csv
+│   │       VNGDPCP.csv
+│   │       VNGDPD.csv
+│   │       VNGDPMAN.csv
+│   │       VNGDPMIN.csv
+│   │       VNGDPPA.csv
+│   │       VNGDPS.csv
+│   │       VNGDPT.csv
+│   │       VNGDPU.csv
+│   │       VNGDPYY.csv
+│   │       VNGFCF.csv
+│   │       VNGNP.csv
+│   │       VNGR.csv
+│   │       VNGSP.csv
+│   │       VNIMP.csv
+│   │       VNINBR.csv
+│   │       VNINTR.csv
+│   │       VNIPRI.csv
+│   │       VNIPYY.csv
+│   │       VNIRMM.csv
+│   │       VNIRYY.csv
+│   │       VNM0.csv
+│   │       VNM1.csv
+│   │       VNM2.csv
+│   │       VNMPRYY.csv
+│   │       VNPPI.csv
+│   │       VNTOT.csv
+│   │       VN_CPI_FX.csv
+│   │       
+│   └───trades
+│           000001.SS.csv
+│           245710.KS.csv
+│           505.csv
+│           570063.KS.csv
+│           AAL.csv
+│           AAVE_USDT.csv
+│           ABEV.csv
+│           ACB.VN.csv
+│           ACHR.csv
+│           ADA_USDT.csv
+│           ADBE.csv
+│           AG.csv
+│           AGR.VN.csv
+│           AMD.csv
+│           AMZN.csv
+│           ANET.csv
+│           ANV.VN.csv
+│           APLD.csv
+│           ARM.csv
+│           ASTER_USDT.csv
+│           ATOM_USDT.csv
+│           AUD=X.csv
+│           AVAX_USDT.csv
+│           AVDL.csv
+│           AVGO.csv
+│           AXP.csv
+│           BA.csv
+│           BABA.csv
+│           BAC.csv
+│           BBD.csv
+│           BCH_USDT.csv
+│           BERA_USDT.csv
+│           BID.VN.csv
+│           BIDU.csv
+│           BIL.csv
+│           BILI.csv
+│           BLK.csv
+│           BMNR.csv
+│           BNB_USDT.csv
+│           BP.csv
+│           BROS.csv
+│           BSI.VN.csv
+│           BSR.VN.csv
+│           BTC_USDT.csv
+│           BTE.csv
+│           BTG.csv
+│           BZ=F.csv
+│           C.csv
+│           CAD=X.csv
+│           CART.csv
+│           CAT.csv
+│           CCL.csv
+│           CDE.csv
+│           CIFR.csv
+│           CL=F.csv
+│           CLF.csv
+│           CLSK.csv
+│           CMCSA.csv
+│           CNH.csv
+│           COIN.csv
+│           COST.csv
+│           CPNG.csv
+│           CRE.VN.csv
+│           CRM.csv
+│           CRWV.csv
+│           CSCO.csv
+│           CSV.VN.csv
+│           CTD.VN.csv
+│           CTG.VN.csv
+│           CTS.VN.csv
+│           CVX.csv
+│           DASH_USDT.csv
+│           DCM.VN.csv
+│           DELL.csv
+│           DGC.VN.csv
+│           DGW.VN.csv
+│           DIA.csv
+│           DIG.VN.csv
+│           DIS.csv
+│           DKNG.csv
+│           DNN.csv
+│           DOGE_USDT.csv
+│           DPM.VN.csv
+│           DX-Y.NYB.csv
+│           DXG.VN.csv
+│           DXS.VN.csv
+│           E1VFVN30.VN.csv
+│           EIB.VN.csv
+│           ENA_USDT.csv
+│           ENB.csv
+│           ESP_USDT.csv
+│           ET.csv
+│           ETH_USDT.csv
+│           EURUSD=X.csv
+│           EUR_USDT.csv
+│           F.csv
+│           FBIN.csv
+│           FCN.VN.csv
+│           FDUSD_USDT.csv
+│           FPT.VN.csv
+│           FRT.VN.csv
+│           FSLY.csv
+│           FTS.VN.csv
+│           FUESSV30.VN.csv
+│           GAS.VN.csv
+│           GBP=X.csv
+│           GC=F.csv
+│           GE.csv
+│           GEG.VN.csv
+│           GGB.csv
+│           GLD.csv
+│           GOOGL.csv
+│           GRAB.csv
+│           GS.csv
+│           HBAN.csv
+│           HBAR_USDT.csv
+│           HCM.VN.csv
+│           HD.csv
+│           HDB.VN.csv
+│           HDC.VN.csv
+│           HG=F.csv
+│           HHV.VN.csv
+│           HIMS.csv
+│           HOOD.csv
+│           HPG.VN.csv
+│           HPQ.csv
+│           HQC.VN.csv
+│           HSG.VN.csv
+│           HYG.csv
+│           IBM.csv
+│           IBRX.csv
+│           IJC.VN.csv
+│           INFY.csv
+│           INIT_USDT.csv
+│           INTC.csv
+│           IONQ.csv
+│           IREN.csv
+│           ITUB.csv
+│           IWM.csv
+│           JD.csv
+│           JNJ.csv
+│           JPM.csv
+│           JPY=X.csv
+│           KBC.VN.csv
+│           KDH.VN.csv
+│           KHG.VN.csv
+│           KO.csv
+│           KSB.VN.csv
+│           KVUE.csv
+│           KWEB.csv
+│           LCG.VN.csv
+│           LDG.VN.csv
+│           LI.csv
+│           LINK_USDT.csv
+│           LMT.csv
+│           LOW.csv
+│           LPB.VN.csv
+│           LTC_USDT.csv
+│           LVMUY.csv
+│           LYFT.csv
+│           LYG.csv
+│           MA.csv
+│           MARA.csv
+│           MBB.VN.csv
+│           MCD.csv
+│           META.csv
+│           MRK.csv
+│           MS.csv
+│           MSB.VN.csv
+│           MSFT.csv
+│           MSN.VN.csv
+│           MSTR.csv
+│           MU.csv
+│           MUBARAK_USDT.csv
+│           MWG.VN.csv
+│           MXN=X.csv
+│           NAB.VN.csv
+│           NBIS.csv
+│           NCLH.csv
+│           NEAR_USDT.csv
+│           NEM.csv
+│           NFLX.csv
+│           NG=F.csv
+│           NGD.csv
+│           NIO.csv
+│           NKE.csv
+│           NKG.VN.csv
+│           NOK.csv
+│           NOW.csv
+│           NT2.VN.csv
+│           NU.csv
+│           NVDA.csv
+│           NVL.VN.csv
+│           OCB.VN.csv
+│           OGN_USDT.csv
+│           ONDS.csv
+│           OPEN.csv
+│           ORCA_USDT.csv
+│           ORCL.csv
+│           ORS.VN.csv
+│           OWL.csv
+│           OXY.csv
+│           PATH.csv
+│           PAXG_USDT.csv
+│           PC1.VN.csv
+│           PCG.csv
+│           PDD.csv
+│           PDR.VN.csv
+│           PENGU_USDT.csv
+│           PEP.csv
+│           PEPE_USDT.csv
+│           PFE.csv
+│           PG.csv
+│           PGV.VN.csv
+│           PINS.csv
+│           PL=F.csv
+│           PLTR.csv
+│           PLUG.csv
+│           PLX.VN.csv
+│           PNJ.VN.csv
+│           POW.VN.csv
+│           PSLV.csv
+│           PUMP_USDT.csv
+│           PVD.VN.csv
+│           PYPL.csv
+│           QBTS.csv
+│           QCG.VN.csv
+│           QCOM.csv
+│           QQQ.csv
+│           RAY_USDT.csv
+│           REE.VN.csv
+│           RGTI.csv
+│           RIG.csv
+│           RIOT.csv
+│           RIVN.csv
+│           RKT.csv
+│           RPL_USDT.csv
+│           RTX.csv
+│           SAB.VN.csv
+│           SBUX.csv
+│           SCR.VN.csv
+│           SHB.VN.csv
+│           SHIB_USDT.csv
+│           SHY.csv
+│           SI=F.csv
+│           SIG.csv
+│           SLB.csv
+│           SLV.csv
+│           SMCI.csv
+│           SMR.csv
+│           SNAP.csv
+│           SNDK.csv
+│           SOFI.csv
+│           SOL_USDT.csv
+│           SOUN.csv
+│           SPY.csv
+│           SSB.VN.csv
+│           SSI.VN.csv
+│           STB.VN.csv
+│           SUI_USDT.csv
+│           SZC.VN.csv
+│           T.csv
+│           TAO_USDT.csv
+│           TCB.VN.csv
+│           TCEHY.csv
+│           TCH.VN.csv
+│           TGT.csv
+│           TLH.VN.csv
+│           TLT.csv
+│           TOST.csv
+│           TPB.VN.csv
+│           TPH.csv
+│           TRUMP_USDT.csv
+│           TRX_USDT.csv
+│           TSLA.csv
+│           TSM.csv
+│           TXN.csv
+│           U.csv
+│           UBER.csv
+│           UMA_USDT.csv
+│           UNG.csv
+│           UNI_USDT.csv
+│           USD1_USDT.csv
+│           USDC_USDT.csv
+│           USO.csv
+│           U_USDT.csv
+│           V.csv
+│           VAB.VN.csv
+│           VALE.csv
+│           VCB.VN.csv
+│           VCG.VN.csv
+│           VCI.VN.csv
+│           VDS.VN.csv
+│           VGC.VN.csv
+│           VHC.VN.csv
+│           VHM.VN.csv
+│           VIB.VN.csv
+│           VIC.VN.csv
+│           VIRTUAL_USDT.csv
+│           VIX.csv
+│           VIX.VN.csv
+│           VN30.csv
+│           VN301_.csv
+│           VND.VN.csv
+│           VND=X.csv
+│           VNINDEX.csv
+│           VNM.VN.csv
+│           VNREAL.csv
+│           VN_GOLD_SJC.csv
+│           VPB.VN.csv
+│           VRE.VN.csv
+│           VZ.csv
+│           WFC.csv
+│           WLD_USDT.csv
+│           WLFI_USDT.csv
+│           WMT.csv
+│           WULF.csv
+│           XOM.csv
+│           XPEV.csv
+│           XPL_USDT.csv
+│           XRP_USDT.csv
+│           ZAMA_USDT.csv
+│           ZC=F.csv
+│           ZEC_USDT.csv
+│           ZN=F.csv
+│           ZRO_USDT.csv
+│           ^ADOW.csv
+│           ^AXJO.csv
+│           ^DJI.csv
+│           ^FCHI.csv
+│           ^FTSE.csv
+│           ^FVX.csv
+│           ^GDAXI.csv
+│           ^GSPC.csv
+│           ^HSI.csv
+│           ^IRX.csv
+│           ^IXIC.csv
+│           ^N100.csv
+│           ^N225.csv
+│           ^RUT.csv
+│           ^TNX.csv
+│           ^TYX.csv
+│           ^VIX.csv
+│           
+├───logs
+│   │   system.log
+│   │   
+│   ├───chats
+│   │       memory.db
+│   │       
+│   ├───trading
+│   │       transactions.csv
+│   │       
+│   └───training
+│       └───tensorboard
+│           │   best_model.zip
+│           │   training_metrics.csv
+│           │   
+│           └───ppo
+│                   events.out.tfevents.1771541238.DESKTOP-9R2TSD2.7940.0
+│                   events.out.tfevents.1771542006.DESKTOP-9R2TSD2.8956.0
+│                   events.out.tfevents.1771542085.DESKTOP-9R2TSD2.18348.0
+│                   
+├───models
+│   └───rl_agent
+│           best_model.zip
+│           
+├───src
+│   │   main.py
+│   │   
+│   ├───agents
+│   │   │   base_agent.py
+│   │   │   booster.py
+│   │   │   callbacks.py
+│   │   │   optimizer.py
+│   │   │   predictor.py
+│   │   │   trader.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           base_agent.cpython-312.pyc
+│   │           booster.cpython-312.pyc
+│   │           callbacks.cpython-312.pyc
+│   │           optimizer.cpython-312.pyc
+│   │           predictor.cpython-312.pyc
+│   │           trader.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   ├───engine
+│   │   │   analyzer.py
+│   │   │   env.py
+│   │   │   market.py
+│   │   │   monte_carlo.py
+│   │   │   simulator.py
+│   │   │   wallet.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           analyzer.cpython-312.pyc
+│   │           env.cpython-312.pyc
+│   │           market.cpython-312.pyc
+│   │           monte_carlo.cpython-312.pyc
+│   │           simulator.cpython-312.pyc
+│   │           wallet.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   ├───pipeline
+│   │   │   data_loader.py
+│   │   │   features.py
+│   │   │   scaler.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           data_loader.cpython-312.pyc
+│   │           features.cpython-312.pyc
+│   │           scaler.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   ├───services
+│   │   │   database.py
+│   │   │   formatter.py
+│   │   │   gemini.py
+│   │   │   memory.py
+│   │   │   parser.py
+│   │   │   rag_engine.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           database.cpython-312.pyc
+│   │           formatter.cpython-312.pyc
+│   │           gemini.cpython-312.pyc
+│   │           memory.cpython-312.pyc
+│   │           parser.cpython-312.pyc
+│   │           rag_engine.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   ├───utils
+│   │   │   config_loader.py
+│   │   │   exceptions.py
+│   │   │   logger.py
+│   │   │   metrics.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           config_loader.cpython-312.pyc
+│   │           exceptions.cpython-312.pyc
+│   │           logger.cpython-312.pyc
+│   │           metrics.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   └───__pycache__
+│           main.cpython-312.pyc
+│           
+└───ui
+    │   app.py
+    │   styles.css
+    │   
+    ├───components
+    │   │   chart_view.py
+    │   │   chat_box.py
+    │   │   config_editor.py
+    │   │   learning_monitor.py
+    │   │   order_book_view.py
+    │   │   portfolio_view.py
+    │   │   quant_matrix_view.py
+    │   │   technicals_view.py
+    │   │   watchlist.py
+    │   │   __init__.py
+    │   │   
+    │   └───__pycache__
+    │           chart_view.cpython-312.pyc
+    │           chat_box.cpython-312.pyc
+    │           config_editor.cpython-312.pyc
+    │           learning_monitor.cpython-312.pyc
+    │           order_book_view.cpython-312.pyc
+    │           portfolio_view.cpython-312.pyc
+    │           quant_matrix_view.cpython-312.pyc
+    │           technicals_view.cpython-312.pyc
+    │           watchlist.cpython-312.pyc
+    │           __init__.cpython-312.pyc
+    │           
+    └───__pycache__
+            app.cpython-312.pyc
+            

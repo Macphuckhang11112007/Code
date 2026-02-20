@@ -45,18 +45,49 @@ def render_portfolio():
         )
     with col2:
         st.markdown(
-            f'''<div class="metric-card" style="border-left-color: #f0162f;">
-            <h3>Maturity Locked NAV (Đang Khóa)</h3>
+            f'''<div class="metric-card" style="border-left-color: #F0B90B;">
+            <h3>Locked NAV (Cấm Rút)</h3>
             <h2>${locked:,.2f}</h2>
             </div>''', unsafe_allow_html=True
         )
     with col3:
         st.markdown(
-            f'''<div class="metric-card" style="border-left-color: #7856ff;">
-            <h3>Return on Investment (R.O.I)</h3>
+            f'''<div class="metric-card" style="border-left-color: #0ECB81;">
+            <h3>Return on Investment</h3>
             <h2>{roi:,.2f} %</h2>
             </div>''', unsafe_allow_html=True
         )
+        
+    st.markdown("---")
+    st.markdown("### 🍩 Allocation Sunburst")
+    
+    # Portfolio Sunburst Data construction
+    import pandas as pd
+    import plotly.express as px
+    
+    portfolio_data = [{"Type": "Liquid", "Asset": "CASH", "Value_USD": wallet.cash}]
+    for sym, val in alloc.items():
+        if sym == 'CASH': continue
+        ptype = "Locked" if sym.startswith("VCB") or sym.startswith("US") else "Liquid"
+        portfolio_data.append({"Type": ptype, "Asset": sym, "Value_USD": max(val, 0.001)})
+    
+    df_portfolio = pd.DataFrame(portfolio_data)
+    
+    if df_portfolio['Value_USD'].sum() > 0:
+        fig_sunburst = px.sunburst(
+            df_portfolio,
+            path=['Type', 'Asset'],
+            values='Value_USD',
+            color='Type',
+            color_discrete_map={'Liquid': '#0ECB81', 'Locked': '#F0B90B'}
+        )
+        fig_sunburst.update_layout(
+            paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(0,0,0,0)",
+            margin=dict(t=0, l=0, r=0, b=0),
+            font=dict(color="#D1D4DC")
+        )
+        st.plotly_chart(fig_sunburst, use_container_width=True, config={'displayModeBar': False})
         
     st.markdown("### 📊 Live Analytics & Trade Statistics")
     # Tự động tính các chỉ số Quant nếu có Transaction
