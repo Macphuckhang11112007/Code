@@ -1,0 +1,57 @@
+2026-02-20 03:20:46 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:20:46 | INFO     | main:run_monte_carlo | Khởi động tiến trình MONTE CARLO (Quantum Audit).
+2026-02-20 03:26:35 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:26:35 | INFO     | main:run_monte_carlo | Khởi động tiến trình MONTE CARLO (Quantum Audit).
+2026-02-20 03:28:08 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:28:08 | INFO     | main:run_monte_carlo | Khởi động tiến trình MONTE CARLO (Quantum Audit).
+2026-02-20 03:28:13 | INFO     | main:run_monte_carlo | ============== BÁO CÁO TOÁN HỌC LƯỢNG TỬ (MONTE CARLO) ==============
+2026-02-20 03:28:13 | INFO     | main:run_monte_carlo | Kỳ vọng Lợi nhuận (Expected ROI): 0.30 %
+2026-02-20 03:28:13 | INFO     | main:run_monte_carlo | Xác Suất Phá Sản (Margin Call): 0.00 %
+2026-02-20 03:28:13 | INFO     | main:run_monte_carlo | Rủi Ro Đuôi (CVaR 95%): -0.53 %
+2026-02-20 03:28:13 | INFO     | main:run_monte_carlo | =====================================================================
+2026-02-20 03:45:42 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:45:42 | INFO     | main:run_features | Khởi động tiến trình FEATURES COMPUTATION.
+2026-02-20 03:45:47 | INFO     | main:run_features | Hoạt động tạo Đặc trưng Tensor Vector đã nạp thành công: (175201, 1, 54)
+2026-02-20 03:45:47 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:45:47 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 03:46:47 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:46:47 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 03:47:25 | INFO     | main:run_train | Huấn luyện hoàn tất và đã lưu Model Best.
+2026-02-20 03:47:26 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:47:26 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-20 03:47:46 | INFO     | main:run_backtest | Bắt đầu vòng lặp thời gian cốt lõi...
+2026-02-20 03:51:16 | INFO     | main:run_backtest | Backtest kết thúc. Trích xuất thành quả File Sổ cái (Ledger Export)...
+2026-02-20 03:51:16 | INFO     | main:run_backtest | Kết quả NAV: {'Total_NAV': np.float32(1.0), 'Locked_Cap': 'To_be_Queried', 'ROI_Pct': np.float32(-99.99)}
+2026-02-20 03:51:18 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 03:51:18 | INFO     | main:run_monte_carlo | Khởi động tiến trình MONTE CARLO (Quantum Audit).
+2026-02-20 03:51:25 | INFO     | main:run_monte_carlo | ============== BÁO CÁO TOÁN HỌC LƯỢNG TỬ (MONTE CARLO) ==============
+2026-02-20 03:51:25 | INFO     | main:run_monte_carlo | Kỳ vọng Lợi nhuận (Expected ROI): 0.30 %
+2026-02-20 03:51:25 | INFO     | main:run_monte_carlo | Xác Suất Phá Sản (Margin Call): 0.00 %
+2026-02-20 03:51:25 | INFO     | main:run_monte_carlo | Rủi Ro Đuôi (CVaR 95%): -0.53 %
+2026-02-20 03:51:25 | INFO     | main:run_monte_carlo | =====================================================================
+2026-02-20 05:31:26 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 05:31:26 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 05:32:00 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian 15-30 phút.
+2026-02-20 05:32:00 | INFO     | main:run_train | Mẹo: Thêm cờ `--force` khi chạy `python main.py --mode train --force` nếu bạn thực sự muốn train lại từ đầu (Retrain).
+2026-02-20 05:36:31 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 05:36:31 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 05:37:51 | INFO     | main:run_train | Huấn luyện hoàn tất và đã lưu Model Best.
+2026-02-20 05:46:38 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 05:46:38 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 05:47:30 | INFO     | main:run_train | Huấn luyện hoàn tất và đã lưu Model Best.
+2026-02-20 05:51:03 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 05:51:03 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 05:51:33 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian 15-30 phút.
+2026-02-20 05:51:33 | INFO     | main:run_train | Mẹo: Thêm cờ `--force` khi chạy `python main.py --mode train --force` nếu bạn thực sự muốn train lại từ đầu (Retrain).
+2026-02-20 05:59:27 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 05:59:27 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 06:00:43 | INFO     | main:run_train | Huấn luyện hoàn tất và đã lưu Model Best.
+2026-02-20 06:00:46 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 06:00:46 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-20 06:01:26 | INFO     | main:run_backtest | Bắt đầu vòng lặp thời gian cốt lõi...
+2026-02-20 06:07:49 | INFO     | main:run_backtest | Backtest kết thúc. Trích xuất thành quả File Sổ cái (Ledger Export)...
+2026-02-20 06:07:49 | INFO     | main:run_backtest | Kết quả NAV: {'Total_NAV': np.float32(1.0), 'Locked_Cap': 'To_be_Queried', 'ROI_Pct': np.float32(-99.99)}
+2026-02-20 06:09:22 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 06:09:22 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 06:09:39 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian 15-30 phút.
+2026-02-20 06:09:39 | INFO     | main:run_train | Mẹo: Thêm cờ `--force` khi chạy `python main.py --mode train --force` nếu bạn thực sự muốn train lại từ đầu (Retrain).

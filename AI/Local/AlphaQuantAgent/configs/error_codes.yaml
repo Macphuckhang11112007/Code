@@ -1,0 +1,10 @@
+# ==========================================
+# ERROR CODE MAPPINGS (BẢNG LỖI HỆ THỐNG)
+# ==========================================
+# Dùng để dịch lỗi kỹ thuật sang lỗi hiển thị cho User
+
+ERR_01: "Tài sản thuộc nhóm RATES (Tiết kiệm/Trái phiếu) đang trong thời gian Khóa Vốn (Maturity Locked). Bạn không thể rút thanh khoản trước hạn."
+ERR_02: "Lỗi Số Dư Khả Dụng (Insufficient Funds). Số dư Liquid NAV của bạn không đủ để thực hiện lệnh này."
+ERR_03: "Lệnh có giá trị quá nhỏ (Below Minimum Notional). Không đáng để thực hiện do sẽ bị bào mòn bởi phí trượt giá (Slippage)."
+ERR_04: "Lỗi Bán Khống (Short-selling Violation). Hệ thống chỉ cấu hình cho phép giao dịch Spot. Bạn chưa sở hữu tài sản này."
+ERR_05: "Dữ liệu Thị Trường Không Khả Dụng (Market Data Stale / Missing). Volume bằng 0. Hệ thống tạm dừng khớp lệnh để bảo vệ an toàn."

@@ -1,0 +1,24 @@
+# ==========================================
+# AI AGENT HYPERPARAMETERS (SIÊU THAM SỐ)
+# ==========================================
+
+# 1. Tác tử Hành Động (PPO Trader)
+ppo:
+  learning_rate: 0.0003
+  n_steps: 2048
+  batch_size: 64
+  gamma: 0.99  # Hệ số suy giảm Reward tương lai
+  clip_range: 0.2
+  ent_coef: 0.01  # Exploration noise
+
+# 2. Bộ Cổ Máy Thời Gian (LSTM Predictor)
+lstm:
+  hidden_dim: 128
+  num_layers: 2
+  dropout: 0.1
+
+# 3. Kẻ Xếp Hạng (XGBoost Booster)
+xgboost:
+  max_depth: 3
+  learning_rate: 0.1
+  n_estimators: 100

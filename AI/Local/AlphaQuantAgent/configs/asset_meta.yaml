@@ -1,0 +1,41 @@
+# ==========================================
+# ASSET METADATA (ĐỊNH TÍNH TÀI SẢN)
+# ==========================================
+# Định nghĩa bản chất của từng mã tài sản
+
+# TRADE: Sinh lời dựa trên Capital Gains (Mua thấp bán cao)
+trades:
+  BTC_USDT:
+    type: "TRADE"
+    term_days: 0
+  ETH_USDT:
+    type: "TRADE"
+    term_days: 0
+  NVDA:
+    type: "TRADE"
+    term_days: 0
+
+# RATE: Sinh lời dựa trên Yield Cố định (Lãi suất, Cổ tức)
+# Hệ thống sẽ ép buộc khóa vốn (Maturity Lock) bằng term_days
+rates:
+  VCB_deposit_1m:
+    type: "RATE"
+    term_days: 30
+  VCB_deposit_6m:
+    type: "RATE"
+    term_days: 180
+  VCB_deposit_12m:
+    type: "RATE"
+    term_days: 365
+  US10Y_10y:
+    type: "RATE"
+    term_days: 3650
+
+# STATS: Chỉ báo Kinh Tế (Không thể giao dịch)
+stats:
+  USCPI:
+    type: "STAT"
+    term_days: 0
+  VNGDP:
+    type: "STAT"
+    term_days: 0

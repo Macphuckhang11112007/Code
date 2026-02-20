@@ -2,23 +2,36 @@
 
 using namespace std;
 
-int n;
+const int N = 1e5;
+
+int           n;
+map<int, int> mp;
 
 int main() {
     cin.tie(0)->sync_with_stdio(0);
     cin >> n;
-    while (n--) {
-        stringstream ss;
-        string       s, str;
-        getline(cin >> ws, str);
-        ss << str;
-        while (ss >> s) {
-            s[0] = toupper(s[0]);
-            for (int i = 1; i < int(s.size()); i++) {
-                s[i] = tolower(s[i]);
+    for (int i = 1; i <= n; i++) {
+        string str;
+        cin >> str;
+        if (str == "add") {
+            int x;
+            cin >> x;
+            mp[x]++;
+        } else if (str == "del") {
+            int x;
+            cin >> x;
+            if (mp.count(x)) {
+                mp[x]--;
+                if (mp[x] == 0) {
+                    mp.erase(x);
+                }
             }
-            cout << s << " ";
+        } else if (str == "count") {
+            int x;
+            cin >> x;
+            cout << (mp.count(x) ? mp[x] : 0) << "\n";
+        } else if (str == "size") {
+            cout << mp.size() << "\n";
         }
-        cout << "\n";
     }
 }

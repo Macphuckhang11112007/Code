@@ -1,2 +1,22 @@
-Diagnostics:
-    Suppress: "*"
+---
+CompileFlags:
+  Add:
+    - "-xc++"
+    - "--query-driver=C:/msys64/ucrt64/bin/g++.exe"
+    - "--header-insertion=never"
+
+Index:
+  Background: Build
+
+# Diagnostics:
+#   ClangTidy:
+#     Add: ["*"]
+#     Remove:
+#       - "llvmlibc-*"
+#       - "fuchsia-*"
+#       - "abseil-*"
+
+Completion:
+  AllScopes: true
+
+---

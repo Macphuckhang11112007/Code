@@ -1,0 +1,122 @@
+# ==========================================
+# 📐 BOOK I: NỀN TẢNG TOÁN HỌC (The Math Substrate)
+# ==========================================
+numpy               # Xử lý ma trận, Tensor (Chương 01)
+scipy               # Tích phân, tối ưu hóa (Chương 02)
+cvxpy               # Tối ưu hóa lồi cho Portfolio (Chương 05)
+polars              # Xử lý dữ liệu lớn thay Pandas (Chương 08)
+pandas              # Thư viện truyền thống (để tương thích)
+networkx            # Lý thuyết đồ thị (Chương 10)
+sympy               # Tính toán đại số tượng trưng
+
+# ==========================================
+# 🧠 BOOK II & III: NEURAL ENGINE & LANGUAGE BRAIN
+# ==========================================
+torch               # Pytorch Core (Chương 11-20)
+einops              # Thao tác Tensor chuyên sâu (Chương 01)
+transformers        # HuggingFace Transformer (Chương 30)
+tokenizers          # BPE Tokenization (Chương 21)
+tiktoken            # OpenAI Tokenizer (Chương 22)
+sentencepiece       # Unigram Tokenizer
+accelerate          # Tăng tốc tính toán AI
+
+# ==========================================
+# 🎓 BOOK IV: TRAINING & INFERENCE
+# ==========================================
+bitsandbytes        # Lượng tử hóa 4-bit/8-bit (Chương 36)
+peft                # LoRA/QLoRA Fine-tuning (Chương 37)
+trl                 # Reinforcement Learning for LLM (Chương 38)
+optimum             # Tối ưu hóa phần cứng
+
+# ==========================================
+# 📚 BOOK V: INFINITE MEMORY (RAG)
+# ==========================================
+chromadb            # Vector Database (Chương 42)
+langchain           # Framework kết nối LLM (Chương 41)
+langchain-community
+langchain-openai
+sentence-transformers  # Tạo Embeddings (Chương 23)
+faiss-cpu           # Thư viện tìm kiếm Vector của Meta
+pymupdf             # Đọc file PDF báo cáo tài chính
+
+# ==========================================
+# 🛠️ BOOK VI & VII: TOOLS & AGENTS
+# ==========================================
+pydantic            # Validate dữ liệu JSON (Chương 52)
+pydantic-settings
+openai              # Gọi GPT-4 (nếu cần so sánh)
+langgraph           # Điều phối vòng lặp Agent (Chương 72)
+ragas               # Đánh giá độ ảo giác (Chương 68)
+
+# ==========================================
+# 📈 BOOK IX: FINANCIAL CORE (14 ATOMS)
+# ==========================================
+yfinance            # Lấy dữ liệu Yahoo Finance (Chương 55)
+ccxt                # Kết nối sàn Crypto Binance/Bybit (Chương 141)
+pandas_ta           # Phân tích kỹ thuật (RSI, MACD)
+pyportfolioopt      # Mô hình Black-Litterman (Chương 86)
+statsmodels         # Kinh tế lượng, Taylor Rule (Chương 81)
+arch                # Mô hình GARCH dự báo rủi ro (Chương 90)
+fredapi             # Lấy dữ liệu vĩ mô FED (Chương 82)
+
+# ==========================================
+# 🎮 BOOK X: REINFORCEMENT LEARNING
+# ==========================================
+gymnasium    # Môi trường giao dịch giả lập (Chương 96)
+stable-baselines3   # Thuật toán PPO/A2C (Chương 94)
+pymc                # Xác suất Bayes (Chương 91)
+
+# ==========================================
+# 🖥️ BOOK XII: RICH UI & VISUALIZATION
+# ==========================================
+streamlit         # Giao diện Dashboard (Chương 115)
+plotly       # Biểu đồ tương tác (Chương 115)
+matplotlib   # Biểu đồ tĩnh
+rich        # In màu đẹp trong Terminal (Chương 110)
+markdown-it-py  # Render Markdown nâng cao
+
+# ==========================================
+# 🚀 BOOK XIII: PRODUCTION & BACKEND
+# ==========================================
+fastapi    # API Framework (Chương 121)
+uvicorn    # Server ASGI
+gunicorn    # Production Server
+python-dotenv # Quản lý biến môi trường
+psycopg2-binary  # Driver PostgreSQL (Chương 122)
+sqlalchemy    # ORM tương tác DB
+alembic     # Quản lý version DB (Chương 148)
+redis          # Kết nối Redis Cache (Chương 124)
+tenacity     # Cơ chế Retry thông minh (Chương 134)
+loguru     # Ghi log chuẩn (Chương 129)
+prometheus-client   # Giám sát hệ thống (Chương 130)
+
+# ==========================================
+# 🧪 TESTING
+# ==========================================
+pytest        # Framework test
+pytest-cov    # Đo độ bao phủ code
+locust       # Test tải hệ thống (Chương 137)
+ruff        # Linter code siêu tốc (Chương 140)
+black      # Format code tự động
+
+google-generativeai
+python-dotenv
+google.genai
+
+# --- AI & Deep Learning Core ---
+# Tự động lấy bản tensorflow-cpu mới nhất ổn định
+tensorflow-cpu
+scikit-learn
+joblib
+
+# --- Data & Finance ---
+# Lấy dữ liệu và tính toán chỉ số
+pandas
+pandas-ta
+yfinance
+ccxt
+numpy
+
+# --- System & Utils ---
+python-dotenv
+colorama

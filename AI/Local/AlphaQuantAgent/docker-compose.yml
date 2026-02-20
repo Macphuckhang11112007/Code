@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # 🧠 1. AGENT CORE (Bộ não xử lý chính)
+  alpha_core:
+    build: .
+    container_name: alpha_core
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"  # Để xem API hoặc Dashboard Streamlit
+    stdin_open: true # Cho phép tương tác terminal
+    tty: true
+    networks:
+      - alpha_net
+
+  # 🐘 2. DATABASE (Lưu giá chứng khoán/Crypto)
+  postgres:
+    image: postgres:15-alpine
+    container_name: alpha_db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    networks:
+      - alpha_net
+
+  # 📚 3. VECTOR DB (Để Agent tra cứu tài liệu/tin tức - RAG)
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: alpha_vector
+    ports:
+      - "8001:8000"
+    networks:
+      - alpha_net
+
+networks:
+  alpha_net:
+    driver: bridge

@@ -1,0 +1,19 @@
+# ==========================================
+# SYSTEM CORE CONFIGURATION (HỆ THỐNG CỐT LÕI)
+# ==========================================
+
+# Vốn khởi tạo (Initial Capital) - USD
+# Dùng để cấp vốn cho lần chạy giả lập (Backtest) đầu tiên
+initial_capital: 10000.0
+
+# Phí giao dịch (Transaction Fee Rate)
+# Ví dụ 0.001 = 0.1% phí sàn giao dịch
+fee_rate: 0.001
+
+# Hệ số trượt giá (Slippage Factor)
+# Sử dụng trong mô hình Square-Root Market Impact
+slippage_k: 0.1
+
+# Lãi suất phi rủi ro (Risk Free Rate) biểu diễn theo năm (Annualized)
+# Dùng để tính toán Sharpe Ratio và Alpha tĩnh
+risk_free_rate_annual: 0.05
