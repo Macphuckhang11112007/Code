@@ -1,0 +1,40 @@
+Help on class RecordWriter in module tensorboard.summary.writer.record_writer:
+
+class RecordWriter(builtins.object)
+ |  RecordWriter(writer)
+ |
+ |  Write encoded protobuf to a file with packing defined in tensorflow.
+ |
+ |  Methods defined here:
+ |
+ |  __init__(self, writer)
+ |      Open a file to keep the tensorboard records.
+ |
+ |      Args:
+ |      writer: A file-like object that implements `write`, `flush` and `close`.
+ |
+ |  close(self)
+ |
+ |  flush(self)
+ |
+ |  write(self, data)
+ |      # Format of a single record: (little-endian)
+ |      # uint64    length
+ |      # uint32    masked crc of length
+ |      # byte      data[length]
+ |      # uint32    masked crc of data
+ |
+ |  ----------------------------------------------------------------------
+ |  Readonly properties defined here:
+ |
+ |  closed
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  __dict__
+ |      dictionary for instance variables
+ |
+ |  __weakref__
+ |      list of weak references to the object
+

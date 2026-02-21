@@ -1,9 +1,16 @@
 """
 /**
- * MODULE: System Booster (Kẻ Xếp Hạng Ánh Sáng)
- * VAI TRÒ: Ứng dụng Cây Quyết định Tối ưu Hóa Gradient (XGBoost/LightGBM). Chuyên gia đánh giá dữ liệu bảng (Tabular/Macro Stats) 
- * mà Mạng Neural thường xử lý kém cỏi. Nó trả về "Ranking Score" sức mạnh của tài sản.
- * CƠ CHẾ: Đặt tính năng này cạnh chuỗi TimeSeries để Tác tử RL (PPO) nhúng vào như một chỉ báo cực mạnh.
+ * TỆP AI (AI MODULE): THE XGBOOST RANKING BOOSTER (HỆ XẾP HẠNG)
+ * =================================================================================
+ * CÂU HỎI 1: Tệp này có lý do gì để tồn tại?
+ * -> Vai trò: Các bảng dữ liệu (Tabular/Macro Stats) chứa nhiễu khổng lồ. Mạng Nơron (RL/LSTM) thường bị Overfitting khi học dạng này. XGBoost với thuật toán Gradient Tree Boosting là sát thủ số 1 với dữ liệu Tabular. Nó tồn tại để chấm một điểm số "Ranking" dự phòng rủi ro tài sản.
+ * 
+ * CÂU HỎI 2: Đầu vào (Input) của hệ thống là gì?
+ * -> Nhát cắt Dữ liệu 2D (Chỉ xét dòng Mới Nhất của Tensor) vì Cây Quyết Định không có trí nhớ tuần tự như LSTM.
+ * 
+ * CÂU HỎI 3: Đầu ra (Output) xuất đi đâu?
+ * -> Xuất ra một Vector 1D (Điểm số từ -1 đến 1 cho mỗi Tài sản).
+ * -> Điểm số này sẽ được `market.py` bơm ngược lại vào Tensor 3D gốc thành Feature `xgboost_score` để Trí tuệ PPO đọc trên mỗi step!
  */
 """
 import numpy as np
@@ -30,9 +37,9 @@ class RankingBooster(BaseAgent):
 
     def predict(self, observation: np.ndarray) -> np.ndarray:
         """
-        Giao thức truy vấn.
-        TÓM TẮT: Observation của ta hiện đang là 3D (Window_L, Asset_N, Feat_F).
-        Tuy nhiên XGBoost chỉ ăn Mảng Vô hướng 2D. Do đó, ta chỉ trích xuất hàng Nến mới nhất (Last Timestep).
+        [CHỨC NĂNG CỐT LÕI]: Dự phóng (Inference) điểm số hồi quy.
+        [ĐẦU VÀO]: Quan sát 3D đầy đủ `(L, N, F)`. Cắt lấy nhát dao thời gian cuối cùng `[-1, :, :]`.
+        [ĐẦU RA]: Mảng 1D array dự báo chiều hướng (Alpha). Nếu mô hình chưa học (is_trained=False), hệ thống ngầm định mảng Zero trung tính để PPO không bị nhiễu do điểm rác.
         """
         # Cắt lấy nhát dao thời gian cuối cùng: (N, F)
         latest_slice = observation[-1, :, :]

@@ -1,14 +1,16 @@
 """
 /**
- * THÔNG TIN BÀI TOÁN: Time Series Forecasting Engine (AlphaQuantAgent - Predictor Module)
- * CÔNG NGHỆ BẤT TRỊ: Mô Hình Deep Learning Transformer (Pre-LayerNorm).
- * PHÂN TÍCH ĐỘ PHỨC TẠP TÍCH LŨY:
- * - Time Complexity: $O(B \\cdot A \\cdot L^2 \\cdot d_{model})$ Cổ chai nút thắt cổ lọ (Bottleneck) nằm tại phép toán Self-Attention cực kỳ tốn kém tỷ lệ bình phương với độ dài cửa sổ $L$.
- * - Space Complexity: $O(B \\cdot A \\cdot L \\cdot d_{model})$ Phình to theo Batch Size x Số Asset. (Nơi ngốn RAM CUDA chính).
- * CHIẾN LƯỢC MÔ HÌNH HÓA THUẬT TOÁN:
- * 1. Channel Independence: Bóc tách mỗi Asset thành 1 luồng Model riêng lẻ trong Batch (Thay vì nhồi nhét tất cả tài sản làm feature). Điều này biến Mạng Nơron thành "Asset-Agnostic" (Độc lập, miễn nhiễm trước việc mất kết nối tín hiệu 1 vài Asset do API nghẽn).
- * 2. Positional Encoding Sin/Cos: Không gian chập chùng, bơm tọa độ toán gốc thời gian $T$, giúp mạng lưu ý Tính chất định kỳ (Seasonality).
- * 3. Pre-LayerNorm Architecture: Vàng Ròng Điểm Kỳ Dị - Vượt trội cực đoan hơn Post-Norm (Transformer 2017) khi xử lý Dữ liệu Chuỗi thời gian cực Cắn nhiễu (High-Noise), tránh tiêu thọt đạo hàm (Gradient Vanishing).
+ * TỆP AI (AI MODULE): THE TRANSFORMER FORECASTER (BỘ TIÊN TRI CHUỖI THỜI GIAN)
+ * ============================================================================
+ * CÂU HỎI 1: Tệp này có lý do gì để tồn tại?
+ * -> Vai trò: Mạng Transformer sử dụng Pre-LayerNorm Architecture để dự báo chuỗi thời gian nhiễu cực cao (High-Noise Time Series). Nó giải quyết nhược điểm "mù phương hướng trong dài hạn" của RL PPO. PPO chỉ ra Lệnh, nhưng Transformer thì dự báo Tương Lai.
+ * 
+ * CÂU HỎI 2: Đầu vào (Input) của hệ thống là gì?
+ * -> Tuple: `(Batch_B, Window_W, Assets_A, Features_F)`. Một khối không thời gian trượt (Sliding Window Tensor). Tức là Transformer được phép "nhìn lại" quá khứ `W` nến.
+ * 
+ * CÂU HỎI 3: Đầu ra (Output) xuất đi đâu?
+ * -> Xuất ra Mảng Điểm Số (Score Array). Điểm này tương tự XGBoost, được Market Engine thu thập và tiêm thẳng vào khối Tensor (feature `lstm_pred`) trước khi PPO nhúng tay vào ra quyết định.
+ * -> Complexity: Trọng tâm O(B * A * W^2 * D_Model), rất nặng VRAM do cơ chế Self-Attention.
  */
 """
 
@@ -20,8 +22,9 @@ from typing import Optional
 
 class PositionalEncoding(nn.Module):
     """
-    Tiêm Mã Tọa Độ Tuần Hoàn (Sinusoidal PE).
-    TẠI SAO: Khác với RNN/LSTM ăn dữ liệu tuần tự nến này qua nến khác (Nhớ thứ bậc quá khứ), cơ chế Self-Attention của Transformer cắn toàn bộ Window Window cùng lúc vô tri thức (Permutation Invariant). Do đó, hàm Cos/Sin này giúp khắc "dấu chỉ quá khứ xa/gần" vào từng Feature vector.
+    [CHỨC NĂNG CỐT LÕI]: Tiêm Mã Tọa Độ Tuần Hoàn (Sinusoidal Positional Encoding).
+    [TẠI SAO TỒN TẠI]: Cơ chế Self-Attention là "vô tri" về mặt thứ tự (Permutation Invariant). Nếu không có hàm lượng giác Cos/Sin chèn vào, dữ liệu nến số 1 và nến số 100 sẽ được xem là như nhau đối với Transformer.
+    [CƠ CHẾ]: Tự động sinh tọa độ hình sin cộng (add) đè lên dữ liệu Data (T, F).
     """
     def __init__(self, d_model: int, max_len: int = 5000):
         super().__init__()
@@ -88,8 +91,10 @@ class TimeSeriesTransformer(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """
-        Đường Xích Vi Xử Lý Truyền Thẳng Chân Chuyên Sâu Của Mạng Não D-Model.
-        [B, Window_Step, Asset_Qty, Indicator_Qty]
+        [CHỨC NĂNG CỐT LÕI]: Forward Propagation (Tiến truyền).
+        [ĐẦU VÀO]: `x` hình khối `(Batch_size, Window_Length, Num_Assets, Features)`.
+        [QUY TẮC ĐỘC LẬP KÊNH (Channel Independence)]: 
+        Ép dẹp `Assets` vào chung với `Batch` -> Biến hình thành `(B*A, Window, Features)`. Hệ quả: Model biến thành "Kẻ mù đặc" về từng mã riêng biệt (như BTC hay ETH). Nó chỉ hiểu bản chất của Dòng Thời Gian Trìu tượng (Pure Time Series), miễn nhiễm hoàn toàn sự đứt gãy tương quan cục bộ.
         """
         B, W, A, F = x.shape
 

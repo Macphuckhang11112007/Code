@@ -20,13 +20,17 @@ class RLTrader(BaseAgent):
         self.model_path = model_path
         
         # Proxy Policy Setup: Mạng Nơron diễn dịch Đa lớp Nhận Thức (MLP)
+        from src.agents.custom_policy import AlphaQuantCustomExtractor
+        
         policy_kwargs = dict(
+            features_extractor_class=AlphaQuantCustomExtractor,
+            features_extractor_kwargs=dict(features_dim=256),
             net_arch=dict(pi=[128, 128], vf=[128, 128]) # Tầng Nhận Diện (Actor) và Tầng Định Giá (Critic)
         )
         
         # PPO: Proximal Policy Optimization - Giải thuật Clipped Surrogate siêu việt cân bằng giữa tốc độ và độ bền vững.
         self.model = PPO(
-            "MlpPolicy",
+            "MultiInputPolicy", # Bắt buộc phải chuyển từ MlpPolicy sang MultiInput cho Dict Space
             self.env,
             learning_rate=0.0003,
             n_steps=2048,
@@ -63,7 +67,18 @@ class RLTrader(BaseAgent):
 
     def learn(self, total_timesteps: int, callbacks: Optional[list] = None):
         """Mệnh lệnh đắm chìm vào kỷ nguyên huấn luyện. Kích hoạt Backpropagation."""
-        self.model.learn(total_timesteps=total_timesteps, callback=callbacks)
+        from src.engine.callbacks import QuantTelemetryCallback
+
+        # Khởi tạo Callback, trỏ đúng vào thư mục logs của React API
+        telemetry_cb = QuantTelemetryCallback(log_path="logs/trading/training_history.json")
+        
+        cb_list = callbacks if callbacks is not None else []
+        if not isinstance(cb_list, list):
+            cb_list = [cb_list]
+        cb_list.append(telemetry_cb)
+
+        # Gắn vào hàm learn
+        self.model.learn(total_timesteps=total_timesteps, callback=cb_list, progress_bar=True)
         self.is_trained = True
 
     def save(self, path: str):

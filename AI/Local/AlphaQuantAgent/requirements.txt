@@ -69,7 +69,6 @@ pymc                # Xác suất Bayes (Chương 91)
 # ==========================================
 # 🖥️ BOOK XII: RICH UI & VISUALIZATION
 # ==========================================
-streamlit         # Giao diện Dashboard (Chương 115)
 plotly       # Biểu đồ tương tác (Chương 115)
 matplotlib   # Biểu đồ tĩnh
 rich        # In màu đẹp trong Terminal (Chương 110)
@@ -116,6 +115,7 @@ pandas-ta
 yfinance
 ccxt
 numpy
+empyrical-reloaded
 
 # --- System & Utils ---
 python-dotenv

@@ -55,3 +55,1269 @@
 2026-02-20 06:09:22 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
 2026-02-20 06:09:39 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian 15-30 phút.
 2026-02-20 06:09:39 | INFO     | main:run_train | Mẹo: Thêm cờ `--force` khi chạy `python main.py --mode train --force` nếu bạn thực sự muốn train lại từ đầu (Retrain).
+2026-02-20 21:28:59 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 21:28:59 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-20 21:28:59 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-20 21:28:59 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 21:29:31 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-20 21:29:31 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-20 21:29:31 | INFO     | main:run_auto | >>> TIẾN TRÌNH 2: KIỂM THỬ (BACKTEST)
+2026-02-20 21:29:31 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-20 21:32:58 | INFO     | main:run_backtest | Bắt đầu vòng lặp thời gian cốt lõi...
+2026-02-20 21:38:47 | INFO     | main:run_backtest | Backtest kết thúc. Trích xuất thành quả File Sổ cái (Ledger Export)...
+2026-02-20 21:41:55 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 21:41:55 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-20 21:41:55 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-20 21:41:55 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 21:42:08 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-20 21:42:08 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-20 21:42:08 | INFO     | main:run_auto | >>> TIẾN TRÌNH 2: KIỂM THỬ (BACKTEST)
+2026-02-20 21:42:08 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-20 21:42:14 | INFO     | main:run_backtest | Bắt đầu vòng lặp thời gian cốt lõi...
+2026-02-20 21:44:47 | INFO     | main:run_backtest | Backtest kết thúc. Trích xuất thành quả File Sổ cái (Ledger Export)...
+2026-02-20 21:45:51 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 21:45:51 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-20 21:45:51 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-20 21:45:51 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-20 21:46:01 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-20 21:46:01 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-20 21:46:01 | INFO     | main:run_auto | >>> TIẾN TRÌNH 2: KIỂM THỬ (BACKTEST)
+2026-02-20 21:46:01 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-20 21:46:06 | INFO     | main:run_backtest | Bắt đầu vòng lặp thời gian cốt lõi...
+2026-02-20 21:48:43 | INFO     | main:run_backtest | Backtest kết thúc. Trích xuất thành quả File Sổ cái (Ledger Export)...
+2026-02-20 21:48:44 | INFO     | main:run_backtest | Kết quả NAV: {'Total_NAV': np.float32(1.0), 'Locked_Cap': 'To_be_Queried', 'ROI_Pct': np.float32(-99.99)}
+2026-02-20 21:48:44 | INFO     | main:run_auto | >>> TIẾN TRÌNH 3: MỞ GIAO DIỆN WEB (UI)
+2026-02-20 21:50:40 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-20 21:50:40 | INFO     | main:run_monte_carlo | Khởi động tiến trình MONTE CARLO (Quantum Audit).
+2026-02-20 21:50:44 | INFO     | main:run_monte_carlo | ============== BÁO CÁO TOÁN HỌC LƯỢNG TỬ (MONTE CARLO) ==============
+2026-02-20 21:50:44 | INFO     | main:run_monte_carlo | Kỳ vọng Lợi nhuận (Expected ROI): 0.30 %
+2026-02-20 21:50:44 | INFO     | main:run_monte_carlo | Xác Suất Phá Sản (Margin Call): 0.00 %
+2026-02-20 21:50:44 | INFO     | main:run_monte_carlo | Rủi Ro Đuôi (CVaR 95%): -0.53 %
+2026-02-20 21:50:44 | INFO     | main:run_monte_carlo | =====================================================================
+2026-02-21 07:49:33 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-21 07:49:33 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-21 07:50:20 | INFO     | main:run_backtest | Khởi động Backtest với N_SIMULATIONS=2 (Randomize Initial Capital)
+2026-02-21 07:50:20 | INFO     | main:run_backtest | [Simulation 1/2] Initial Balance: $883,090.02
+2026-02-21 07:54:42 | INFO     | main:main | System Boot: Memory configured with 10000.0 USD initial capital.
+2026-02-21 07:54:42 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-21 07:54:53 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-21 07:54:53 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-21 07:57:10 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 07:57:10 | INFO     | main:run_train | Khởi động tiến trình TRAINING cho agent: ppo
+2026-02-21 07:57:21 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 07:57:43 | INFO     | main:run_train | Randomized Initial Capital mapped for Training: $644,999.55 USD
+2026-02-21 08:04:09 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:04:09 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:04:24 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:04:50 | INFO     | main:run_train | Chia nhỏ 400 Epochs thành 100 Epochs cho mỗi tệp Persona.
+2026-02-21 08:04:50 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:04:50 | INFO     | main:run_train | ĐANG HUẤN LUYỆN PERSONA 1/4: [Nano-Ape]
+2026-02-21 08:04:50 | INFO     | main:run_train | Vốn: $5.00 | Penalty: 0.1
+2026-02-21 08:04:50 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:11:58 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:11:58 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:12:10 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:12:35 | INFO     | main:run_train | Sinh ngẫu nhiên 1000 tệp hồ sơ cá nhân hóa (Meta-Personas) theo yêu cầu...
+2026-02-21 08:12:35 | INFO     | main:run_train | Đã tạo 1000 Personas tĩnh. Chọn ngẫu nhiên 30 Personas Đại Diện đa dạng nhất để Train trong cấu hình thời gian 15 phút. (5 Epochs/Persona)
+2026-02-21 08:12:35 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:12:35 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #240 / 1000
+2026-02-21 08:12:35 | INFO     | main:run_train | Vốn (Capital): $82,033.15 | Độ sợ Rủi ro (Penalty): 0.1148
+2026-02-21 08:12:35 | INFO     | main:run_train | Tâm lý Đầu tư (Universe): [np.str_('EUR_USD'), np.str_('AAPL'), np.str_('NVDA'), np.str_('SOL_USDT'), np.str_('SPY'), np.str_('XAU_USD'), np.str_('DXY'), np.str_('BTC_USDT')]
+2026-02-21 08:12:35 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:25:47 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:25:47 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:25:57 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-21 08:25:57 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-21 08:26:10 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:26:10 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:26:20 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:26:21 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:26:21 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:26:21 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:26:21 | INFO     | main:run_train | Vốn: $3,149.58 | Đòn bẩy: 60.8x | Phạt Trượt Giá: 4.77
+2026-02-21 08:26:21 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 4.43 | Bám sát WinRate: 0.40
+2026-02-21 08:26:21 | INFO     | main:run_train | Tâm lý Đầu tư (1 Asset): [np.str_('EUR_USD')]
+2026-02-21 08:26:21 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:28:55 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:28:55 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:29:04 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-21 08:29:04 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-21 08:29:16 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:29:16 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:29:25 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:29:26 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 08:29:26 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:29:26 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:29:26 | INFO     | main:run_train | Vốn: $8.69 | Đòn bẩy: 59.8x | Phạt Trượt Giá: 1.02
+2026-02-21 08:29:26 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.29 | Bám sát WinRate: 0.15
+2026-02-21 08:29:26 | INFO     | main:run_train | Tâm lý Đầu tư (6 Asset): [np.str_('XAU_USD'), np.str_('AAPL'), np.str_('EUR_USD'), np.str_('ETH_USDT'), np.str_('DXY'), np.str_('SPY')]
+2026-02-21 08:29:26 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:31:29 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:31:29 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:31:39 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:31:39 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:31:39 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:31:39 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:31:39 | INFO     | main:run_train | Vốn: $1,320,044.55 | Đòn bẩy: 21.6x | Phạt Trượt Giá: 3.32
+2026-02-21 08:31:39 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.02 | Bám sát WinRate: 0.37
+2026-02-21 08:31:39 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('EUR_USD'), np.str_('ETH_USDT'), np.str_('XAU_USD'), np.str_('SOL_USDT')]
+2026-02-21 08:31:39 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:32:20 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:32:20 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:32:30 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:32:49 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:32:49 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:32:49 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:32:49 | INFO     | main:run_train | Vốn: $1,572.71 | Đòn bẩy: 94.8x | Phạt Trượt Giá: 3.55
+2026-02-21 08:32:49 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.42 | Bám sát WinRate: 0.58
+2026-02-21 08:32:49 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('SOL_USDT'), np.str_('XAU_USD'), np.str_('EUR_USD'), np.str_('SPY')]
+2026-02-21 08:32:49 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:33:42 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:33:42 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:33:52 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:34:12 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:34:12 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:34:12 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:34:12 | INFO     | main:run_train | Vốn: $10,876.67 | Đòn bẩy: 42.2x | Phạt Trượt Giá: 4.31
+2026-02-21 08:34:12 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.88 | Bám sát WinRate: 0.69
+2026-02-21 08:34:12 | INFO     | main:run_train | Tâm lý Đầu tư (10 Asset): [np.str_('XAU_USD'), np.str_('SOL_USDT'), np.str_('BTC_USDT'), np.str_('EUR_USD'), np.str_('AAPL'), np.str_('ETH_USDT'), np.str_('TSLA'), np.str_('DXY'), np.str_('SPY'), np.str_('NVDA')]
+2026-02-21 08:34:12 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:35:15 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:35:15 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:35:25 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:35:46 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:35:46 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:35:46 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:35:46 | INFO     | main:run_train | Vốn: $7,458.87 | Đòn bẩy: 76.9x | Phạt Trượt Giá: 3.50
+2026-02-21 08:35:46 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.10 | Bám sát WinRate: 0.81
+2026-02-21 08:35:46 | INFO     | main:run_train | Tâm lý Đầu tư (8 Asset): [np.str_('BTC_USDT'), np.str_('AAPL'), np.str_('ETH_USDT'), np.str_('DXY'), np.str_('EUR_USD'), np.str_('SPY'), np.str_('NVDA'), np.str_('TSLA')]
+2026-02-21 08:35:46 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:36:13 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:36:13 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:36:23 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:36:43 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:36:43 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:36:43 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:36:43 | INFO     | main:run_train | Vốn: $6,950.02 | Đòn bẩy: 18.4x | Phạt Trượt Giá: 1.03
+2026-02-21 08:36:43 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.43 | Bám sát WinRate: 0.06
+2026-02-21 08:36:43 | INFO     | main:run_train | Tâm lý Đầu tư (3 Asset): [np.str_('SOL_USDT'), np.str_('DXY'), np.str_('BTC_USDT')]
+2026-02-21 08:36:43 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:37:22 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:37:22 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #2 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:37:22 | INFO     | main:run_train | Vốn: $12.02 | Đòn bẩy: 37.0x | Phạt Trượt Giá: 4.87
+2026-02-21 08:37:22 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.79 | Bám sát WinRate: 0.86
+2026-02-21 08:37:22 | INFO     | main:run_train | Tâm lý Đầu tư (2 Asset): [np.str_('AAPL'), np.str_('XAU_USD')]
+2026-02-21 08:37:22 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:38:01 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:38:01 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #3 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:38:01 | INFO     | main:run_train | Vốn: $30,999.91 | Đòn bẩy: 26.7x | Phạt Trượt Giá: 4.97
+2026-02-21 08:38:01 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.83 | Bám sát WinRate: 0.35
+2026-02-21 08:38:01 | INFO     | main:run_train | Tâm lý Đầu tư (10 Asset): [np.str_('AAPL'), np.str_('XAU_USD'), np.str_('NVDA'), np.str_('ETH_USDT'), np.str_('SPY'), np.str_('BTC_USDT'), np.str_('TSLA'), np.str_('EUR_USD'), np.str_('DXY'), np.str_('SOL_USDT')]
+2026-02-21 08:38:01 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:38:36 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:38:36 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #4 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:38:36 | INFO     | main:run_train | Vốn: $14,617.15 | Đòn bẩy: 30.6x | Phạt Trượt Giá: 3.33
+2026-02-21 08:38:36 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.51 | Bám sát WinRate: 0.37
+2026-02-21 08:38:36 | INFO     | main:run_train | Tâm lý Đầu tư (3 Asset): [np.str_('TSLA'), np.str_('NVDA'), np.str_('SOL_USDT')]
+2026-02-21 08:38:36 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:39:10 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:39:10 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #5 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:39:10 | INFO     | main:run_train | Vốn: $9,542,985.41 | Đòn bẩy: 86.6x | Phạt Trượt Giá: 1.78
+2026-02-21 08:39:10 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 4.65 | Bám sát WinRate: 0.64
+2026-02-21 08:39:10 | INFO     | main:run_train | Tâm lý Đầu tư (9 Asset): [np.str_('BTC_USDT'), np.str_('XAU_USD'), np.str_('ETH_USDT'), np.str_('NVDA'), np.str_('EUR_USD'), np.str_('AAPL'), np.str_('DXY'), np.str_('SOL_USDT'), np.str_('SPY')]
+2026-02-21 08:39:10 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:39:43 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:39:43 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #6 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:39:43 | INFO     | main:run_train | Vốn: $8.67 | Đòn bẩy: 64.3x | Phạt Trượt Giá: 1.52
+2026-02-21 08:39:43 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.89 | Bám sát WinRate: 0.63
+2026-02-21 08:39:43 | INFO     | main:run_train | Tâm lý Đầu tư (5 Asset): [np.str_('EUR_USD'), np.str_('TSLA'), np.str_('BTC_USDT'), np.str_('DXY'), np.str_('NVDA')]
+2026-02-21 08:39:43 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:40:21 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:40:21 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #7 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:40:21 | INFO     | main:run_train | Vốn: $5,400,883.19 | Đòn bẩy: 63.8x | Phạt Trượt Giá: 2.58
+2026-02-21 08:40:21 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.17 | Bám sát WinRate: 0.25
+2026-02-21 08:40:21 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('ETH_USDT'), np.str_('SOL_USDT'), np.str_('BTC_USDT'), np.str_('EUR_USD')]
+2026-02-21 08:40:21 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:41:01 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:41:01 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #8 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:41:01 | INFO     | main:run_train | Vốn: $242,534.03 | Đòn bẩy: 4.9x | Phạt Trượt Giá: 2.78
+2026-02-21 08:41:01 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.84 | Bám sát WinRate: 0.87
+2026-02-21 08:41:01 | INFO     | main:run_train | Tâm lý Đầu tư (9 Asset): [np.str_('XAU_USD'), np.str_('NVDA'), np.str_('DXY'), np.str_('ETH_USDT'), np.str_('EUR_USD'), np.str_('TSLA'), np.str_('SPY'), np.str_('BTC_USDT'), np.str_('SOL_USDT')]
+2026-02-21 08:41:01 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:41:36 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:41:36 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #9 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:41:36 | INFO     | main:run_train | Vốn: $13,597,207.24 | Đòn bẩy: 41.8x | Phạt Trượt Giá: 1.95
+2026-02-21 08:41:36 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.27 | Bám sát WinRate: 0.74
+2026-02-21 08:41:36 | INFO     | main:run_train | Tâm lý Đầu tư (3 Asset): [np.str_('XAU_USD'), np.str_('TSLA'), np.str_('SOL_USDT')]
+2026-02-21 08:41:36 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:42:17 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:42:17 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #10 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:42:17 | INFO     | main:run_train | Vốn: $39,604,926.10 | Đòn bẩy: 59.2x | Phạt Trượt Giá: 2.68
+2026-02-21 08:42:17 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.63 | Bám sát WinRate: 0.79
+2026-02-21 08:42:17 | INFO     | main:run_train | Tâm lý Đầu tư (8 Asset): [np.str_('ETH_USDT'), np.str_('SPY'), np.str_('NVDA'), np.str_('TSLA'), np.str_('DXY'), np.str_('SOL_USDT'), np.str_('AAPL'), np.str_('EUR_USD')]
+2026-02-21 08:42:17 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:43:02 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:43:02 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #11 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:43:02 | INFO     | main:run_train | Vốn: $118.85 | Đòn bẩy: 47.5x | Phạt Trượt Giá: 3.78
+2026-02-21 08:43:02 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.40 | Bám sát WinRate: 0.49
+2026-02-21 08:43:02 | INFO     | main:run_train | Tâm lý Đầu tư (6 Asset): [np.str_('SOL_USDT'), np.str_('ETH_USDT'), np.str_('DXY'), np.str_('SPY'), np.str_('NVDA'), np.str_('TSLA')]
+2026-02-21 08:43:02 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:43:37 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:43:37 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #12 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:43:37 | INFO     | main:run_train | Vốn: $67,361.42 | Đòn bẩy: 39.2x | Phạt Trượt Giá: 4.98
+2026-02-21 08:43:37 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.67 | Bám sát WinRate: 0.73
+2026-02-21 08:43:37 | INFO     | main:run_train | Tâm lý Đầu tư (1 Asset): [np.str_('ETH_USDT')]
+2026-02-21 08:43:37 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:44:12 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:44:12 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #13 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:44:12 | INFO     | main:run_train | Vốn: $2,101,569.54 | Đòn bẩy: 81.7x | Phạt Trượt Giá: 2.63
+2026-02-21 08:44:12 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.94 | Bám sát WinRate: 0.86
+2026-02-21 08:44:12 | INFO     | main:run_train | Tâm lý Đầu tư (3 Asset): [np.str_('ETH_USDT'), np.str_('BTC_USDT'), np.str_('AAPL')]
+2026-02-21 08:44:12 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:44:18 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:44:18 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:44:40 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:44:57 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:44:57 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #14 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:44:57 | INFO     | main:run_train | Vốn: $6,454,065.96 | Đòn bẩy: 38.1x | Phạt Trượt Giá: 4.05
+2026-02-21 08:44:57 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.02 | Bám sát WinRate: 0.43
+2026-02-21 08:44:57 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('SOL_USDT'), np.str_('NVDA'), np.str_('AAPL'), np.str_('DXY')]
+2026-02-21 08:44:57 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:45:41 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:45:41 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #15 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:45:41 | INFO     | main:run_train | Vốn: $10,816,349.82 | Đòn bẩy: 40.4x | Phạt Trượt Giá: 2.38
+2026-02-21 08:45:41 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.90 | Bám sát WinRate: 0.25
+2026-02-21 08:45:41 | INFO     | main:run_train | Tâm lý Đầu tư (3 Asset): [np.str_('AAPL'), np.str_('EUR_USD'), np.str_('XAU_USD')]
+2026-02-21 08:45:41 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:46:25 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:46:25 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #16 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:46:25 | INFO     | main:run_train | Vốn: $3,496.26 | Đòn bẩy: 1.0x | Phạt Trượt Giá: 3.59
+2026-02-21 08:46:25 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.52 | Bám sát WinRate: 0.41
+2026-02-21 08:46:25 | INFO     | main:run_train | Tâm lý Đầu tư (9 Asset): [np.str_('TSLA'), np.str_('DXY'), np.str_('EUR_USD'), np.str_('SOL_USDT'), np.str_('SPY'), np.str_('BTC_USDT'), np.str_('AAPL'), np.str_('NVDA'), np.str_('XAU_USD')]
+2026-02-21 08:46:25 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:47:18 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:47:18 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #17 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:47:18 | INFO     | main:run_train | Vốn: $90.83 | Đòn bẩy: 30.0x | Phạt Trượt Giá: 2.38
+2026-02-21 08:47:18 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.63 | Bám sát WinRate: 0.34
+2026-02-21 08:47:18 | INFO     | main:run_train | Tâm lý Đầu tư (5 Asset): [np.str_('NVDA'), np.str_('TSLA'), np.str_('XAU_USD'), np.str_('BTC_USDT'), np.str_('DXY')]
+2026-02-21 08:47:18 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:48:12 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:48:12 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #18 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:48:12 | INFO     | main:run_train | Vốn: $1,701,733.34 | Đòn bẩy: 7.9x | Phạt Trượt Giá: 3.15
+2026-02-21 08:48:12 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.43 | Bám sát WinRate: 0.60
+2026-02-21 08:48:12 | INFO     | main:run_train | Tâm lý Đầu tư (7 Asset): [np.str_('SOL_USDT'), np.str_('AAPL'), np.str_('NVDA'), np.str_('SPY'), np.str_('EUR_USD'), np.str_('DXY'), np.str_('ETH_USDT')]
+2026-02-21 08:48:12 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:49:00 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:49:00 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #19 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:49:00 | INFO     | main:run_train | Vốn: $2,213.48 | Đòn bẩy: 63.7x | Phạt Trượt Giá: 3.09
+2026-02-21 08:49:00 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.52 | Bám sát WinRate: 0.93
+2026-02-21 08:49:00 | INFO     | main:run_train | Tâm lý Đầu tư (8 Asset): [np.str_('SOL_USDT'), np.str_('ETH_USDT'), np.str_('BTC_USDT'), np.str_('DXY'), np.str_('EUR_USD'), np.str_('AAPL'), np.str_('TSLA'), np.str_('NVDA')]
+2026-02-21 08:49:00 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:49:46 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:49:46 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #20 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:49:46 | INFO     | main:run_train | Vốn: $1,670.06 | Đòn bẩy: 38.0x | Phạt Trượt Giá: 4.83
+2026-02-21 08:49:46 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.30 | Bám sát WinRate: 0.90
+2026-02-21 08:49:46 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('SOL_USDT'), np.str_('EUR_USD'), np.str_('AAPL'), np.str_('TSLA')]
+2026-02-21 08:49:46 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:50:36 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:50:36 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #21 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:50:36 | INFO     | main:run_train | Vốn: $31.84 | Đòn bẩy: 75.9x | Phạt Trượt Giá: 3.68
+2026-02-21 08:50:36 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.12 | Bám sát WinRate: 0.37
+2026-02-21 08:50:36 | INFO     | main:run_train | Tâm lý Đầu tư (5 Asset): [np.str_('ETH_USDT'), np.str_('TSLA'), np.str_('SOL_USDT'), np.str_('DXY'), np.str_('AAPL')]
+2026-02-21 08:50:36 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:51:47 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:51:47 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #22 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:51:47 | INFO     | main:run_train | Vốn: $6,587,933.47 | Đòn bẩy: 6.5x | Phạt Trượt Giá: 2.75
+2026-02-21 08:51:47 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.78 | Bám sát WinRate: 0.11
+2026-02-21 08:51:47 | INFO     | main:run_train | Tâm lý Đầu tư (2 Asset): [np.str_('ETH_USDT'), np.str_('NVDA')]
+2026-02-21 08:51:47 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:52:38 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:52:38 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #23 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:52:38 | INFO     | main:run_train | Vốn: $6.83 | Đòn bẩy: 25.0x | Phạt Trượt Giá: 3.93
+2026-02-21 08:52:38 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.96 | Bám sát WinRate: 0.76
+2026-02-21 08:52:38 | INFO     | main:run_train | Tâm lý Đầu tư (2 Asset): [np.str_('BTC_USDT'), np.str_('TSLA')]
+2026-02-21 08:52:38 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:53:29 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:53:29 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #24 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:53:29 | INFO     | main:run_train | Vốn: $484,508.61 | Đòn bẩy: 18.3x | Phạt Trượt Giá: 1.85
+2026-02-21 08:53:29 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.03 | Bám sát WinRate: 0.33
+2026-02-21 08:53:29 | INFO     | main:run_train | Tâm lý Đầu tư (7 Asset): [np.str_('EUR_USD'), np.str_('BTC_USDT'), np.str_('AAPL'), np.str_('TSLA'), np.str_('ETH_USDT'), np.str_('NVDA'), np.str_('XAU_USD')]
+2026-02-21 08:53:29 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:54:28 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:54:28 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #25 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:54:28 | INFO     | main:run_train | Vốn: $322.53 | Đòn bẩy: 1.2x | Phạt Trượt Giá: 4.63
+2026-02-21 08:54:28 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.88 | Bám sát WinRate: 0.28
+2026-02-21 08:54:28 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('SPY'), np.str_('EUR_USD'), np.str_('BTC_USDT'), np.str_('TSLA')]
+2026-02-21 08:54:28 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:55:17 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:55:17 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #26 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:55:17 | INFO     | main:run_train | Vốn: $476,583.09 | Đòn bẩy: 32.5x | Phạt Trượt Giá: 4.61
+2026-02-21 08:55:17 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.74 | Bám sát WinRate: 0.99
+2026-02-21 08:55:17 | INFO     | main:run_train | Tâm lý Đầu tư (5 Asset): [np.str_('SPY'), np.str_('DXY'), np.str_('AAPL'), np.str_('BTC_USDT'), np.str_('XAU_USD')]
+2026-02-21 08:55:17 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:56:03 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:56:03 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #27 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:56:03 | INFO     | main:run_train | Vốn: $6,832.23 | Đòn bẩy: 81.4x | Phạt Trượt Giá: 2.55
+2026-02-21 08:56:03 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.53 | Bám sát WinRate: 0.02
+2026-02-21 08:56:03 | INFO     | main:run_train | Tâm lý Đầu tư (9 Asset): [np.str_('AAPL'), np.str_('XAU_USD'), np.str_('EUR_USD'), np.str_('ETH_USDT'), np.str_('DXY'), np.str_('BTC_USDT'), np.str_('SOL_USDT'), np.str_('TSLA'), np.str_('NVDA')]
+2026-02-21 08:56:03 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:56:18 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:56:18 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:56:45 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:56:52 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:56:52 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #28 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:56:52 | INFO     | main:run_train | Vốn: $946.99 | Đòn bẩy: 79.2x | Phạt Trượt Giá: 2.18
+2026-02-21 08:56:52 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.36 | Bám sát WinRate: 0.17
+2026-02-21 08:56:52 | INFO     | main:run_train | Tâm lý Đầu tư (8 Asset): [np.str_('BTC_USDT'), np.str_('XAU_USD'), np.str_('SOL_USDT'), np.str_('TSLA'), np.str_('AAPL'), np.str_('ETH_USDT'), np.str_('NVDA'), np.str_('DXY')]
+2026-02-21 08:56:52 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:57:41 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:57:41 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #29 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:57:41 | INFO     | main:run_train | Vốn: $10.84 | Đòn bẩy: 68.2x | Phạt Trượt Giá: 4.66
+2026-02-21 08:57:41 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 4.08 | Bám sát WinRate: 0.03
+2026-02-21 08:57:41 | INFO     | main:run_train | Tâm lý Đầu tư (10 Asset): [np.str_('DXY'), np.str_('ETH_USDT'), np.str_('XAU_USD'), np.str_('TSLA'), np.str_('AAPL'), np.str_('SOL_USDT'), np.str_('EUR_USD'), np.str_('SPY'), np.str_('BTC_USDT'), np.str_('NVDA')]
+2026-02-21 08:57:41 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:58:05 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 08:58:05 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 08:58:27 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 08:58:28 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:58:28 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #30 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:58:28 | INFO     | main:run_train | Vốn: $1,672,383.84 | Đòn bẩy: 50.6x | Phạt Trượt Giá: 4.15
+2026-02-21 08:58:28 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.60 | Bám sát WinRate: 0.09
+2026-02-21 08:58:28 | INFO     | main:run_train | Tâm lý Đầu tư (2 Asset): [np.str_('DXY'), np.str_('EUR_USD')]
+2026-02-21 08:58:28 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:58:29 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 08:58:29 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 08:58:29 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 08:58:29 | INFO     | main:run_train | Vốn: $98,353.63 | Đòn bẩy: 12.9x | Phạt Trượt Giá: 1.34
+2026-02-21 08:58:29 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.83 | Bám sát WinRate: 0.87
+2026-02-21 08:58:29 | INFO     | main:run_train | Tâm lý Đầu tư (11 Asset): [np.str_('FUESSV30'), np.str_('EIB'), np.str_('GAS'), np.str_('SZC'), np.str_('LINK_USDT'), np.str_('VAB'), np.str_('CRM'), np.str_('CSCO'), np.str_('HOOD'), np.str_('TSM'), np.str_('BCH_USDT')]
+2026-02-21 08:58:29 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 08:59:29 | INFO     | main:run_train | Huấn luyện Meta-Curriculum Hoàn Tất. Agent đã chinh phục ngàn vạn điều kiện ngẫu nhiên từ Distance Rejection Sampling!
+2026-02-21 09:02:53 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:02:53 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:03:15 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:03:16 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 09:03:16 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:03:16 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:03:16 | INFO     | main:run_train | Vốn: $242.05 | Đòn bẩy: 98.6x | Phạt Trượt Giá: 3.27
+2026-02-21 09:03:16 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.27 | Bám sát WinRate: 0.24
+2026-02-21 09:03:16 | INFO     | main:run_train | Tâm lý Đầu tư (4 Asset): [np.str_('SMCI'), np.str_('570063'), np.str_('MBB'), np.str_('MARA')]
+2026-02-21 09:03:16 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 09:06:41 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:06:41 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:06:56 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:06:56 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 09:06:56 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:06:56 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:06:56 | INFO     | main:run_train | Vốn: $226.29 | Đòn bẩy: 11.8x | Phạt Trượt Giá: 4.75
+2026-02-21 09:06:56 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.07 | Bám sát WinRate: 0.31
+2026-02-21 09:06:56 | INFO     | main:run_train | Tâm lý Đầu tư (1 Asset): [np.str_('BIDU')]
+2026-02-21 09:06:56 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 09:07:54 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:07:54 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:08:05 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:08:05 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 09:08:05 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:08:05 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:08:05 | INFO     | main:run_train | Vốn: $9,969.33 | Đòn bẩy: 11.5x | Phạt Trượt Giá: 4.84
+2026-02-21 09:08:05 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.71 | Bám sát WinRate: 0.81
+2026-02-21 09:08:05 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('ESP_USDT'), np.str_('BROS'), np.str_('LI'), np.str_('HYG'), np.str_('CCL'), np.str_('CTD'), np.str_('SPY'), np.str_('SNDK'), np.str_('EUR_USD'), np.str_('WFC'), np.str_('IWM'), np.str_('MRK'), np.str_('TAO_USDT'), np.str_('U'), np.str_('DKNG'), np.str_('PCG'), np.str_('SOUN'), np.str_('FSLY'), np.str_('LCG'), np.str_('SNAP'), np.str_('VHM'), np.str_('DELL'), np.str_('HHV'), np.str_('CMCSA'), np.str_('JNJ'), np.str_('PLUG'), np.str_('GE'), np.str_('GLD'), np.str_('SHB'), np.str_('NCLH')]
+2026-02-21 09:08:05 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 09:13:56 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:13:56 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:14:12 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:14:13 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 09:14:13 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:14:13 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:14:13 | INFO     | main:run_train | Vốn: $21.02 | Đòn bẩy: 97.6x | Phạt Trượt Giá: 3.57
+2026-02-21 09:14:13 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.98 | Bám sát WinRate: 0.52
+2026-02-21 09:14:13 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('GE'), np.str_('PEPE_USDT'), np.str_('STB'), np.str_('APLD'), np.str_('SI=F'), np.str_('CSCO'), np.str_('570063'), np.str_('UMA_USDT'), np.str_('KHG'), np.str_('HBAR_USDT'), np.str_('OCB'), np.str_('XAU_USD'), np.str_('AXP'), np.str_('TGT'), np.str_('TLT'), np.str_('LVMUY'), np.str_('WULF'), np.str_('MCD'), np.str_('NOK'), np.str_('FRT'), np.str_('VHM'), np.str_('VN301_'), np.str_('BTC_USDT'), np.str_('PLTR'), np.str_('HD'), np.str_('VCI'), np.str_('BBD'), np.str_('NOW'), np.str_('BAC'), np.str_('^VIX')]
+2026-02-21 09:14:13 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 09:19:48 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:19:48 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:20:01 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:20:01 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 09:20:01 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:20:01 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:20:01 | INFO     | main:run_train | Vốn: $6.26 | Đòn bẩy: 89.3x | Phạt Trượt Giá: 4.58
+2026-02-21 09:20:01 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.23 | Bám sát WinRate: 0.11
+2026-02-21 09:20:01 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('VNREAL'), np.str_('U_USDT'), np.str_('CART'), np.str_('DELL'), np.str_('^VIX'), np.str_('CTG'), np.str_('DIS'), np.str_('CL=F'), np.str_('U'), np.str_('DGW'), np.str_('CTS'), np.str_('SHY'), np.str_('NT2'), np.str_('ENB'), np.str_('TSM'), np.str_('FRT'), np.str_('EUR_USDT'), np.str_('^ADOW'), np.str_('LOW'), np.str_('CRM'), np.str_('TSLA'), np.str_('DX-Y'), np.str_('VHC'), np.str_('RGTI'), np.str_('^GDAXI'), np.str_('REE'), np.str_('VALE'), np.str_('CMCSA'), np.str_('KWEB'), np.str_('SMR')]
+2026-02-21 09:20:01 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 09:25:18 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:25:18 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:25:33 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:25:33 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 09:25:33 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:25:33 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:25:33 | INFO     | main:run_train | Vốn: $1,896,188.83 | Đòn bẩy: 76.5x | Phạt Trượt Giá: 3.34
+2026-02-21 09:25:33 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.17 | Bám sát WinRate: 0.47
+2026-02-21 09:25:33 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('GAS'), np.str_('JPY=X'), np.str_('E1VFVN30'), np.str_('LDG'), np.str_('WLFI_USDT'), np.str_('CIFR'), np.str_('GC=F'), np.str_('PFE'), np.str_('NVDA'), np.str_('EURUSD=X'), np.str_('BLK'), np.str_('F'), np.str_('USO'), np.str_('VIB'), np.str_('IREN'), np.str_('IONQ'), np.str_('PUMP_USDT'), np.str_('TPB'), np.str_('BIDU'), np.str_('OPEN'), np.str_('CART'), np.str_('SOL_USDT'), np.str_('CL=F'), np.str_('LCG'), np.str_('ACHR'), np.str_('V'), np.str_('XPEV'), np.str_('FBIN'), np.str_('OCB'), np.str_('BMNR')]
+2026-02-21 09:25:33 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 09:36:51 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:36:51 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:37:03 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-21 09:37:03 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-21 09:46:41 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 09:46:41 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 09:47:07 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 09:47:07 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 09:47:07 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 09:47:07 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 09:47:07 | INFO     | main:run_train | Vốn: $292,983.30 | Đòn bẩy: 62.5x | Phạt Trượt Giá: 4.90
+2026-02-21 09:47:07 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.01 | Bám sát WinRate: 0.72
+2026-02-21 09:47:07 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('VHC'), np.str_('LVMUY'), np.str_('VCI'), np.str_('DIG'), np.str_('BID'), np.str_('AVDL'), np.str_('QQQ'), np.str_('VAB'), np.str_('TPH'), np.str_('EUR_USD'), np.str_('VCG'), np.str_('AMZN'), np.str_('OWL'), np.str_('MXN=X'), np.str_('REE'), np.str_('SSB'), np.str_('PSLV'), np.str_('CART'), np.str_('LOW'), np.str_('BSR'), np.str_('F'), np.str_('XAU_USD'), np.str_('PLX'), np.str_('ORCA_USDT'), np.str_('^GDAXI'), np.str_('STB'), np.str_('VIB'), np.str_('CAD=X'), np.str_('EURUSD=X'), np.str_('WMT')]
+2026-02-21 09:47:07 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 10:13:24 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 10:13:24 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-21 10:13:39 | INFO     | main:run_backtest | Khởi động Backtest với N_SIMULATIONS=1 (Random Meta-Personas Generated)
+2026-02-21 10:13:39 | INFO     | main:run_backtest | 
+[Simulation 1/1] Khởi tạo Môi trường Cá Nhân Hóa (Euclidean Distance Verified):
+2026-02-21 10:13:39 | INFO     | main:run_backtest | -> Vốn: $2,769,246.89 | Đòn bẩy tối đa: 97.5x
+2026-02-21 10:13:39 | INFO     | main:run_backtest | -> Khẩu vị Đầu tư (Universe): [np.str_('BROS'), np.str_('VN30'), np.str_('SIG'), np.str_('C'), np.str_('RGTI'), np.str_('USD1_USDT'), np.str_('BABA'), np.str_('PCG'), np.str_('VAB'), np.str_('PYPL'), np.str_('ETH_USDT'), np.str_('VZ'), np.str_('TOST'), np.str_('^FVX'), np.str_('VND'), np.str_('LPB'), np.str_('MCD'), np.str_('CVX'), np.str_('CRE'), np.str_('KO'), np.str_('PFE'), np.str_('CAD=X'), np.str_('ACHR'), np.str_('MRK'), np.str_('GAS'), np.str_('SLV'), np.str_('BMNR'), np.str_('^RUT'), np.str_('AAVE_USDT'), np.str_('BAC')]
+2026-02-21 10:15:13 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 10:15:13 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-21 10:15:34 | INFO     | main:run_backtest | Khởi động Backtest với N_SIMULATIONS=1 (Random Meta-Personas Generated)
+2026-02-21 10:15:34 | INFO     | main:run_backtest | 
+[Simulation 1/1] Khởi tạo Môi trường Cá Nhân Hóa (Euclidean Distance Verified):
+2026-02-21 10:15:34 | INFO     | main:run_backtest | -> Vốn: $660,159.51 | Đòn bẩy tối đa: 47.9x
+2026-02-21 10:15:34 | INFO     | main:run_backtest | -> Khẩu vị Đầu tư (Universe): [np.str_('COIN'), np.str_('CRM'), np.str_('USD1_USDT'), np.str_('LDG'), np.str_('DX-Y'), np.str_('IREN'), np.str_('^RUT'), np.str_('HSG'), np.str_('IWM'), np.str_('CCL'), np.str_('CAT'), np.str_('XPL_USDT'), np.str_('WFC'), np.str_('MA'), np.str_('SIG'), np.str_('SOUN'), np.str_('AVDL'), np.str_('IJC'), np.str_('TLH'), np.str_('^FCHI'), np.str_('ZRO_USDT'), np.str_('LPB'), np.str_('MUBARAK_USDT'), np.str_('VHC'), np.str_('KHG'), np.str_('PFE'), np.str_('GGB'), np.str_('MSB'), np.str_('RPL_USDT'), np.str_('INIT_USDT')]
+2026-02-21 11:04:24 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:04:24 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:04:48 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:04:49 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 11:04:49 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:04:49 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:04:49 | INFO     | main:run_train | Vốn: $11.27 | Đòn bẩy: 90.7x | Phạt Trượt Giá: 2.44
+2026-02-21 11:04:49 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.44 | Bám sát WinRate: 0.40
+2026-02-21 11:04:49 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('DIA'), np.str_('XAU_USD'), np.str_('TPB'), np.str_('SHY'), np.str_('505'), np.str_('MS'), np.str_('VIX'), np.str_('PC1'), np.str_('VPB'), np.str_('JPY=X'), np.str_('FBIN'), np.str_('BAC'), np.str_('NAB'), np.str_('DX-Y'), np.str_('NCLH'), np.str_('000001'), np.str_('FTS'), np.str_('NG=F'), np.str_('QCG'), np.str_('PINS'), np.str_('VNINDEX'), np.str_('PEP'), np.str_('BNB_USDT'), np.str_('GGB'), np.str_('HSG'), np.str_('GEG'), np.str_('EUR_USDT'), np.str_('ZEC_USDT'), np.str_('LOW'), np.str_('PFE')]
+2026-02-21 11:04:49 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:11:15 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:11:15 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:11:38 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:11:39 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 11:11:39 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:11:39 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:11:39 | INFO     | main:run_train | Vốn: $6.10 | Đòn bẩy: 9.9x | Phạt Trượt Giá: 4.12
+2026-02-21 11:11:39 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.97 | Bám sát WinRate: 0.15
+2026-02-21 11:11:39 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('SOFI'), np.str_('UNI_USDT'), np.str_('VHC'), np.str_('RPL_USDT'), np.str_('BAC'), np.str_('GEG'), np.str_('GGB'), np.str_('VN301_'), np.str_('^IXIC'), np.str_('DNN'), np.str_('GAS'), np.str_('PCG'), np.str_('AAVE_USDT'), np.str_('TLT'), np.str_('MARA'), np.str_('PEP'), np.str_('SLV'), np.str_('CVX'), np.str_('VIX'), np.str_('TRUMP_USDT'), np.str_('HOOD'), np.str_('VHM'), np.str_('ANV'), np.str_('IONQ'), np.str_('BTC_USDT'), np.str_('XPEV'), np.str_('NIO'), np.str_('NKE'), np.str_('PL=F'), np.str_('NVL')]
+2026-02-21 11:11:39 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:14:21 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:14:21 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:14:21 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:14:21 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:14:36 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:14:37 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:14:37 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:14:37 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:14:37 | INFO     | main:run_train | Vốn: $49,390.20 | Đòn bẩy: 66.6x | Phạt Trượt Giá: 3.77
+2026-02-21 11:14:37 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.42 | Bám sát WinRate: 0.77
+2026-02-21 11:14:37 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('GC=F'), np.str_('IWM'), np.str_('OWL'), np.str_('CART'), np.str_('AUD=X'), np.str_('AMZN'), np.str_('^FTSE'), np.str_('MXN=X'), np.str_('PLTR'), np.str_('HBAR_USDT'), np.str_('CRE'), np.str_('NT2'), np.str_('MSFT'), np.str_('KVUE'), np.str_('XOM'), np.str_('SHB'), np.str_('AG'), np.str_('PCG'), np.str_('VN30'), np.str_('NAB'), np.str_('^GSPC'), np.str_('HSG'), np.str_('WMT'), np.str_('LDG'), np.str_('COST'), np.str_('COIN'), np.str_('VIX'), np.str_('DXS'), np.str_('XPL_USDT'), np.str_('NKG')]
+2026-02-21 11:14:37 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:19:38 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:19:38 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:19:53 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:19:53 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 11:19:53 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:19:53 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:19:53 | INFO     | main:run_train | Vốn: $7.81 | Đòn bẩy: 74.3x | Phạt Trượt Giá: 1.14
+2026-02-21 11:19:53 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.06 | Bám sát WinRate: 0.71
+2026-02-21 11:19:53 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HD'), np.str_('UBER'), np.str_('HBAR_USDT'), np.str_('BSR'), np.str_('BIL'), np.str_('ACB'), np.str_('SNAP'), np.str_('COST'), np.str_('PVD'), np.str_('ADBE'), np.str_('CL=F'), np.str_('FBIN'), np.str_('ORCA_USDT'), np.str_('SSI'), np.str_('NAB'), np.str_('SOL_USDT'), np.str_('CRM'), np.str_('GE'), np.str_('TOST'), np.str_('WLD_USDT'), np.str_('GS'), np.str_('JPM'), np.str_('OWL'), np.str_('OPEN'), np.str_('QBTS'), np.str_('XOM'), np.str_('HYG'), np.str_('ATOM_USDT'), np.str_('MWG'), np.str_('SCR')]
+2026-02-21 11:19:53 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:24:13 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:24:13 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:24:13 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:24:13 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:24:27 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:24:27 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:24:27 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:24:27 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:24:27 | INFO     | main:run_train | Vốn: $1,824,165.69 | Đòn bẩy: 39.1x | Phạt Trượt Giá: 4.57
+2026-02-21 11:24:27 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.13 | Bám sát WinRate: 0.66
+2026-02-21 11:24:27 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('TCEHY'), np.str_('TOST'), np.str_('KVUE'), np.str_('LOW'), np.str_('SOUN'), np.str_('SCR'), np.str_('NGD'), np.str_('FBIN'), np.str_('BAC'), np.str_('STB'), np.str_('SMR'), np.str_('HPQ'), np.str_('MSTR'), np.str_('RGTI'), np.str_('GLD'), np.str_('BNB_USDT'), np.str_('F'), np.str_('EIB'), np.str_('ARM'), np.str_('MARA'), np.str_('BILI'), np.str_('DCM'), np.str_('JNJ'), np.str_('RAY_USDT'), np.str_('HBAN'), np.str_('MSFT'), np.str_('AAL'), np.str_('VN_GOLD_SJC'), np.str_('VN30'), np.str_('^VIX')]
+2026-02-21 11:24:27 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:26:20 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:26:20 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:26:35 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:26:36 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 11:26:36 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:26:36 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:26:36 | INFO     | main:run_train | Vốn: $501.26 | Đòn bẩy: 62.0x | Phạt Trượt Giá: 3.65
+2026-02-21 11:26:36 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.24 | Bám sát WinRate: 0.03
+2026-02-21 11:26:36 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HDB'), np.str_('DIA'), np.str_('DOGE_USDT'), np.str_('BLK'), np.str_('HIMS'), np.str_('UNG'), np.str_('HPG'), np.str_('^TNX'), np.str_('VIC'), np.str_('VRE'), np.str_('TGT'), np.str_('^ADOW'), np.str_('XRP_USDT'), np.str_('VHC'), np.str_('CCL'), np.str_('SBUX'), np.str_('DCM'), np.str_('AAVE_USDT'), np.str_('HYG'), np.str_('BIL'), np.str_('RAY_USDT'), np.str_('PLUG'), np.str_('FUESSV30'), np.str_('CMCSA'), np.str_('GEG'), np.str_('SCR'), np.str_('CIFR'), np.str_('LDG'), np.str_('FPT'), np.str_('TRUMP_USDT')]
+2026-02-21 11:26:36 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:28:20 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:28:20 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:28:20 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:28:20 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:28:33 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:28:34 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:28:34 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:28:34 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:28:34 | INFO     | main:run_train | Vốn: $10.59 | Đòn bẩy: 98.5x | Phạt Trượt Giá: 2.33
+2026-02-21 11:28:34 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.28 | Bám sát WinRate: 0.99
+2026-02-21 11:28:34 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('CRM'), np.str_('OGN_USDT'), np.str_('EUR_USD'), np.str_('ZAMA_USDT'), np.str_('LMT'), np.str_('JD'), np.str_('KHG'), np.str_('BTC_USDT'), np.str_('ADA_USDT'), np.str_('PYPL'), np.str_('ZEC_USDT'), np.str_('NOW'), np.str_('SIG'), np.str_('RAY_USDT'), np.str_('INIT_USDT'), np.str_('SPY'), np.str_('SNAP'), np.str_('COIN'), np.str_('HSG'), np.str_('LCG'), np.str_('^TYX'), np.str_('^RUT'), np.str_('AMZN'), np.str_('FTS'), np.str_('HBAN'), np.str_('BIL'), np.str_('SBUX'), np.str_('VNINDEX'), np.str_('TPH'), np.str_('POW')]
+2026-02-21 11:28:34 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:33:24 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:33:24 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:33:39 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 11:33:39 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:33:39 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:33:39 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:33:39 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:33:39 | INFO     | main:run_train | Vốn: $8,407,800.65 | Đòn bẩy: 69.1x | Phạt Trượt Giá: 1.02
+2026-02-21 11:33:39 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.39 | Bám sát WinRate: 0.94
+2026-02-21 11:33:39 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('LCG'), np.str_('^IRX'), np.str_('KDH'), np.str_('LYFT'), np.str_('AGR'), np.str_('GGB'), np.str_('CCL'), np.str_('VIB'), np.str_('LYG'), np.str_('ENB'), np.str_('APLD'), np.str_('^ADOW'), np.str_('LDG'), np.str_('IBRX'), np.str_('CTS'), np.str_('TOST'), np.str_('KO'), np.str_('CSCO'), np.str_('TCEHY'), np.str_('AMD'), np.str_('VIC'), np.str_('CNH'), np.str_('SSB'), np.str_('MS'), np.str_('SMR'), np.str_('TRUMP_USDT'), np.str_('AUD=X'), np.str_('INTC'), np.str_('GRAB'), np.str_('META')]
+2026-02-21 11:33:39 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:35:13 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:35:13 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:35:13 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:35:13 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:35:28 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:35:29 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:35:29 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:35:29 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:35:29 | INFO     | main:run_train | Vốn: $37.13 | Đòn bẩy: 8.3x | Phạt Trượt Giá: 4.80
+2026-02-21 11:35:29 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.19 | Bám sát WinRate: 0.96
+2026-02-21 11:35:29 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('WMT'), np.str_('ZEC_USDT'), np.str_('IWM'), np.str_('F'), np.str_('VGC'), np.str_('ENA_USDT'), np.str_('CCL'), np.str_('AAL'), np.str_('AAPL'), np.str_('^AXJO'), np.str_('ATOM_USDT'), np.str_('AVAX_USDT'), np.str_('PENGU_USDT'), np.str_('PDR'), np.str_('KVUE'), np.str_('CL=F'), np.str_('^IXIC'), np.str_('AVGO'), np.str_('OXY'), np.str_('SAB'), np.str_('XAU_USD'), np.str_('BLK'), np.str_('AVDL'), np.str_('KWEB'), np.str_('SCR'), np.str_('DPM'), np.str_('OPEN'), np.str_('POW'), np.str_('VN301_'), np.str_('NFLX')]
+2026-02-21 11:35:29 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:39:10 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:39:10 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:39:25 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 11:39:25 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:39:26 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (16 Epochs/Persona)
+2026-02-21 11:39:26 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:39:26 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:39:26 | INFO     | main:run_train | Vốn: $40.18 | Đòn bẩy: 29.5x | Phạt Trượt Giá: 2.58
+2026-02-21 11:39:26 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 4.20 | Bám sát WinRate: 0.27
+2026-02-21 11:39:26 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('CL=F'), np.str_('TRUMP_USDT'), np.str_('JPM'), np.str_('SI=F'), np.str_('ZEC_USDT'), np.str_('ADBE'), np.str_('QCOM'), np.str_('^RUT'), np.str_('EUR_USD'), np.str_('245710'), np.str_('PLX'), np.str_('GLD'), np.str_('ARM'), np.str_('HDB'), np.str_('FUESSV30'), np.str_('^N100'), np.str_('WULF'), np.str_('CART'), np.str_('WLFI_USDT'), np.str_('SNDK'), np.str_('CLF'), np.str_('SMR'), np.str_('VHC'), np.str_('MSB'), np.str_('IBM'), np.str_('GOOGL'), np.str_('AGR'), np.str_('TPH'), np.str_('SBUX'), np.str_('OCB')]
+2026-02-21 11:39:26 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:41:16 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:41:16 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:41:16 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:41:16 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:41:29 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:41:30 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:41:30 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:41:30 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:41:30 | INFO     | main:run_train | Vốn: $32.31 | Đòn bẩy: 16.7x | Phạt Trượt Giá: 3.12
+2026-02-21 11:41:30 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.59 | Bám sát WinRate: 0.63
+2026-02-21 11:41:30 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('COST'), np.str_('INFY'), np.str_('^GDAXI'), np.str_('FSLY'), np.str_('WMT'), np.str_('AVDL'), np.str_('VALE'), np.str_('VN_GOLD_SJC'), np.str_('NCLH'), np.str_('INIT_USDT'), np.str_('570063'), np.str_('MRK'), np.str_('JD'), np.str_('U_USDT'), np.str_('^DJI'), np.str_('LPB'), np.str_('BAC'), np.str_('BTC_USDT'), np.str_('DXS'), np.str_('DGC'), np.str_('CTD'), np.str_('NGD'), np.str_('F'), np.str_('CLF'), np.str_('^IRX'), np.str_('LTC_USDT'), np.str_('AG'), np.str_('DX-Y'), np.str_('SZC'), np.str_('CIFR')]
+2026-02-21 11:41:30 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:42:43 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:42:43 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #2 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:42:43 | INFO     | main:run_train | Vốn: $2,763,616.90 | Đòn bẩy: 49.4x | Phạt Trượt Giá: 3.33
+2026-02-21 11:42:43 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.73 | Bám sát WinRate: 0.62
+2026-02-21 11:42:43 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('WFC'), np.str_('U'), np.str_('BCH_USDT'), np.str_('NVL'), np.str_('VHM'), np.str_('MARA'), np.str_('PEPE_USDT'), np.str_('^IXIC'), np.str_('VIX'), np.str_('CLSK'), np.str_('HBAR_USDT'), np.str_('BSR'), np.str_('VNM'), np.str_('SNAP'), np.str_('TLH'), np.str_('PVD'), np.str_('NEM'), np.str_('CDE'), np.str_('KVUE'), np.str_('ANET'), np.str_('ZC=F'), np.str_('TAO_USDT'), np.str_('ONDS'), np.str_('ESP_USDT'), np.str_('DCM'), np.str_('GOOGL'), np.str_('MSB'), np.str_('NOK'), np.str_('NGD'), np.str_('TPH')]
+2026-02-21 11:42:43 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:43:43 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:43:43 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #3 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:43:43 | INFO     | main:run_train | Vốn: $8,292,879.55 | Đòn bẩy: 84.8x | Phạt Trượt Giá: 3.80
+2026-02-21 11:43:43 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.27 | Bám sát WinRate: 0.85
+2026-02-21 11:43:43 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HIMS'), np.str_('MXN=X'), np.str_('^IRX'), np.str_('NKE'), np.str_('WMT'), np.str_('TAO_USDT'), np.str_('CTS'), np.str_('ACHR'), np.str_('CART'), np.str_('VZ'), np.str_('VN30'), np.str_('TXN'), np.str_('BAC'), np.str_('CMCSA'), np.str_('CSCO'), np.str_('CIFR'), np.str_('RGTI'), np.str_('OWL'), np.str_('PDR'), np.str_('GOOGL'), np.str_('SOL_USDT'), np.str_('JPM'), np.str_('NOW'), np.str_('BID'), np.str_('HSG'), np.str_('U_USDT'), np.str_('U'), np.str_('PGV'), np.str_('PATH'), np.str_('XPEV')]
+2026-02-21 11:43:43 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:44:43 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:44:43 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #4 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:44:43 | INFO     | main:run_train | Vốn: $11,026.65 | Đòn bẩy: 11.3x | Phạt Trượt Giá: 1.99
+2026-02-21 11:44:43 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.77 | Bám sát WinRate: 0.79
+2026-02-21 11:44:43 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('SUI_USDT'), np.str_('ADBE'), np.str_('^GDAXI'), np.str_('FDUSD_USDT'), np.str_('PCG'), np.str_('XOM'), np.str_('GS'), np.str_('AGR'), np.str_('GC=F'), np.str_('NFLX'), np.str_('DASH_USDT'), np.str_('PINS'), np.str_('META'), np.str_('BLK'), np.str_('RKT'), np.str_('PGV'), np.str_('^TYX'), np.str_('LVMUY'), np.str_('VN_GOLD_SJC'), np.str_('ORS'), np.str_('VND'), np.str_('ITUB'), np.str_('NEM'), np.str_('CAD=X'), np.str_('PG'), np.str_('^FTSE'), np.str_('VHM'), np.str_('VCG'), np.str_('MSB'), np.str_('SAB')]
+2026-02-21 11:44:43 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:45:46 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:45:46 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #5 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:45:46 | INFO     | main:run_train | Vốn: $524.01 | Đòn bẩy: 55.6x | Phạt Trượt Giá: 2.80
+2026-02-21 11:45:46 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.16 | Bám sát WinRate: 0.17
+2026-02-21 11:45:46 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('AVGO'), np.str_('NOK'), np.str_('ENB'), np.str_('AAPL'), np.str_('SSB'), np.str_('GGB'), np.str_('VN301_'), np.str_('COST'), np.str_('BCH_USDT'), np.str_('ETH_USDT'), np.str_('C'), np.str_('NKE'), np.str_('PG'), np.str_('IREN'), np.str_('T'), np.str_('NG=F'), np.str_('HOOD'), np.str_('LVMUY'), np.str_('VND=X'), np.str_('MSN'), np.str_('PEPE_USDT'), np.str_('E1VFVN30'), np.str_('F'), np.str_('NCLH'), np.str_('POW'), np.str_('ITUB'), np.str_('SHY'), np.str_('RAY_USDT'), np.str_('ORCA_USDT'), np.str_('UNI_USDT')]
+2026-02-21 11:45:46 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:47:28 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:47:28 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:47:56 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 11:47:56 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:47:57 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 11:47:57 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:47:57 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:47:57 | INFO     | main:run_train | Vốn: $46.21 | Đòn bẩy: 35.8x | Phạt Trượt Giá: 1.89
+2026-02-21 11:47:57 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.66 | Bám sát WinRate: 0.99
+2026-02-21 11:47:57 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('KO'), np.str_('USD1_USDT'), np.str_('UMA_USDT'), np.str_('^RUT'), np.str_('VNREAL'), np.str_('ADA_USDT'), np.str_('PUMP_USDT'), np.str_('VN_GOLD_SJC'), np.str_('TSM'), np.str_('^TNX'), np.str_('TCEHY'), np.str_('DELL'), np.str_('NEM'), np.str_('^TYX'), np.str_('CLSK'), np.str_('TXN'), np.str_('TLT'), np.str_('ORCA_USDT'), np.str_('PATH'), np.str_('RKT'), np.str_('DIS'), np.str_('HG=F'), np.str_('LI'), np.str_('VIC'), np.str_('HYG'), np.str_('FCN'), np.str_('KDH'), np.str_('ORS'), np.str_('ESP_USDT'), np.str_('INTC')]
+2026-02-21 11:47:57 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:48:42 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:48:42 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:48:57 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:48:57 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 11:48:57 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:48:57 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:48:57 | INFO     | main:run_train | Vốn: $11,417.57 | Đòn bẩy: 13.5x | Phạt Trượt Giá: 2.67
+2026-02-21 11:48:57 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.96 | Bám sát WinRate: 0.86
+2026-02-21 11:48:57 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('OXY'), np.str_('EIB'), np.str_('T'), np.str_('ESP_USDT'), np.str_('NEM'), np.str_('OGN_USDT'), np.str_('PENGU_USDT'), np.str_('VIC'), np.str_('PEP'), np.str_('BTC_USDT'), np.str_('VIRTUAL_USDT'), np.str_('VNM'), np.str_('SHY'), np.str_('INTC'), np.str_('XPL_USDT'), np.str_('GOOGL'), np.str_('^FCHI'), np.str_('F'), np.str_('BA'), np.str_('VIX'), np.str_('BABA'), np.str_('BAC'), np.str_('PUMP_USDT'), np.str_('VPB'), np.str_('VND=X'), np.str_('TPH'), np.str_('WULF'), np.str_('DGC'), np.str_('MSN'), np.str_('HBAR_USDT')]
+2026-02-21 11:48:57 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:50:20 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:50:20 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:50:20 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:50:20 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:50:38 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:50:38 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:50:38 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:50:38 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:50:38 | INFO     | main:run_train | Vốn: $860.77 | Đòn bẩy: 31.1x | Phạt Trượt Giá: 1.55
+2026-02-21 11:50:38 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.34 | Bám sát WinRate: 0.02
+2026-02-21 11:50:38 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('MCD'), np.str_('AVGO'), np.str_('PVD'), np.str_('ORCA_USDT'), np.str_('XPEV'), np.str_('CTG'), np.str_('FSLY'), np.str_('UMA_USDT'), np.str_('HSG'), np.str_('AMZN'), np.str_('ARM'), np.str_('VIRTUAL_USDT'), np.str_('T'), np.str_('NFLX'), np.str_('REE'), np.str_('DKNG'), np.str_('TRUMP_USDT'), np.str_('ATOM_USDT'), np.str_('VNM'), np.str_('STB'), np.str_('ZRO_USDT'), np.str_('CAT'), np.str_('ZN=F'), np.str_('BNB_USDT'), np.str_('BTG'), np.str_('BAC'), np.str_('TLT'), np.str_('^HSI'), np.str_('PEP'), np.str_('LINK_USDT')]
+2026-02-21 11:50:38 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 11:55:37 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 11:55:37 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 11:55:37 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 11:55:37 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 11:56:04 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 11:56:05 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 11:56:05 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 11:56:05 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 11:56:05 | INFO     | main:run_train | Vốn: $7,096,032.43 | Đòn bẩy: 70.9x | Phạt Trượt Giá: 2.72
+2026-02-21 11:56:05 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.53 | Bám sát WinRate: 0.78
+2026-02-21 11:56:05 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('MBB'), np.str_('DGC'), np.str_('JPM'), np.str_('BA'), np.str_('POW'), np.str_('TCEHY'), np.str_('U_USDT'), np.str_('FUESSV30'), np.str_('INTC'), np.str_('AG'), np.str_('VPB'), np.str_('IWM'), np.str_('JD'), np.str_('TCH'), np.str_('HQC'), np.str_('QQQ'), np.str_('GS'), np.str_('VAB'), np.str_('TSLA'), np.str_('LTC_USDT'), np.str_('GLD'), np.str_('TLT'), np.str_('NAB'), np.str_('ARM'), np.str_('IJC'), np.str_('SSI'), np.str_('KO'), np.str_('MA'), np.str_('KHG'), np.str_('REE')]
+2026-02-21 11:56:05 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:02:18 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:02:18 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:02:36 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:02:36 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 12:02:36 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:02:36 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:02:36 | INFO     | main:run_train | Vốn: $591,410.43 | Đòn bẩy: 21.7x | Phạt Trượt Giá: 4.67
+2026-02-21 12:02:36 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.76 | Bám sát WinRate: 0.86
+2026-02-21 12:02:36 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('CL=F'), np.str_('DPM'), np.str_('OXY'), np.str_('LYFT'), np.str_('SHY'), np.str_('AAPL'), np.str_('MRK'), np.str_('MUBARAK_USDT'), np.str_('^AXJO'), np.str_('CLSK'), np.str_('LMT'), np.str_('SMR'), np.str_('DOGE_USDT'), np.str_('NOK'), np.str_('DELL'), np.str_('BSR'), np.str_('FTS'), np.str_('SOL_USDT'), np.str_('KBC'), np.str_('VN30'), np.str_('SIG'), np.str_('BROS'), np.str_('NAB'), np.str_('SHIB_USDT'), np.str_('^N225'), np.str_('VND'), np.str_('DXY'), np.str_('MCD'), np.str_('T'), np.str_('DX-Y')]
+2026-02-21 12:02:36 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:09:01 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:09:01 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:09:17 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:09:18 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 12:09:18 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:09:18 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:09:18 | INFO     | main:run_train | Vốn: $17,296,077.94 | Đòn bẩy: 39.6x | Phạt Trượt Giá: 1.37
+2026-02-21 12:09:18 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.70 | Bám sát WinRate: 0.93
+2026-02-21 12:09:18 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('ANET'), np.str_('USD1_USDT'), np.str_('LCG'), np.str_('BROS'), np.str_('MXN=X'), np.str_('QCOM'), np.str_('TRX_USDT'), np.str_('VZ'), np.str_('VND'), np.str_('PLTR'), np.str_('JPM'), np.str_('CRM'), np.str_('^TNX'), np.str_('AGR'), np.str_('TLT'), np.str_('AVAX_USDT'), np.str_('CLF'), np.str_('RIOT'), np.str_('VPB'), np.str_('OWL'), np.str_('BTE'), np.str_('CTD'), np.str_('ASTER_USDT'), np.str_('JPY=X'), np.str_('INIT_USDT'), np.str_('SMR'), np.str_('NG=F'), np.str_('TOST'), np.str_('F'), np.str_('PCG')]
+2026-02-21 12:09:18 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:15:04 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:15:04 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:15:18 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:15:18 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 12:15:18 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:15:18 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:15:18 | INFO     | main:run_train | Vốn: $41,967,679.72 | Đòn bẩy: 12.6x | Phạt Trượt Giá: 1.29
+2026-02-21 12:15:18 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.84 | Bám sát WinRate: 0.45
+2026-02-21 12:15:18 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('DXY'), np.str_('NBIS'), np.str_('CSV'), np.str_('^DJI'), np.str_('HDC'), np.str_('WLFI_USDT'), np.str_('AG'), np.str_('^FVX'), np.str_('BROS'), np.str_('PLX'), np.str_('HPG'), np.str_('VIX'), np.str_('HSG'), np.str_('GOOGL'), np.str_('VN301_'), np.str_('CAT'), np.str_('SHB'), np.str_('KWEB'), np.str_('ADA_USDT'), np.str_('PATH'), np.str_('RAY_USDT'), np.str_('^IRX'), np.str_('VNINDEX'), np.str_('SMCI'), np.str_('PAXG_USDT'), np.str_('HBAN'), np.str_('SZC'), np.str_('RKT'), np.str_('ATOM_USDT'), np.str_('JPM')]
+2026-02-21 12:15:18 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:18:31 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:18:31 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:18:43 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:18:44 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 12:18:44 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:18:44 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:18:44 | INFO     | main:run_train | Vốn: $47,524,346.19 | Đòn bẩy: 99.7x | Phạt Trượt Giá: 1.96
+2026-02-21 12:18:44 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.94 | Bám sát WinRate: 0.17
+2026-02-21 12:18:44 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('TPB'), np.str_('CART'), np.str_('MSB'), np.str_('T'), np.str_('RIOT'), np.str_('SNDK'), np.str_('BERA_USDT'), np.str_('USDC_USDT'), np.str_('ANV'), np.str_('OCB'), np.str_('BTE'), np.str_('HG=F'), np.str_('VCG'), np.str_('POW'), np.str_('VIX'), np.str_('NKG'), np.str_('F'), np.str_('CAD=X'), np.str_('SNAP'), np.str_('STB'), np.str_('SLB'), np.str_('HQC'), np.str_('SSB'), np.str_('XAU_USD'), np.str_('BNB_USDT'), np.str_('LCG'), np.str_('TXN'), np.str_('GEG'), np.str_('MUBARAK_USDT'), np.str_('KDH')]
+2026-02-21 12:18:44 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:19:54 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:19:54 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:20:04 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:20:05 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 12:20:05 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:20:05 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:20:05 | INFO     | main:run_train | Vốn: $3,438,432.06 | Đòn bẩy: 70.8x | Phạt Trượt Giá: 1.38
+2026-02-21 12:20:05 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.46 | Bám sát WinRate: 0.33
+2026-02-21 12:20:05 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('DKNG'), np.str_('AXP'), np.str_('CRM'), np.str_('BZ=F'), np.str_('HPQ'), np.str_('CSV'), np.str_('VALE'), np.str_('WLD_USDT'), np.str_('XOM'), np.str_('^RUT'), np.str_('505'), np.str_('JNJ'), np.str_('PDR'), np.str_('BBD'), np.str_('PG'), np.str_('AVAX_USDT'), np.str_('ATOM_USDT'), np.str_('UNI_USDT'), np.str_('NFLX'), np.str_('SLV'), np.str_('FTS'), np.str_('VAB'), np.str_('VCB'), np.str_('OXY'), np.str_('MWG'), np.str_('FCN'), np.str_('BLK'), np.str_('UMA_USDT'), np.str_('ZAMA_USDT'), np.str_('SIG')]
+2026-02-21 12:20:05 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:21:53 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:21:53 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:22:08 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:22:09 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 12:22:09 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:22:09 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:22:09 | INFO     | main:run_train | Vốn: $186,301.89 | Đòn bẩy: 51.8x | Phạt Trượt Giá: 4.97
+2026-02-21 12:22:09 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.88 | Bám sát WinRate: 0.29
+2026-02-21 12:22:09 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('DCM'), np.str_('WLFI_USDT'), np.str_('SNDK'), np.str_('RAY_USDT'), np.str_('GRAB'), np.str_('PNJ'), np.str_('BCH_USDT'), np.str_('LTC_USDT'), np.str_('MU'), np.str_('ZRO_USDT'), np.str_('UNG'), np.str_('MCD'), np.str_('GAS'), np.str_('FRT'), np.str_('IWM'), np.str_('CCL'), np.str_('VIC'), np.str_('LINK_USDT'), np.str_('SAB'), np.str_('C'), np.str_('245710'), np.str_('KSB'), np.str_('PEPE_USDT'), np.str_('TCH'), np.str_('OCB'), np.str_('VCI'), np.str_('COIN'), np.str_('AAPL'), np.str_('U_USDT'), np.str_('HIMS')]
+2026-02-21 12:22:09 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:23:49 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:23:49 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 12:23:49 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 12:23:49 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:24:02 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 12:24:02 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:24:02 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 12:24:02 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:24:02 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:24:02 | INFO     | main:run_train | Vốn: $66,782,023.08 | Đòn bẩy: 70.2x | Phạt Trượt Giá: 2.79
+2026-02-21 12:24:02 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.01 | Bám sát WinRate: 0.39
+2026-02-21 12:24:02 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HOOD'), np.str_('JPM'), np.str_('COIN'), np.str_('ESP_USDT'), np.str_('WULF'), np.str_('PDD'), np.str_('TOST'), np.str_('IWM'), np.str_('KVUE'), np.str_('CAD=X'), np.str_('CLF'), np.str_('505'), np.str_('AAVE_USDT'), np.str_('DGW'), np.str_('VRE'), np.str_('^HSI'), np.str_('VIX'), np.str_('HD'), np.str_('FRT'), np.str_('INTC'), np.str_('LYG'), np.str_('ZAMA_USDT'), np.str_('HDB'), np.str_('^FTSE'), np.str_('JD'), np.str_('COST'), np.str_('NIO'), np.str_('^RUT'), np.str_('OPEN'), np.str_('UMA_USDT')]
+2026-02-21 12:24:02 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:25:11 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:25:11 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #2 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:25:11 | INFO     | main:run_train | Vốn: $119,235.12 | Đòn bẩy: 21.1x | Phạt Trượt Giá: 4.61
+2026-02-21 12:25:11 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.69 | Bám sát WinRate: 0.54
+2026-02-21 12:25:11 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('MSN'), np.str_('VN301_'), np.str_('BBD'), np.str_('NEAR_USDT'), np.str_('PL=F'), np.str_('ORS'), np.str_('AUD=X'), np.str_('BP'), np.str_('LOW'), np.str_('F'), np.str_('HHV'), np.str_('VN_GOLD_SJC'), np.str_('CRWV'), np.str_('AAPL'), np.str_('FBIN'), np.str_('FCN'), np.str_('GGB'), np.str_('ADA_USDT'), np.str_('ARM'), np.str_('MSB'), np.str_('PVD'), np.str_('DASH_USDT'), np.str_('LCG'), np.str_('WLFI_USDT'), np.str_('505'), np.str_('UBER'), np.str_('FSLY'), np.str_('VCI'), np.str_('APLD'), np.str_('HDB')]
+2026-02-21 12:25:11 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:33:43 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:33:43 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 12:33:43 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 12:33:43 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:33:57 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 12:33:57 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:33:57 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (2 Epochs/Persona)
+2026-02-21 12:33:57 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:33:57 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:33:57 | INFO     | main:run_train | Vốn: $49,890.52 | Đòn bẩy: 33.9x | Phạt Trượt Giá: 1.57
+2026-02-21 12:33:57 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.99 | Bám sát WinRate: 0.36
+2026-02-21 12:33:57 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('CART'), np.str_('HBAN'), np.str_('TRUMP_USDT'), np.str_('DCM'), np.str_('CTG'), np.str_('VND=X'), np.str_('DXG'), np.str_('MS'), np.str_('VHC'), np.str_('CAT'), np.str_('DASH_USDT'), np.str_('XRP_USDT'), np.str_('QCOM'), np.str_('AAVE_USDT'), np.str_('ZAMA_USDT'), np.str_('KDH'), np.str_('PEPE_USDT'), np.str_('CSCO'), np.str_('GE'), np.str_('KVUE'), np.str_('BABA'), np.str_('NIO'), np.str_('PGV'), np.str_('VIB'), np.str_('DX-Y'), np.str_('C'), np.str_('VIX'), np.str_('^FCHI'), np.str_('GS'), np.str_('BBD')]
+2026-02-21 12:33:57 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:35:55 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 12:35:55 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 12:35:55 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 12:35:55 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 12:36:09 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 12:36:09 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 12:36:09 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (33 Epochs/Persona)
+2026-02-21 12:36:09 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:36:09 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:36:09 | INFO     | main:run_train | Vốn: $11,796.72 | Đòn bẩy: 12.0x | Phạt Trượt Giá: 2.98
+2026-02-21 12:36:09 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.46 | Bám sát WinRate: 0.68
+2026-02-21 12:36:09 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('MSN'), np.str_('MRK'), np.str_('VIX'), np.str_('RKT'), np.str_('RIVN'), np.str_('KBC'), np.str_('INTC'), np.str_('VHC'), np.str_('USO'), np.str_('APLD'), np.str_('^RUT'), np.str_('ADBE'), np.str_('C'), np.str_('ESP_USDT'), np.str_('PDD'), np.str_('PAXG_USDT'), np.str_('TRUMP_USDT'), np.str_('BA'), np.str_('^GDAXI'), np.str_('LDG'), np.str_('PEPE_USDT'), np.str_('ACB'), np.str_('BTG'), np.str_('LYG'), np.str_('ACHR'), np.str_('DASH_USDT'), np.str_('BBD'), np.str_('ZEC_USDT'), np.str_('AUD=X'), np.str_('BSR')]
+2026-02-21 12:36:09 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:37:15 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:37:15 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #2 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:37:15 | INFO     | main:run_train | Vốn: $20,466,817.62 | Đòn bẩy: 31.5x | Phạt Trượt Giá: 1.37
+2026-02-21 12:37:15 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.14 | Bám sát WinRate: 0.62
+2026-02-21 12:37:15 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('OGN_USDT'), np.str_('BMNR'), np.str_('AMZN'), np.str_('AVAX_USDT'), np.str_('UNG'), np.str_('HPG'), np.str_('LMT'), np.str_('BIL'), np.str_('SOFI'), np.str_('BERA_USDT'), np.str_('NCLH'), np.str_('RIG'), np.str_('PSLV'), np.str_('LCG'), np.str_('^AXJO'), np.str_('VIB'), np.str_('TXN'), np.str_('CPNG'), np.str_('ARM'), np.str_('TCEHY'), np.str_('CLSK'), np.str_('GGB'), np.str_('CRE'), np.str_('IWM'), np.str_('ONDS'), np.str_('HDC'), np.str_('VCG'), np.str_('GBP=X'), np.str_('ADA_USDT'), np.str_('BROS')]
+2026-02-21 12:37:15 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:38:16 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:38:16 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #3 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:38:16 | INFO     | main:run_train | Vốn: $7,334,306.19 | Đòn bẩy: 79.9x | Phạt Trượt Giá: 4.49
+2026-02-21 12:38:16 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.93 | Bám sát WinRate: 0.41
+2026-02-21 12:38:16 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('SBUX'), np.str_('AUD=X'), np.str_('CTD'), np.str_('ENB'), np.str_('BTG'), np.str_('SCR'), np.str_('PENGU_USDT'), np.str_('WULF'), np.str_('MSFT'), np.str_('GC=F'), np.str_('NFLX'), np.str_('GLD'), np.str_('SMCI'), np.str_('AXP'), np.str_('HPQ'), np.str_('NOW'), np.str_('SLB'), np.str_('TSM'), np.str_('^GSPC'), np.str_('CRM'), np.str_('ET'), np.str_('ZN=F'), np.str_('MSTR'), np.str_('SNAP'), np.str_('NEM'), np.str_('VN30'), np.str_('HD'), np.str_('VIB'), np.str_('^ADOW'), np.str_('DASH_USDT')]
+2026-02-21 12:38:16 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:39:15 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:39:15 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #4 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:39:15 | INFO     | main:run_train | Vốn: $3,259,173.36 | Đòn bẩy: 18.6x | Phạt Trượt Giá: 4.30
+2026-02-21 12:39:15 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.83 | Bám sát WinRate: 0.14
+2026-02-21 12:39:15 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('COIN'), np.str_('MSB'), np.str_('MRK'), np.str_('META'), np.str_('VNREAL'), np.str_('^IXIC'), np.str_('HIMS'), np.str_('TLH'), np.str_('GS'), np.str_('CSCO'), np.str_('CRWV'), np.str_('T'), np.str_('FPT'), np.str_('GE'), np.str_('HPG'), np.str_('V'), np.str_('VPB'), np.str_('CDE'), np.str_('VNINDEX'), np.str_('^FVX'), np.str_('PNJ'), np.str_('HDC'), np.str_('VGC'), np.str_('ABEV'), np.str_('MSN'), np.str_('F'), np.str_('HD'), np.str_('ENB'), np.str_('PYPL'), np.str_('KO')]
+2026-02-21 12:39:15 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:40:13 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:40:13 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #5 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:40:13 | INFO     | main:run_train | Vốn: $3,173.98 | Đòn bẩy: 54.6x | Phạt Trượt Giá: 2.57
+2026-02-21 12:40:13 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.62 | Bám sát WinRate: 0.63
+2026-02-21 12:40:13 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('AVGO'), np.str_('XRP_USDT'), np.str_('PAXG_USDT'), np.str_('PCG'), np.str_('POW'), np.str_('IWM'), np.str_('DCM'), np.str_('ACHR'), np.str_('UNG'), np.str_('TCH'), np.str_('NOW'), np.str_('CAT'), np.str_('VNINDEX'), np.str_('OGN_USDT'), np.str_('BTE'), np.str_('VNM'), np.str_('STB'), np.str_('MSN'), np.str_('NCLH'), np.str_('TPH'), np.str_('VN_GOLD_SJC'), np.str_('ADA_USDT'), np.str_('CPNG'), np.str_('ZN=F'), np.str_('245710'), np.str_('KVUE'), np.str_('WLD_USDT'), np.str_('BID'), np.str_('CTS'), np.str_('MRK')]
+2026-02-21 12:40:13 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:41:13 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:41:13 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #6 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:41:13 | INFO     | main:run_train | Vốn: $8,553,286.12 | Đòn bẩy: 28.9x | Phạt Trượt Giá: 3.09
+2026-02-21 12:41:13 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.93 | Bám sát WinRate: 0.66
+2026-02-21 12:41:13 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('XOM'), np.str_('USO'), np.str_('IJC'), np.str_('PDD'), np.str_('F'), np.str_('LMT'), np.str_('BCH_USDT'), np.str_('AVAX_USDT'), np.str_('BMNR'), np.str_('PSLV'), np.str_('PC1'), np.str_('VND'), np.str_('FCN'), np.str_('GGB'), np.str_('ITUB'), np.str_('U'), np.str_('HCM'), np.str_('GE'), np.str_('HPG'), np.str_('NEM'), np.str_('DPM'), np.str_('COST'), np.str_('VPB'), np.str_('ARM'), np.str_('NIO'), np.str_('OCB'), np.str_('FBIN'), np.str_('JD'), np.str_('COIN'), np.str_('PINS')]
+2026-02-21 12:41:13 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:42:11 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:42:11 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #7 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:42:11 | INFO     | main:run_train | Vốn: $19.97 | Đòn bẩy: 11.7x | Phạt Trượt Giá: 1.32
+2026-02-21 12:42:11 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.26 | Bám sát WinRate: 0.59
+2026-02-21 12:42:11 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('SHB'), np.str_('INTC'), np.str_('LVMUY'), np.str_('MRK'), np.str_('ORCA_USDT'), np.str_('SMR'), np.str_('COIN'), np.str_('CAT'), np.str_('ENB'), np.str_('HPQ'), np.str_('PUMP_USDT'), np.str_('NEM'), np.str_('MXN=X'), np.str_('ORCL'), np.str_('HG=F'), np.str_('SSI'), np.str_('WLFI_USDT'), np.str_('AVAX_USDT'), np.str_('DIG'), np.str_('BABA'), np.str_('SNAP'), np.str_('STB'), np.str_('KDH'), np.str_('XRP_USDT'), np.str_('NOK'), np.str_('CCL'), np.str_('EIB'), np.str_('OGN_USDT'), np.str_('FSLY'), np.str_('VCB')]
+2026-02-21 12:42:11 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:43:08 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:43:08 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #8 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:43:08 | INFO     | main:run_train | Vốn: $199.56 | Đòn bẩy: 13.3x | Phạt Trượt Giá: 2.49
+2026-02-21 12:43:08 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.15 | Bám sát WinRate: 0.01
+2026-02-21 12:43:08 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NT2'), np.str_('OGN_USDT'), np.str_('XOM'), np.str_('IBM'), np.str_('ANET'), np.str_('BCH_USDT'), np.str_('SHB'), np.str_('SNAP'), np.str_('FUESSV30'), np.str_('ORCL'), np.str_('CLF'), np.str_('ETH_USDT'), np.str_('^GDAXI'), np.str_('^GSPC'), np.str_('^RUT'), np.str_('HQC'), np.str_('RKT'), np.str_('WLFI_USDT'), np.str_('SPY'), np.str_('DGC'), np.str_('SOFI'), np.str_('LDG'), np.str_('CL=F'), np.str_('AG'), np.str_('TLT'), np.str_('MA'), np.str_('FSLY'), np.str_('DX-Y'), np.str_('CART'), np.str_('BROS')]
+2026-02-21 12:43:08 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:44:05 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:44:05 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #9 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:44:05 | INFO     | main:run_train | Vốn: $185.34 | Đòn bẩy: 24.5x | Phạt Trượt Giá: 3.82
+2026-02-21 12:44:05 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.87 | Bám sát WinRate: 0.51
+2026-02-21 12:44:05 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('ABEV'), np.str_('AMZN'), np.str_('BIL'), np.str_('MA'), np.str_('SMR'), np.str_('AXP'), np.str_('PCG'), np.str_('F'), np.str_('FBIN'), np.str_('DCM'), np.str_('HOOD'), np.str_('HDB'), np.str_('WMT'), np.str_('NBIS'), np.str_('NEM'), np.str_('NEAR_USDT'), np.str_('BZ=F'), np.str_('VNM'), np.str_('TCEHY'), np.str_('VIX'), np.str_('GEG'), np.str_('RPL_USDT'), np.str_('HG=F'), np.str_('LINK_USDT'), np.str_('SLV'), np.str_('CRE'), np.str_('TPH'), np.str_('STB'), np.str_('AVAX_USDT'), np.str_('PYPL')]
+2026-02-21 12:44:05 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:45:03 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:45:03 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #10 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:45:03 | INFO     | main:run_train | Vốn: $315.05 | Đòn bẩy: 84.1x | Phạt Trượt Giá: 2.80
+2026-02-21 12:45:03 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.55 | Bám sát WinRate: 0.86
+2026-02-21 12:45:03 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('SHY'), np.str_('HBAN'), np.str_('MBB'), np.str_('FPT'), np.str_('VALE'), np.str_('ARM'), np.str_('HD'), np.str_('NG=F'), np.str_('VIX'), np.str_('RAY_USDT'), np.str_('ITUB'), np.str_('TGT'), np.str_('KWEB'), np.str_('U_USDT'), np.str_('KHG'), np.str_('IREN'), np.str_('VNINDEX'), np.str_('META'), np.str_('BID'), np.str_('VHC'), np.str_('RIVN'), np.str_('LVMUY'), np.str_('AUD=X'), np.str_('SNAP'), np.str_('CLSK'), np.str_('CDE'), np.str_('HPG'), np.str_('VNREAL'), np.str_('CTD'), np.str_('DIG')]
+2026-02-21 12:45:03 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:46:01 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:46:01 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #11 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:46:01 | INFO     | main:run_train | Vốn: $1,361.64 | Đòn bẩy: 97.9x | Phạt Trượt Giá: 3.54
+2026-02-21 12:46:01 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.40 | Bám sát WinRate: 0.29
+2026-02-21 12:46:01 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NU'), np.str_('U_USDT'), np.str_('SLB'), np.str_('UNG'), np.str_('MSN'), np.str_('AVAX_USDT'), np.str_('PLX'), np.str_('NEM'), np.str_('USO'), np.str_('SUI_USDT'), np.str_('VRE'), np.str_('MUBARAK_USDT'), np.str_('NFLX'), np.str_('APLD'), np.str_('ACB'), np.str_('VNINDEX'), np.str_('SOUN'), np.str_('SOL_USDT'), np.str_('PNJ'), np.str_('PATH'), np.str_('RKT'), np.str_('LTC_USDT'), np.str_('^RUT'), np.str_('RTX'), np.str_('GE'), np.str_('HDC'), np.str_('UBER'), np.str_('TLH'), np.str_('HPQ'), np.str_('IONQ')]
+2026-02-21 12:46:01 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:46:58 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:46:58 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #12 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:46:58 | INFO     | main:run_train | Vốn: $5,796,780.45 | Đòn bẩy: 82.4x | Phạt Trượt Giá: 3.52
+2026-02-21 12:46:58 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.08 | Bám sát WinRate: 0.31
+2026-02-21 12:46:58 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('SCR'), np.str_('SHB'), np.str_('DCM'), np.str_('APLD'), np.str_('VGC'), np.str_('FBIN'), np.str_('BID'), np.str_('FPT'), np.str_('GAS'), np.str_('CTS'), np.str_('PCG'), np.str_('MU'), np.str_('VIX'), np.str_('GOOGL'), np.str_('VALE'), np.str_('CTG'), np.str_('CAT'), np.str_('POW'), np.str_('MBB'), np.str_('MSN'), np.str_('HSG'), np.str_('ANV'), np.str_('QQQ'), np.str_('SNAP'), np.str_('TLH'), np.str_('ADBE'), np.str_('^N100'), np.str_('GE'), np.str_('RIVN'), np.str_('PYPL')]
+2026-02-21 12:46:58 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:47:54 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:47:54 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #13 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:47:54 | INFO     | main:run_train | Vốn: $963.29 | Đòn bẩy: 42.5x | Phạt Trượt Giá: 2.44
+2026-02-21 12:47:54 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.95 | Bám sát WinRate: 0.05
+2026-02-21 12:47:54 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('MA'), np.str_('MU'), np.str_('SBUX'), np.str_('IWM'), np.str_('T'), np.str_('ET'), np.str_('NEM'), np.str_('SZC'), np.str_('HG=F'), np.str_('E1VFVN30'), np.str_('CTD'), np.str_('^IRX'), np.str_('BCH_USDT'), np.str_('SHIB_USDT'), np.str_('AAL'), np.str_('VN30'), np.str_('UBER'), np.str_('CLF'), np.str_('000001'), np.str_('SCR'), np.str_('VN_GOLD_SJC'), np.str_('DOGE_USDT'), np.str_('PCG'), np.str_('ACB'), np.str_('VCB'), np.str_('NKG'), np.str_('LYG'), np.str_('CTG'), np.str_('LDG'), np.str_('KHG')]
+2026-02-21 12:47:54 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 12:48:50 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 12:48:50 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #14 / 30 (Original Seed Distance Confirmed)
+2026-02-21 12:48:50 | INFO     | main:run_train | Vốn: $443.20 | Đòn bẩy: 48.7x | Phạt Trượt Giá: 1.75
+2026-02-21 12:48:50 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.18 | Bám sát WinRate: 0.96
+2026-02-21 12:48:50 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NFLX'), np.str_('U_USDT'), np.str_('HD'), np.str_('POW'), np.str_('PVD'), np.str_('AGR'), np.str_('VHM'), np.str_('^N225'), np.str_('FBIN'), np.str_('EUR_USDT'), np.str_('XPL_USDT'), np.str_('JNJ'), np.str_('BZ=F'), np.str_('ACB'), np.str_('PL=F'), np.str_('INTC'), np.str_('SZC'), np.str_('OCB'), np.str_('NIO'), np.str_('PINS'), np.str_('ASTER_USDT'), np.str_('CCL'), np.str_('MU'), np.str_('MSTR'), np.str_('BMNR'), np.str_('SSB'), np.str_('HIMS'), np.str_('^N100'), np.str_('TSM'), np.str_('CART')]
+2026-02-21 12:48:50 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:00:53 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 18:00:53 | INFO     | main:run_auto | 🚀 KÍCH HOẠT CHẾ ĐỘ AUTO (ALL-IN-ONE)...
+2026-02-21 18:00:53 | INFO     | main:run_auto | >>> TIẾN TRÌNH 1: HUẤN LUYỆN (TRAIN)
+2026-02-21 18:00:53 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 18:01:09 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 18:01:09 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 18:01:10 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 18:01:10 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:01:10 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:01:10 | INFO     | main:run_train | Vốn: $455,412.16 | Đòn bẩy: 8.6x | Phạt Trượt Giá: 1.99
+2026-02-21 18:01:10 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.16 | Bám sát WinRate: 0.03
+2026-02-21 18:01:10 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('^AXJO'), np.str_('DXG'), np.str_('SMR'), np.str_('RPL_USDT'), np.str_('ATOM_USDT'), np.str_('BTG'), np.str_('SOFI'), np.str_('CPNG'), np.str_('RIVN'), np.str_('CLSK'), np.str_('SNDK'), np.str_('^N225'), np.str_('RTX'), np.str_('CCL'), np.str_('TXN'), np.str_('ACB'), np.str_('HG=F'), np.str_('HPG'), np.str_('WLFI_USDT'), np.str_('PVD'), np.str_('T'), np.str_('ABEV'), np.str_('ADBE'), np.str_('GS'), np.str_('ANV'), np.str_('ENB'), np.str_('APLD'), np.str_('^RUT'), np.str_('BA'), np.str_('HYG')]
+2026-02-21 18:01:10 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:02:25 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:02:25 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #2 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:02:25 | INFO     | main:run_train | Vốn: $7.51 | Đòn bẩy: 52.3x | Phạt Trượt Giá: 1.27
+2026-02-21 18:02:25 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.32 | Bám sát WinRate: 0.35
+2026-02-21 18:02:25 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('AG'), np.str_('PL=F'), np.str_('INFY'), np.str_('VIX'), np.str_('CNH'), np.str_('ZEC_USDT'), np.str_('SOL_USDT'), np.str_('DNN'), np.str_('BAC'), np.str_('CRWV'), np.str_('ENB'), np.str_('REE'), np.str_('TRUMP_USDT'), np.str_('BLK'), np.str_('MBB'), np.str_('BERA_USDT'), np.str_('^DJI'), np.str_('SPY'), np.str_('C'), np.str_('E1VFVN30'), np.str_('GBP=X'), np.str_('DIG'), np.str_('COIN'), np.str_('PATH'), np.str_('BSI'), np.str_('HQC'), np.str_('VRE'), np.str_('V'), np.str_('PEP'), np.str_('IONQ')]
+2026-02-21 18:02:25 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:03:30 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:03:30 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #3 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:03:30 | INFO     | main:run_train | Vốn: $2,852.93 | Đòn bẩy: 68.2x | Phạt Trượt Giá: 3.12
+2026-02-21 18:03:30 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.09 | Bám sát WinRate: 0.85
+2026-02-21 18:03:30 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('T'), np.str_('SNDK'), np.str_('UNG'), np.str_('SHB'), np.str_('NFLX'), np.str_('MRK'), np.str_('TCEHY'), np.str_('PFE'), np.str_('AG'), np.str_('NVDA'), np.str_('FCN'), np.str_('570063'), np.str_('QCG'), np.str_('HD'), np.str_('PYPL'), np.str_('MBB'), np.str_('PLX'), np.str_('ZRO_USDT'), np.str_('VDS'), np.str_('LVMUY'), np.str_('FRT'), np.str_('CMCSA'), np.str_('VN30'), np.str_('HG=F'), np.str_('TSLA'), np.str_('POW'), np.str_('000001'), np.str_('U'), np.str_('VHM'), np.str_('^FCHI')]
+2026-02-21 18:03:30 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:04:33 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:04:33 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #4 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:04:33 | INFO     | main:run_train | Vốn: $1,893,210.35 | Đòn bẩy: 16.9x | Phạt Trượt Giá: 2.26
+2026-02-21 18:04:33 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.32 | Bám sát WinRate: 0.20
+2026-02-21 18:04:33 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('WLD_USDT'), np.str_('HQC'), np.str_('^ADOW'), np.str_('ORCL'), np.str_('MRK'), np.str_('BERA_USDT'), np.str_('PNJ'), np.str_('VCI'), np.str_('AUD=X'), np.str_('GBP=X'), np.str_('BCH_USDT'), np.str_('NCLH'), np.str_('POW'), np.str_('VN_GOLD_SJC'), np.str_('KBC'), np.str_('NFLX'), np.str_('IJC'), np.str_('DKNG'), np.str_('XRP_USDT'), np.str_('VIC'), np.str_('SLB'), np.str_('BZ=F'), np.str_('FDUSD_USDT'), np.str_('NG=F'), np.str_('SHY'), np.str_('JD'), np.str_('VIB'), np.str_('RGTI'), np.str_('LYG'), np.str_('FPT')]
+2026-02-21 18:04:33 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:05:37 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:05:37 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #5 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:05:37 | INFO     | main:run_train | Vốn: $2,675,023.73 | Đòn bẩy: 41.3x | Phạt Trượt Giá: 2.86
+2026-02-21 18:05:37 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.99 | Bám sát WinRate: 0.89
+2026-02-21 18:05:37 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('ENB'), np.str_('LINK_USDT'), np.str_('ACB'), np.str_('PSLV'), np.str_('HD'), np.str_('FRT'), np.str_('AG'), np.str_('ORCL'), np.str_('DX-Y'), np.str_('VGC'), np.str_('NEAR_USDT'), np.str_('^IXIC'), np.str_('INFY'), np.str_('DIA'), np.str_('NVL'), np.str_('VRE'), np.str_('NEM'), np.str_('MBB'), np.str_('QCG'), np.str_('NT2'), np.str_('IBRX'), np.str_('BID'), np.str_('DXS'), np.str_('IREN'), np.str_('DXG'), np.str_('ATOM_USDT'), np.str_('ZN=F'), np.str_('INIT_USDT'), np.str_('LCG'), np.str_('NKE')]
+2026-02-21 18:05:37 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:06:37 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:06:37 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #6 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:06:37 | INFO     | main:run_train | Vốn: $8,719.54 | Đòn bẩy: 24.6x | Phạt Trượt Giá: 2.16
+2026-02-21 18:06:37 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 0.08 | Bám sát WinRate: 0.24
+2026-02-21 18:06:37 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('FBIN'), np.str_('NAB'), np.str_('HPG'), np.str_('QQQ'), np.str_('ACHR'), np.str_('SAB'), np.str_('FDUSD_USDT'), np.str_('ADBE'), np.str_('VAB'), np.str_('USO'), np.str_('PDR'), np.str_('VRE'), np.str_('RPL_USDT'), np.str_('LTC_USDT'), np.str_('PG'), np.str_('TSLA'), np.str_('VGC'), np.str_('^ADOW'), np.str_('WMT'), np.str_('SOFI'), np.str_('^IXIC'), np.str_('TRUMP_USDT'), np.str_('WFC'), np.str_('GRAB'), np.str_('AUD=X'), np.str_('NVDA'), np.str_('ETH_USDT'), np.str_('POW'), np.str_('BID'), np.str_('VCB')]
+2026-02-21 18:06:37 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:07:40 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:07:40 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #7 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:07:40 | INFO     | main:run_train | Vốn: $1,293,989.49 | Đòn bẩy: 45.8x | Phạt Trượt Giá: 2.53
+2026-02-21 18:07:40 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.50 | Bám sát WinRate: 0.50
+2026-02-21 18:07:40 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('KSB'), np.str_('ZRO_USDT'), np.str_('KDH'), np.str_('NVL'), np.str_('TOST'), np.str_('TCEHY'), np.str_('PVD'), np.str_('CTS'), np.str_('VHM'), np.str_('^HSI'), np.str_('NEM'), np.str_('MARA'), np.str_('HSG'), np.str_('QCOM'), np.str_('CMCSA'), np.str_('XPL_USDT'), np.str_('MBB'), np.str_('GC=F'), np.str_('TSM'), np.str_('EUR_USDT'), np.str_('MSTR'), np.str_('SLB'), np.str_('CPNG'), np.str_('PEP'), np.str_('AAVE_USDT'), np.str_('ESP_USDT'), np.str_('PDD'), np.str_('ACHR'), np.str_('QCG'), np.str_('ZAMA_USDT')]
+2026-02-21 18:07:40 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:08:46 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:08:46 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #8 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:08:46 | INFO     | main:run_train | Vốn: $319.76 | Đòn bẩy: 36.5x | Phạt Trượt Giá: 2.84
+2026-02-21 18:08:46 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.50 | Bám sát WinRate: 0.84
+2026-02-21 18:08:46 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('PLTR'), np.str_('STB'), np.str_('RIVN'), np.str_('RTX'), np.str_('MWG'), np.str_('VDS'), np.str_('NCLH'), np.str_('BNB_USDT'), np.str_('BIL'), np.str_('VCB'), np.str_('ORCA_USDT'), np.str_('HDB'), np.str_('MS'), np.str_('VZ'), np.str_('PENGU_USDT'), np.str_('MCD'), np.str_('KSB'), np.str_('ARM'), np.str_('LCG'), np.str_('V'), np.str_('PEP'), np.str_('ABEV'), np.str_('DKNG'), np.str_('VIX'), np.str_('NIO'), np.str_('DXG'), np.str_('MUBARAK_USDT'), np.str_('IJC'), np.str_('TCEHY'), np.str_('DGW')]
+2026-02-21 18:08:46 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:09:51 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:09:51 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #9 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:09:51 | INFO     | main:run_train | Vốn: $9,973.94 | Đòn bẩy: 52.4x | Phạt Trượt Giá: 2.98
+2026-02-21 18:09:51 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.44 | Bám sát WinRate: 0.24
+2026-02-21 18:09:51 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('USD1_USDT'), np.str_('USO'), np.str_('GGB'), np.str_('ET'), np.str_('^FTSE'), np.str_('000001'), np.str_('SIG'), np.str_('NCLH'), np.str_('SZC'), np.str_('VN30'), np.str_('KBC'), np.str_('UBER'), np.str_('C'), np.str_('RIOT'), np.str_('^RUT'), np.str_('APLD'), np.str_('VIRTUAL_USDT'), np.str_('HBAN'), np.str_('GEG'), np.str_('FRT'), np.str_('NOW'), np.str_('DGC'), np.str_('ITUB'), np.str_('HD'), np.str_('LTC_USDT'), np.str_('BAC'), np.str_('ADA_USDT'), np.str_('UMA_USDT'), np.str_('PDD'), np.str_('ARM')]
+2026-02-21 18:09:51 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:10:55 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:10:55 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #10 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:10:55 | INFO     | main:run_train | Vốn: $11.54 | Đòn bẩy: 2.5x | Phạt Trượt Giá: 1.29
+2026-02-21 18:10:55 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.52 | Bám sát WinRate: 0.34
+2026-02-21 18:10:55 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('CVX'), np.str_('PL=F'), np.str_('KO'), np.str_('CAD=X'), np.str_('ABEV'), np.str_('^DJI'), np.str_('BABA'), np.str_('PATH'), np.str_('ADA_USDT'), np.str_('PUMP_USDT'), np.str_('^N225'), np.str_('SNAP'), np.str_('LTC_USDT'), np.str_('VN30'), np.str_('GRAB'), np.str_('TLH'), np.str_('ASTER_USDT'), np.str_('CART'), np.str_('OCB'), np.str_('BIL'), np.str_('REE'), np.str_('ORCL'), np.str_('EUR_USDT'), np.str_('HDC'), np.str_('GAS'), np.str_('HHV'), np.str_('RGTI'), np.str_('NVDA'), np.str_('NBIS'), np.str_('PVD')]
+2026-02-21 18:10:55 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:11:58 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:11:58 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #11 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:11:58 | INFO     | main:run_train | Vốn: $85.24 | Đòn bẩy: 83.8x | Phạt Trượt Giá: 3.93
+2026-02-21 18:11:58 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.40 | Bám sát WinRate: 0.28
+2026-02-21 18:11:58 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HIMS'), np.str_('GEG'), np.str_('WULF'), np.str_('USD1_USDT'), np.str_('NG=F'), np.str_('DASH_USDT'), np.str_('ARM'), np.str_('PAXG_USDT'), np.str_('BMNR'), np.str_('FPT'), np.str_('DIA'), np.str_('NKG'), np.str_('CCL'), np.str_('COST'), np.str_('BZ=F'), np.str_('PFE'), np.str_('HBAN'), np.str_('HDC'), np.str_('TPB'), np.str_('KDH'), np.str_('^N225'), np.str_('BP'), np.str_('^RUT'), np.str_('WFC'), np.str_('ITUB'), np.str_('LDG'), np.str_('QQQ'), np.str_('DNN'), np.str_('SOFI'), np.str_('ASTER_USDT')]
+2026-02-21 18:11:58 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:13:04 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:13:04 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #12 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:13:04 | INFO     | main:run_train | Vốn: $22,278.78 | Đòn bẩy: 93.0x | Phạt Trượt Giá: 2.18
+2026-02-21 18:13:04 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.94 | Bám sát WinRate: 0.64
+2026-02-21 18:13:04 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('MS'), np.str_('^GDAXI'), np.str_('ET'), np.str_('VNREAL'), np.str_('CDE'), np.str_('XOM'), np.str_('^FTSE'), np.str_('GAS'), np.str_('BERA_USDT'), np.str_('HDB'), np.str_('MSFT'), np.str_('HPG'), np.str_('OXY'), np.str_('NBIS'), np.str_('SOFI'), np.str_('TRUMP_USDT'), np.str_('IONQ'), np.str_('^TNX'), np.str_('GEG'), np.str_('DXS'), np.str_('TCEHY'), np.str_('KO'), np.str_('NKE'), np.str_('IBM'), np.str_('NCLH'), np.str_('MBB'), np.str_('DXG'), np.str_('E1VFVN30'), np.str_('HG=F'), np.str_('GS')]
+2026-02-21 18:13:04 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:14:10 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:14:10 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #13 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:14:10 | INFO     | main:run_train | Vốn: $3,828,576.56 | Đòn bẩy: 21.3x | Phạt Trượt Giá: 2.02
+2026-02-21 18:14:10 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.13 | Bám sát WinRate: 0.22
+2026-02-21 18:14:10 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HBAN'), np.str_('UMA_USDT'), np.str_('ESP_USDT'), np.str_('CDE'), np.str_('FCN'), np.str_('ADA_USDT'), np.str_('CAD=X'), np.str_('FTS'), np.str_('PLX'), np.str_('DGC'), np.str_('JPY=X'), np.str_('DNN'), np.str_('LYG'), np.str_('CNH'), np.str_('SAB'), np.str_('PDR'), np.str_('AMZN'), np.str_('DIG'), np.str_('MBB'), np.str_('MUBARAK_USDT'), np.str_('BMNR'), np.str_('TGT'), np.str_('F'), np.str_('CART'), np.str_('BABA'), np.str_('IREN'), np.str_('AMD'), np.str_('NEM'), np.str_('VCI'), np.str_('BA')]
+2026-02-21 18:14:10 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:15:12 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:15:12 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #14 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:15:12 | INFO     | main:run_train | Vốn: $559.45 | Đòn bẩy: 5.2x | Phạt Trượt Giá: 3.62
+2026-02-21 18:15:12 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.01 | Bám sát WinRate: 0.37
+2026-02-21 18:15:12 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('HBAN'), np.str_('RIG'), np.str_('APLD'), np.str_('VGC'), np.str_('NEAR_USDT'), np.str_('AAL'), np.str_('MXN=X'), np.str_('T'), np.str_('META'), np.str_('DGW'), np.str_('ORCA_USDT'), np.str_('AXP'), np.str_('GAS'), np.str_('NKG'), np.str_('CAT'), np.str_('NOK'), np.str_('WLD_USDT'), np.str_('RTX'), np.str_('UMA_USDT'), np.str_('RGTI'), np.str_('SHIB_USDT'), np.str_('AVDL'), np.str_('VDS'), np.str_('BABA'), np.str_('ABEV'), np.str_('ET'), np.str_('VND=X'), np.str_('VN_GOLD_SJC'), np.str_('ZEC_USDT'), np.str_('AAVE_USDT')]
+2026-02-21 18:15:12 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:16:16 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:16:16 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #15 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:16:16 | INFO     | main:run_train | Vốn: $928.31 | Đòn bẩy: 10.5x | Phạt Trượt Giá: 2.65
+2026-02-21 18:16:16 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.88 | Bám sát WinRate: 0.03
+2026-02-21 18:16:16 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('APLD'), np.str_('VND'), np.str_('BMNR'), np.str_('NEAR_USDT'), np.str_('GOOGL'), np.str_('NKE'), np.str_('QCG'), np.str_('UMA_USDT'), np.str_('STB'), np.str_('NVDA'), np.str_('VDS'), np.str_('SMCI'), np.str_('DNN'), np.str_('HSG'), np.str_('PDR'), np.str_('SLV'), np.str_('HDC'), np.str_('PEP'), np.str_('245710'), np.str_('IJC'), np.str_('TSM'), np.str_('ACHR'), np.str_('FCN'), np.str_('CCL'), np.str_('NOK'), np.str_('CSV'), np.str_('FBIN'), np.str_('DIG'), np.str_('ACB'), np.str_('MA')]
+2026-02-21 18:16:16 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:17:20 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:17:20 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #16 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:17:20 | INFO     | main:run_train | Vốn: $8.44 | Đòn bẩy: 25.2x | Phạt Trượt Giá: 1.16
+2026-02-21 18:17:20 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.47 | Bám sát WinRate: 0.85
+2026-02-21 18:17:20 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('VHM'), np.str_('HDB'), np.str_('^IRX'), np.str_('REE'), np.str_('^VIX'), np.str_('CSV'), np.str_('VCI'), np.str_('PGV'), np.str_('VCG'), np.str_('SOL_USDT'), np.str_('JPM'), np.str_('IJC'), np.str_('LCG'), np.str_('NOK'), np.str_('C'), np.str_('PVD'), np.str_('FTS'), np.str_('MBB'), np.str_('JPY=X'), np.str_('WULF'), np.str_('NAB'), np.str_('BID'), np.str_('^TYX'), np.str_('NBIS'), np.str_('HD'), np.str_('CRM'), np.str_('PATH'), np.str_('CIFR'), np.str_('AXP'), np.str_('ANV')]
+2026-02-21 18:17:20 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:18:23 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:18:23 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #17 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:18:23 | INFO     | main:run_train | Vốn: $94,648.16 | Đòn bẩy: 27.2x | Phạt Trượt Giá: 3.39
+2026-02-21 18:18:23 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.46 | Bám sát WinRate: 0.81
+2026-02-21 18:18:23 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NKE'), np.str_('BABA'), np.str_('LPB'), np.str_('CTD'), np.str_('CNH'), np.str_('VIX'), np.str_('USDC_USDT'), np.str_('BTE'), np.str_('BID'), np.str_('NG=F'), np.str_('DNN'), np.str_('PG'), np.str_('MSTR'), np.str_('TPB'), np.str_('VPB'), np.str_('OGN_USDT'), np.str_('TCEHY'), np.str_('DCM'), np.str_('ETH_USDT'), np.str_('CRE'), np.str_('NOW'), np.str_('DKNG'), np.str_('BAC'), np.str_('^FCHI'), np.str_('ZEC_USDT'), np.str_('DASH_USDT'), np.str_('NEM'), np.str_('INTC'), np.str_('PGV'), np.str_('^AXJO')]
+2026-02-21 18:18:23 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:19:40 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:19:40 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #18 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:19:40 | INFO     | main:run_train | Vốn: $8,382.62 | Đòn bẩy: 16.1x | Phạt Trượt Giá: 4.06
+2026-02-21 18:19:40 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.96 | Bám sát WinRate: 0.67
+2026-02-21 18:19:40 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('WFC'), np.str_('USO'), np.str_('COST'), np.str_('AGR'), np.str_('KDH'), np.str_('INFY'), np.str_('REE'), np.str_('ESP_USDT'), np.str_('TRX_USDT'), np.str_('RTX'), np.str_('SUI_USDT'), np.str_('KBC'), np.str_('LINK_USDT'), np.str_('HSG'), np.str_('BTE'), np.str_('TSM'), np.str_('VIX'), np.str_('^FCHI'), np.str_('SHIB_USDT'), np.str_('KO'), np.str_('VRE'), np.str_('COIN'), np.str_('CMCSA'), np.str_('ZN=F'), np.str_('MXN=X'), np.str_('LTC_USDT'), np.str_('TPB'), np.str_('LYFT'), np.str_('APLD'), np.str_('E1VFVN30')]
+2026-02-21 18:19:40 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:20:46 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:20:46 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #19 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:20:46 | INFO     | main:run_train | Vốn: $909,165.65 | Đòn bẩy: 17.0x | Phạt Trượt Giá: 3.11
+2026-02-21 18:20:46 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 2.86 | Bám sát WinRate: 0.62
+2026-02-21 18:20:46 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('C'), np.str_('NU'), np.str_('XPEV'), np.str_('USD1_USDT'), np.str_('BIDU'), np.str_('ETH_USDT'), np.str_('ACHR'), np.str_('TPB'), np.str_('BSI'), np.str_('BROS'), np.str_('COIN'), np.str_('SPY'), np.str_('LYG'), np.str_('BMNR'), np.str_('ADBE'), np.str_('PYPL'), np.str_('PNJ'), np.str_('ACB'), np.str_('MA'), np.str_('NG=F'), np.str_('BLK'), np.str_('VALE'), np.str_('SOFI'), np.str_('AVAX_USDT'), np.str_('BILI'), np.str_('LYFT'), np.str_('VNINDEX'), np.str_('FPT'), np.str_('^TNX'), np.str_('TSLA')]
+2026-02-21 18:20:46 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:22:04 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:22:04 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #20 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:22:04 | INFO     | main:run_train | Vốn: $73,681.68 | Đòn bẩy: 51.3x | Phạt Trượt Giá: 2.86
+2026-02-21 18:22:04 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.52 | Bám sát WinRate: 0.92
+2026-02-21 18:22:04 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('VNM'), np.str_('BTE'), np.str_('SOFI'), np.str_('PG'), np.str_('SLB'), np.str_('LDG'), np.str_('VIB'), np.str_('VCI'), np.str_('OGN_USDT'), np.str_('NOK'), np.str_('STB'), np.str_('DIS'), np.str_('AGR'), np.str_('ADBE'), np.str_('^RUT'), np.str_('VN301_'), np.str_('PFE'), np.str_('FCN'), np.str_('AMD'), np.str_('AVGO'), np.str_('XPL_USDT'), np.str_('TLH'), np.str_('BID'), np.str_('VND'), np.str_('PCG'), np.str_('KVUE'), np.str_('HBAN'), np.str_('VNINDEX'), np.str_('ARM'), np.str_('NU')]
+2026-02-21 18:22:04 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:23:24 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:23:24 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #21 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:23:24 | INFO     | main:run_train | Vốn: $100.82 | Đòn bẩy: 86.1x | Phạt Trượt Giá: 3.60
+2026-02-21 18:23:24 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.04 | Bám sát WinRate: 0.68
+2026-02-21 18:23:24 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NIO'), np.str_('MCD'), np.str_('IWM'), np.str_('VN_GOLD_SJC'), np.str_('DGW'), np.str_('KVUE'), np.str_('^N225'), np.str_('VIX'), np.str_('VND=X'), np.str_('SOUN'), np.str_('PGV'), np.str_('CSV'), np.str_('CART'), np.str_('BZ=F'), np.str_('JPY=X'), np.str_('CVX'), np.str_('^FVX'), np.str_('SLV'), np.str_('NT2'), np.str_('LOW'), np.str_('GRAB'), np.str_('SI=F'), np.str_('NEAR_USDT'), np.str_('^HSI'), np.str_('VIX'), np.str_('PC1'), np.str_('HDB'), np.str_('EIB'), np.str_('NCLH'), np.str_('VN301_')]
+2026-02-21 18:23:24 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:24:41 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:24:41 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #22 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:24:41 | INFO     | main:run_train | Vốn: $13.03 | Đòn bẩy: 79.4x | Phạt Trượt Giá: 1.22
+2026-02-21 18:24:41 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.23 | Bám sát WinRate: 0.74
+2026-02-21 18:24:41 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NOW'), np.str_('DXS'), np.str_('TRUMP_USDT'), np.str_('HOOD'), np.str_('^GSPC'), np.str_('VALE'), np.str_('PYPL'), np.str_('SHY'), np.str_('JPM'), np.str_('PDD'), np.str_('^FVX'), np.str_('SZC'), np.str_('CPNG'), np.str_('LYFT'), np.str_('HG=F'), np.str_('TCEHY'), np.str_('RAY_USDT'), np.str_('HPG'), np.str_('AVAX_USDT'), np.str_('SUI_USDT'), np.str_('SPY'), np.str_('^IRX'), np.str_('CLF'), np.str_('ACB'), np.str_('MXN=X'), np.str_('HIMS'), np.str_('BTG'), np.str_('ANV'), np.str_('MSTR'), np.str_('GGB')]
+2026-02-21 18:24:41 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:26:13 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:26:13 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #23 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:26:13 | INFO     | main:run_train | Vốn: $89,018.59 | Đòn bẩy: 51.2x | Phạt Trượt Giá: 4.09
+2026-02-21 18:26:13 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 5.09 | Bám sát WinRate: 0.96
+2026-02-21 18:26:13 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('USO'), np.str_('PSLV'), np.str_('MS'), np.str_('HD'), np.str_('BMNR'), np.str_('VIRTUAL_USDT'), np.str_('PCG'), np.str_('SHY'), np.str_('SSB'), np.str_('CMCSA'), np.str_('FBIN'), np.str_('OPEN'), np.str_('^GDAXI'), np.str_('CAD=X'), np.str_('245710'), np.str_('TXN'), np.str_('U_USDT'), np.str_('TOST'), np.str_('AXP'), np.str_('NOK'), np.str_('JNJ'), np.str_('PEPE_USDT'), np.str_('^AXJO'), np.str_('PGV'), np.str_('TCH'), np.str_('BSI'), np.str_('LYFT'), np.str_('XRP_USDT'), np.str_('UBER'), np.str_('PVD')]
+2026-02-21 18:26:13 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:27:38 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:27:38 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #24 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:27:38 | INFO     | main:run_train | Vốn: $193.59 | Đòn bẩy: 5.7x | Phạt Trượt Giá: 2.27
+2026-02-21 18:27:38 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 7.61 | Bám sát WinRate: 0.63
+2026-02-21 18:27:38 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('VN30'), np.str_('MSN'), np.str_('TLH'), np.str_('SAB'), np.str_('DGW'), np.str_('BIDU'), np.str_('BP'), np.str_('USDC_USDT'), np.str_('MRK'), np.str_('CTG'), np.str_('COST'), np.str_('MARA'), np.str_('HSG'), np.str_('ITUB'), np.str_('XPEV'), np.str_('VND'), np.str_('FRT'), np.str_('DNN'), np.str_('COIN'), np.str_('SPY'), np.str_('LPB'), np.str_('VIC'), np.str_('AXP'), np.str_('INFY'), np.str_('RTX'), np.str_('PATH'), np.str_('BA'), np.str_('AMD'), np.str_('HCM'), np.str_('HBAR_USDT')]
+2026-02-21 18:27:38 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:28:46 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:28:46 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #25 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:28:46 | INFO     | main:run_train | Vốn: $27,243.34 | Đòn bẩy: 32.0x | Phạt Trượt Giá: 4.94
+2026-02-21 18:28:46 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 9.09 | Bám sát WinRate: 0.39
+2026-02-21 18:28:46 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('FDUSD_USDT'), np.str_('DX-Y'), np.str_('^FTSE'), np.str_('ZC=F'), np.str_('RPL_USDT'), np.str_('KO'), np.str_('FUESSV30'), np.str_('NEM'), np.str_('VCI'), np.str_('VGC'), np.str_('NAB'), np.str_('PG'), np.str_('AVAX_USDT'), np.str_('LVMUY'), np.str_('OWL'), np.str_('CTD'), np.str_('MARA'), np.str_('VALE'), np.str_('LINK_USDT'), np.str_('KHG'), np.str_('SNDK'), np.str_('BAC'), np.str_('VIX'), np.str_('CRWV'), np.str_('SHY'), np.str_('VIB'), np.str_('SZC'), np.str_('EIB'), np.str_('GLD'), np.str_('PLX')]
+2026-02-21 18:28:46 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:30:13 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:30:13 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #26 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:30:13 | INFO     | main:run_train | Vốn: $14,306.32 | Đòn bẩy: 91.8x | Phạt Trượt Giá: 4.38
+2026-02-21 18:30:13 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.98 | Bám sát WinRate: 0.37
+2026-02-21 18:30:13 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('BIL'), np.str_('IBM'), np.str_('ZC=F'), np.str_('KHG'), np.str_('HG=F'), np.str_('U_USDT'), np.str_('NOK'), np.str_('SBUX'), np.str_('SLB'), np.str_('OXY'), np.str_('MSFT'), np.str_('BILI'), np.str_('BNB_USDT'), np.str_('AVDL'), np.str_('DIG'), np.str_('QCG'), np.str_('NEM'), np.str_('MSTR'), np.str_('ZAMA_USDT'), np.str_('ANET'), np.str_('HDB'), np.str_('MSN'), np.str_('CCL'), np.str_('ABEV'), np.str_('PDD'), np.str_('TLH'), np.str_('UMA_USDT'), np.str_('GBP=X'), np.str_('NG=F'), np.str_('PGV')]
+2026-02-21 18:30:13 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:31:31 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:31:31 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #27 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:31:31 | INFO     | main:run_train | Vốn: $171,092.28 | Đòn bẩy: 12.9x | Phạt Trượt Giá: 4.51
+2026-02-21 18:31:31 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 1.86 | Bám sát WinRate: 0.97
+2026-02-21 18:31:31 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('WLFI_USDT'), np.str_('ONDS'), np.str_('CCL'), np.str_('AVDL'), np.str_('FCN'), np.str_('PNJ'), np.str_('PL=F'), np.str_('TAO_USDT'), np.str_('KBC'), np.str_('MSFT'), np.str_('HG=F'), np.str_('RGTI'), np.str_('ARM'), np.str_('FSLY'), np.str_('MA'), np.str_('NEM'), np.str_('NAB'), np.str_('VIRTUAL_USDT'), np.str_('QCG'), np.str_('QCOM'), np.str_('SBUX'), np.str_('LYG'), np.str_('SI=F'), np.str_('FPT'), np.str_('FRT'), np.str_('VND=X'), np.str_('PAXG_USDT'), np.str_('NGD'), np.str_('XOM'), np.str_('ADA_USDT')]
+2026-02-21 18:31:31 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:32:52 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:32:52 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #28 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:32:52 | INFO     | main:run_train | Vốn: $859.90 | Đòn bẩy: 34.9x | Phạt Trượt Giá: 2.36
+2026-02-21 18:32:52 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 6.39 | Bám sát WinRate: 0.44
+2026-02-21 18:32:52 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('XOM'), np.str_('VRE'), np.str_('HCM'), np.str_('MXN=X'), np.str_('E1VFVN30'), np.str_('HDC'), np.str_('FCN'), np.str_('IBM'), np.str_('PLUG'), np.str_('CMCSA'), np.str_('AMD'), np.str_('ADA_USDT'), np.str_('U_USDT'), np.str_('DKNG'), np.str_('PDR'), np.str_('SAB'), np.str_('VALE'), np.str_('NKE'), np.str_('^N100'), np.str_('GEG'), np.str_('VIC'), np.str_('LI'), np.str_('VN30'), np.str_('^FVX'), np.str_('^N225'), np.str_('CTS'), np.str_('MARA'), np.str_('^GSPC'), np.str_('OXY'), np.str_('COIN')]
+2026-02-21 18:32:52 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:34:04 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:34:04 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #29 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:34:04 | INFO     | main:run_train | Vốn: $62,938,658.54 | Đòn bẩy: 87.5x | Phạt Trượt Giá: 3.46
+2026-02-21 18:34:04 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 4.67 | Bám sát WinRate: 0.55
+2026-02-21 18:34:04 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('BABA'), np.str_('XPL_USDT'), np.str_('PSLV'), np.str_('HBAN'), np.str_('META'), np.str_('ORCL'), np.str_('MSB'), np.str_('AG'), np.str_('ZRO_USDT'), np.str_('VN30'), np.str_('RKT'), np.str_('HSG'), np.str_('BERA_USDT'), np.str_('CL=F'), np.str_('SNDK'), np.str_('ZC=F'), np.str_('F'), np.str_('PGV'), np.str_('JPM'), np.str_('^FTSE'), np.str_('BA'), np.str_('PAXG_USDT'), np.str_('TLT'), np.str_('BIL'), np.str_('SMR'), np.str_('PL=F'), np.str_('RTX'), np.str_('EUR_USDT'), np.str_('MXN=X'), np.str_('IBM')]
+2026-02-21 18:34:04 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:35:21 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:35:21 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #30 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:35:21 | INFO     | main:run_train | Vốn: $432.20 | Đòn bẩy: 68.1x | Phạt Trượt Giá: 4.44
+2026-02-21 18:35:21 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 3.60 | Bám sát WinRate: 0.32
+2026-02-21 18:35:21 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('NIO'), np.str_('AXP'), np.str_('STB'), np.str_('VDS'), np.str_('VZ'), np.str_('ORS'), np.str_('IBRX'), np.str_('RKT'), np.str_('FCN'), np.str_('TPB'), np.str_('UNI_USDT'), np.str_('ZN=F'), np.str_('TGT'), np.str_('^IRX'), np.str_('AVGO'), np.str_('NOW'), np.str_('ZC=F'), np.str_('WMT'), np.str_('HOOD'), np.str_('C'), np.str_('000001'), np.str_('DPM'), np.str_('VIX'), np.str_('VAB'), np.str_('GS'), np.str_('VN30'), np.str_('KBC'), np.str_('DKNG'), np.str_('MUBARAK_USDT'), np.str_('MWG')]
+2026-02-21 18:35:21 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 18:36:38 | INFO     | main:run_train | Huấn luyện Meta-Curriculum Hoàn Tất. Agent đã chinh phục ngàn vạn điều kiện ngẫu nhiên từ Distance Rejection Sampling!
+2026-02-21 18:36:38 | INFO     | main:run_auto | >>> TIẾN TRÌNH 2: KIỂM THỬ (BACKTEST)
+2026-02-21 18:36:38 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-21 18:36:38 | INFO     | main:run_backtest | Khởi động Backtest với N_SIMULATIONS=1000 (Random Meta-Personas Generated)
+2026-02-21 18:36:39 | INFO     | main:run_backtest | 
+[Simulation 1/1000] Khởi tạo Môi trường Cá Nhân Hóa (Euclidean Distance Verified):
+2026-02-21 18:36:39 | INFO     | main:run_backtest | -> Vốn: $6.52 | Đòn bẩy tối đa: 11.9x
+2026-02-21 18:36:39 | INFO     | main:run_backtest | -> Khẩu vị Đầu tư (Universe): [np.str_('HDC'), np.str_('DIA'), np.str_('VALE'), np.str_('JPM'), np.str_('ATOM_USDT'), np.str_('GC=F'), np.str_('505'), np.str_('TAO_USDT'), np.str_('GEG'), np.str_('TSM'), np.str_('LTC_USDT'), np.str_('ETH_USDT'), np.str_('CIFR'), np.str_('APLD'), np.str_('CSV'), np.str_('PDD'), np.str_('ET'), np.str_('DPM'), np.str_('VND'), np.str_('PUMP_USDT'), np.str_('USO'), np.str_('DCM'), np.str_('CCL'), np.str_('GOOGL'), np.str_('FUESSV30'), np.str_('PFE'), np.str_('245710'), np.str_('570063'), np.str_('BCH_USDT'), np.str_('TCEHY')]
+2026-02-21 18:50:59 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 18:50:59 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 18:51:17 | INFO     | main:run_train | Phát hiện Model Cache tại models/rl_agent/best_model.zip. Bỏ qua huấn luyện để tiết kiệm thời gian.
+2026-02-21 18:51:17 | INFO     | main:run_train | Dùng `--force` để train lại từ đầu.
+2026-02-21 18:51:31 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 18:51:31 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 18:51:43 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 18:51:43 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 18:51:44 | INFO     | main:run_train | Hoàn thành trích xuất 30 Personas từ tập 1000 để train trong cấu hình thời gian 15 phút. (1 Epochs/Persona)
+2026-02-21 18:51:44 | INFO     | main:run_train | 
+==========================================================
+2026-02-21 18:51:44 | INFO     | main:run_train | ĐANG HUẤN LUYỆN BỘ NÃO VỚI PERSONA #1 / 30 (Original Seed Distance Confirmed)
+2026-02-21 18:51:44 | INFO     | main:run_train | Vốn: $1,003,254.62 | Đòn bẩy: 65.9x | Phạt Trượt Giá: 3.64
+2026-02-21 18:51:44 | INFO     | main:run_train | Độ sợ Rủi Ro Drawdown: 8.03 | Bám sát WinRate: 0.12
+2026-02-21 18:51:44 | INFO     | main:run_train | Tâm lý Đầu tư (30 Asset): [np.str_('VIC'), np.str_('VIRTUAL_USDT'), np.str_('DXS'), np.str_('ARM'), np.str_('SHY'), np.str_('NVDA'), np.str_('ATOM_USDT'), np.str_('BILI'), np.str_('HDB'), np.str_('IBRX'), np.str_('LYFT'), np.str_('ORCA_USDT'), np.str_('CART'), np.str_('NAB'), np.str_('VHM'), np.str_('USO'), np.str_('GRAB'), np.str_('NEM'), np.str_('PC1'), np.str_('^ADOW'), np.str_('^RUT'), np.str_('DOGE_USDT'), np.str_('CIFR'), np.str_('AMZN'), np.str_('CSCO'), np.str_('PSLV'), np.str_('HSG'), np.str_('UNG'), np.str_('QQQ'), np.str_('BSI')]
+2026-02-21 18:51:44 | INFO     | main:run_train | ==========================================================
+
+2026-02-21 19:01:24 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 19:01:24 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 19:01:39 | INFO     | main:run_train | Đã xóa Model Cache cũ để train lại từ đầu (--force)
+2026-02-21 19:01:39 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 19:02:06 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 19:02:06 | INFO     | main:run_train | Khởi động tiến trình TRAINING ĐA NHÂN CÁCH (Curriculum Learning) cho agent: ppo
+2026-02-21 19:02:16 | WARNING  | main:run_train | Could not delete tensorboard logs: [WinError 5] Access is denied: 'logs/training/tensorboard/ppo'
+2026-02-21 19:02:16 | INFO     | main:run_train | Hoàn thành trích xuất Personas. Khởi chạy 16 Vectorized Workers (SubprocVecEnv).
+2026-02-21 19:04:34 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 19:04:34 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-21 19:04:44 | INFO     | main:run_backtest | Khởi động Backtest với N_SIMULATIONS=1 (Random Meta-Personas Generated)
+2026-02-21 19:05:19 | INFO     | main:main | System Boot: Monte Carlo Protocol Active. Initial balance will be randomized per instance.
+2026-02-21 19:05:19 | INFO     | main:run_backtest | Khởi động tiến trình BACKTESTING.
+2026-02-21 19:05:30 | INFO     | main:run_backtest | Khởi động Backtest với N_SIMULATIONS=1 (Random Meta-Personas Generated)
+2026-02-21 19:05:30 | INFO     | main:run_backtest | 
+[Simulation 1/1] Khởi tạo Môi trường Cá Nhân Hóa (Euclidean Distance Verified):
+2026-02-21 19:05:30 | INFO     | main:run_backtest | -> Vốn: $32.09 | Đòn bẩy tối đa: 38.23884803845542x
+2026-02-21 19:05:30 | INFO     | main:run_backtest | -> Khẩu vị Đầu tư (Universe): [np.str_('GE'), np.str_('BILI'), np.str_('NKE'), np.str_('^GSPC'), np.str_('VIX'), np.str_('XPEV'), np.str_('DIA'), np.str_('WMT'), np.str_('AAVE_USDT'), np.str_('HDC'), np.str_('CSCO'), np.str_('VN301_'), np.str_('NU'), np.str_('CSV'), np.str_('KO'), np.str_('TLT'), np.str_('SCR'), np.str_('HHV'), np.str_('BP')]

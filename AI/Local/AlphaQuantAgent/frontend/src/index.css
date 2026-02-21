@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0e11;
+  color: #D1D4DC;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e11; 
+}
+::-webkit-scrollbar-thumb {
+  background: #2B3139; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #848E9C; 
+}
+
+@keyframes customMarquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-custom-marquee {
+  animation: customMarquee 40s linear infinite;
+}
+
+.animate-custom-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Hide TradingView attribution logo injected by lightweight-charts */
+#tv-attr-logo,
+a[href*="tradingview.com"] {
+  display: none !important;
+}

@@ -1,12 +1,19 @@
 """
 /**
- * MODULE: The Hybrid Accounting Wallet (Bộ Kế toán Kép Tích hợp Phân Lô)
- * VAI TRÒ: Điểm thắt (Bottleneck) bảo hộ an toàn (Safety Mechanism) chặn mọi dòng chảy vốn phi pháp.
- * HIẾN PHÁP NGHIÊM NGẶT (SINGULARITY RULES):
- * 1. Cơ Chế Thương Mại (TRADE - Stock/Crypto): Không cấm Fractional (Thập phân), luôn cộng dồn giá theo Bình Quân Gia Quyền (Weighted Avg Price). Cấm giao dịch bán khống rỗng (No-Shorting Policy).
- * 2. Cơ Chế Tiết Kiệm Kì Hạn (RATE - Bond): Thuật toán Phân Cục Lô Độc Lập (Lot-Based Management). Lệnh bán rút từ RATE chịu lệnh cấm cản Maturity_Locked.
- * 3. Phân Thủy (Bifurcation): Cắt đôi trạng thái tiền (NAV) thành Trôi nổi (Liquid) và Bất Vi phạm (Locked Capital).
- * 4. Yield Đãi Ngộ Vón (Simple Interest) chạy liên tục qua Lãi dồn.
+ * TỆP LÕI (CORE MODULE): KẾ TOÁN KÉP LƯỢNG TỬ (HYBRID ACCOUNTING WALLET)
+ * =====================================================================
+ * CÂU HỎI 1: Hàm / Module này làm gì? (Tồn tại vì mục đích gì?)
+ * -> Đây là 'Ngân hàng Trung ương' của hệ thống ảo. Nó đóng vai trò chốt chặn (Bottleneck) bảo hộ an toàn.
+ * -> Nó phân xử rạch ròi 2 dạng vật chất: 
+ *    (A) TRADE (Tiền điện tử/Cổ phiếu) - Cho phép mua bán phân số (Fractional) dựa trên Giá bình quân gia quyền. Không cho mượn khống (No Shorting).
+ *    (B) RATE (Trái phiếu/Kỳ hạn) - Bắt buộc giam vốn theo Lô (Lot-based). Rút tiền trước hạn sẽ bị cấm (Maturity Locked).
+ * 
+ * CÂU HỎI 2: Đầu vào (Input) bản chất là gì?
+ * -> Các lệnh `execute()` từ Agent truyền xuống bao gồm MÃ TÀI SẢN (Symbol), HƯỚNG LỆNH (Side: 1/-1), KHỐI LƯỢNG (Size), và BỐI CẢNH THỊ TRƯỜNG hiện tại (Price, Vol, Meta).
+ * 
+ * CÂU HỎI 3: Đầu ra (Output) tác động thế nào đến hệ thống?
+ * -> Việc khớp lệnh (hay từ chối) sinh ra các biến thiên cho Ma Trận Trạng Thái Kế Toán (Total NAV), cụ thể tách bạch thành Liquid NAV (Tiền sinh tồn) và Locked NAV (Tiền chết chờ ngày đáo hạn).
+ * -> Lưu vết tuyệt đối vào Sổ cái `transactions.csv` phục vụ cho Quant Analyzer.
  */
 """
 
@@ -18,6 +25,7 @@ from src.utils.exceptions import MaturityLockedError, InsufficientFundsError
 
 # --- BIẾN TOÀN CỤC BẤT NẠP HỆ THỐNG ---
 FEE_RATE = 0.001          # Transaction Base Fee: 0.1% / Phiếu thực thi
+BASE_SLIPPAGE = 0.0005    # Cứng: 0.05% trượt giá mặc định bắt buộc (Phase 3 Requirement)
 SLIPPAGE_K = 0.1          # Hệ số Kháng trượt Tác Động Gốc Bình Phương Market Impact (Market Impact Limit factor)
 PRECISION_USD = 2         # Cents Format làm tròn
 PRECISION_QTY = 6         # Satoshi (Crypto Fractional Unit) làm tròn 6 số sau dấu phẩy thập phân
@@ -57,9 +65,13 @@ class Wallet:
 
     def on_split(self, ts: str, symbol: str, ratio: float):
         """
-        Chia tách Sổ cổ phần (Stock Splits).
-        TẠI SAO: Đảm bảo NAV Bất Biến (Invariant Effect).
-        O(N_Lots) Logic: Nhân Số cổ phiếu, Chia đôi Giá trị gốc (Cost Bases) tại tất cả các khối (Lots).
+        [CHỨC NĂNG CỐT LÕI]: Hành động doanh nghiệp - Chia tách Sổ cổ phần (Stock Splits).
+        [TẠI SAO TỒN TẠI]: Cổ phiếu có thể bị phân mảnh (vd: 1 thành 4 như NVDA). Nếu không điều chỉnh, hệ thống sẽ chẩn đoán sai lệch về việc tài sản đột ngột bốc hơi 75% giá trị, gây vỡ toán học Reward.
+        [ĐẦU VÀO]: `timestamp` (thời điểm), `symbol` (Mã tài sản), `ratio` (Hệ số chia tách).
+        [ĐẦU RA & TÁC ĐỘNG]: 
+        -> Áp dụng lên O(N) Lô (Lots) hiện hữu. 
+        -> Tăng số cổ phiếu sở hữu (`qty` *= ratio) và tự động chiết khấu giá vốn (`avg_px` /= ratio). 
+        -> Đảm bảo NAV (Net Asset Value) BẤT BIẾN (Invariant Effect) sau khi event xảy ra.
         """
         if symbol in self.portfolio and ratio > 0 and ratio != 1.0:
             pos = self.portfolio[symbol]
@@ -72,7 +84,11 @@ class Wallet:
             self._audit(ts, symbol, 'SPLIT', ratio, 0.0, 0.0, 0.0)
 
     def on_dividend(self, ts: str, symbol: str, amount: float):
-        """Nhập sổ thu lợi tức dòng tự do vô hạn."""
+        """
+        [CHỨC NĂNG CỐT LÕI]: Thu lợi tức dòng chảy (Cash Dividend).
+        [TẠI SAO TỒN TẠI]: Đảm bảo quyền lợi cổ đông sinh lời từ việc nắm giữ dài hạn.
+        [TÁC ĐỘNG]: Bơm thẳng giá trị `amount` vào Vốn Hoạt Động (`self.cash`) thay vì ép tái đầu tư (DRIP).
+        """
         if amount > 0:
             self.cash += amount
             self.cum_divs += amount
@@ -80,9 +96,10 @@ class Wallet:
 
     def on_time_step(self, rates_map: Dict[str, float] = None, dt_days: float = 1.0):
         """
-        Trả lãi ngầm tĩnh theo vòng tuần hoàn thời gian. (Accrual Yield Engine).
-        TẠI SAO PHẢI CÓ: Lãi suất Bank / Trái phiểu Mỹ (US10Y) chia đều qua từng nến thời gian. Dữ liệu ngầm này phải tách thành Quỹ 
-        Thực Chờ Nhận (Accrued) thay vì pha trộn thành Cash (Cash chỉ được hoàn sau khi Rút/Bán khỏi Bank thành công!).
+        [CHỨC NĂNG CỐT LÕI]: Động cơ Tích lũy Lãi suất Thời gian Thực (Accrual Yield Engine).
+        [TẠI SAO TỒN TẠI]: Trái phiếu / Tiết kiệm sinh lời theo từng nano-giây. Dữ liệu mờ này phải được theo dõi (Accrued) nhưng tuyệt đối không được pha lẫn vào cấu trúc Cash (Liquid) vì User chưa hề "Rút" tiền để hiện thực hóa lợi nhuận.
+        [ĐẦU VÀO]: Ma trận lãi suất `rates_map` (dành cho biến động Rate) và `dt_days` (bước nhảy thời gian quy đổi, e.g., 15ph = 0.0104 ngày).
+        [ĐẦU RA]: Tiền ảo `accrued` trong danh mục phình to lên. Cash sẽ thu được thật sự khi lệnh "SELL" (Đáo hạn) được duyệt ở hàm `execute()`.
         """
         if self.cash > 0 and self.rf_rate > 0:
             interest = self.cash * (self.rf_rate / 365.0) * dt_days
@@ -128,20 +145,20 @@ class Wallet:
 
         # Cơ Chế Trượt Giá Quảng Tính Động: Mô Phỏng Ảnh Hưởng Đâm Đụng Dòng Vốn
         liq = vol if vol > 0 else (size * 50.0)
-        base_slip = FEE_RATE + (penalty * self.penalty_beta)
+        base_fee_and_slip = FEE_RATE + BASE_SLIPPAGE + (penalty * self.penalty_beta)
 
         # -----------------------------------
         # LOGIC 1: ĐẦU TIÊN CẮT MUA (DEPOSIT / BUY)
         # -----------------------------------
         if side == 1:
-            est_slip = base_slip + (SLIPPAGE_K * (size / liq)**0.5)
+            est_slip = base_fee_and_slip + (SLIPPAGE_K * (size / liq)**0.5)
             max_qty = self.cash / (px * (1 + est_slip))
             qty = min(size, max_qty) 
             
             if qty * px < MIN_NOTIONAL: return False, "INSUFF_FUNDS"
 
-            real_impact = SLIPPAGE_K * (qty / liq)**0.5
-            fill_px = px * (1 + base_slip + real_impact)
+            real_impact = BASE_SLIPPAGE + (SLIPPAGE_K * (qty / liq)**0.5)
+            fill_px = px * (1 + FEE_RATE + real_impact + (penalty * self.penalty_beta))
             cost = qty * fill_px
 
             self.cash = round(self.cash - cost, PRECISION_USD)
@@ -182,27 +199,31 @@ class Wallet:
         # LOGIC 2: LỆNH BÁN THEO FIF0 VÀ CẢN GIỚI RÚT TIỀN (SELL / WITHDRAW)
         # -----------------------------------
         elif side == -1:
-            if symbol not in self.portfolio: return False, "NO_POS"
-            pos = self.portfolio[symbol]
+            if symbol not in self.portfolio or self.portfolio[symbol]['qty'] <= EPSILON:
+                return False, "NO_POSITION"
 
-            available_qty = pos['qty']
+            pos = self.portfolio[symbol]
+            qty_available = pos['qty']
             term_days = meta.get('term_days', 0)
 
-            # KIỂM TRA QUY TRÌNH LUẬT BẤT BIẾN MATURITY THỨ 2 LỚP: HỦY nếu rút lén sổ chưa hết hạn
+            # Luật Khóa Vốn Maturity: Không cho phép rút RATE asset chưa đáo hạn
             if term_days > 0 and 'lots' in pos:
-                matured_qty = sum(lot['qty'] for lot in pos['lots'] if str(ts) >= lot['maturity'])
-                available_qty = matured_qty
+                try:
+                    current_dt = datetime.fromisoformat(str(ts))
+                except:
+                    current_dt = datetime.now()
                 
-                # Cắt rễ: Không lọt nổi nếu Lô đã bị Cấm Rút khóa Vốn theo Hiến pháp. RAG / Exceptions báo ngay
-                if available_qty < MIN_NOTIONAL: 
+                unlocked_qty = sum([lot['qty'] for lot in pos['lots'] if datetime.fromisoformat(lot['maturity']) <= current_dt])
+                qty_available = min(qty_available, unlocked_qty)
+                if qty_available < EPSILON:
                     return False, "LOCKED_MATURITY"
 
-            qty = min(size, available_qty)
-            if qty * px < MIN_NOTIONAL: return False, "TOO_SMALL"
+            qty = min(size, qty_available)
+            if qty * px < MIN_NOTIONAL: return False, "INSUFF_FUNDS_OR_NO_QTY"
 
-            real_impact = SLIPPAGE_K * (qty / liq)**0.5
-            raw_px = px * (1 - base_slip - real_impact)
-            fill_px = max(raw_px, EPSILON) 
+            real_impact = BASE_SLIPPAGE + (SLIPPAGE_K * (qty / liq)**0.5)
+            fill_px = px * (1 - FEE_RATE - real_impact - (penalty * self.penalty_beta))
+            fill_px = max(fill_px, EPSILON) 
             revenue = qty * fill_px
 
             # Cơ Tiết Đào Móng FIF (First In First Out) Khi Rút Lô RATE
@@ -324,4 +345,4 @@ class Wallet:
 
     def _audit(self, ts, sym, side, qty, px, val, pnl):
         self.total_trades += 1
-        self.ledger.append({'ts': str(ts), 'sym': sym, 'side': side, 'qty': qty, 'px': px})
+        self.ledger.append({'ts': str(ts), 'sym': sym, 'side': side, 'qty': qty, 'px': px, 'val': val, 'pnl': pnl})

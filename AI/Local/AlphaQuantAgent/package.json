@@ -1,0 +1,15 @@
+{
+  "name": "alphaquant-agent-core",
+  "version": "2.0.0",
+  "description": "Native Orchestrator for AlphaQuant AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -c \"cyan,green,magenta\" -n \"PYTHON-CORE,NODE-BRIDGE,REACT-FRONTEND\" \"uvicorn api:app --host 127.0.0.1 --port 8000 --reload\" \"cd api && npm start\" \"cd frontend && npm run dev\"",
+    "postinstall": "cd api && npm install && cd ../frontend && npm install"
+  },
+  "author": "AlphaQuant",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
